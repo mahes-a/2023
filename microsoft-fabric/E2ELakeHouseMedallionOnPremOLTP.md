@@ -86,8 +86,21 @@
    - While the bronze layer contains the entire data history in a nearly raw state, the silver layer represents a validated, enriched version of our data that can be trusted for downstream analytics.
    
    -  In the notebook , we can enable Vorder and Optimize write and file sizes using below spark configs
+         <img width="888" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0d0e23ff-aa5b-4bae-8380-2ce00d46f425">
+         
+   - We can remove duplicates , remove unused columns, create a 3rd-Normal Form like data models in silver layer , the sliver layer forms the enterprise view of the data by joining and transforming the bronze tables
+   
+   - Data in the Gold layer of the lakehouse is typically organized in consumption-ready structures with a data model like star schema applied. Data is aggregated based on business and reporting needs ready to be served 
+   
+   - As an example , the 4 tables shown above can be used to create a Fact Sales table by combining Invoice and Invoicelines table and City dimension can be created by joining the state and city bronze tables
+   
+   - The Star schema concept of Surrogate Keys , SCD 1 , SCD 2 needs to be followed for 
 
-        <img width="888" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0d0e23ff-aa5b-4bae-8380-2ce00d46f425">
+
+   
+   
+
+        
 
    
       
