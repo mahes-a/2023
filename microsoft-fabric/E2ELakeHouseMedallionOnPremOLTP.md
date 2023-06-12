@@ -27,7 +27,7 @@
       <img width="839" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f025f7be-f875-4905-9fa2-5f1a84b7092c">
 
   
-  - If you have not setup the On-premises data gateway to establish connection between the Power BI (Fabric) service. Please do by following instructions  [here](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-install)
+  - If you have not setup the On-premises data gateway to establish connection between the on-prem SQL and Power BI (Fabric) service. Please do by following instructions  [here](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-install)
   
   - Browse to your Fabric enabled workspace in Power Bi and switch to Data Engineering persona
       
