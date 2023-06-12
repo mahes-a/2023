@@ -1,11 +1,11 @@
 
-# Microsoft Fabric : Build end-to-end Medallion Lakehouse architecture for Data Analytics from On-Premise OLTP Source
+# Microsoft Fabric : Build end-to-end Medallion Lakehouse architecture  from On-Premise OLTP Source
 
 
 ## Prerequisites
 
 - Microsoft Fabric You can enable free trial [here](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial). 
-- Microsoft SQL Server (On-Premise) edition
+- Microsoft SQL Server (On-Premise)
 - On-premises data gateway 
 
 ## Flow
