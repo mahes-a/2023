@@ -20,11 +20,12 @@
   
   #### Choose the OLTP Data Set for ingestion
   
-  - 4 Simplified tables based on  Wide World Importers forms the dataset to be ingested , databaset can be found [here](https://learn.microsoft.com/en-us/sql/samples/wide-world-importers-what-is?view=sql-server-ver16)
-
-    <img width="872" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/51d5b465-cf33-4064-bc2e-acf2533518fb">
+  - 4 Simplified tables based on  Wide World Importers forms the dataset to be ingested , dataset can be found [here](https://learn.microsoft.com/en-us/sql/samples/wide-world-importers-what-is?view=sql-server-ver16)
     
-  - The tables are normalized 
+  - The tables are normalized and have parent child relationship , For example we could chose below tables from wide world importers dataset
+  
+      <img width="839" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f025f7be-f875-4905-9fa2-5f1a84b7092c">
+
   
   - If you have not setup the On-premises data gateway to establish connection between the Power BI (Fabric) service. Please do by following instructions  [here](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-install)
   
@@ -70,14 +71,29 @@
 
 
 
-
    - Wait for the dataflow to complete and open the lakehouse and validate the tables are created under the tables section and validate the data 
 
         <img width="207" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ee3aa803-7907-4b35-ab5d-08129383319b">
    
    
+   - These will be our bronze layer tables ingested from source.  
    
-   - These will be our bronze layer tables ingested from source .  
+   - For curating the silver layer , Notebooks can be used
+   
+      <img width="646" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/00fd54fb-36ac-43fc-9842-200fc61bf246">
+      
+      
+   - While the bronze layer contains the entire data history in a nearly raw state, the silver layer represents a validated, enriched version of our data that can be trusted for downstream analytics.
+   
+   -  In the notebook , we can enable Vorder and Optimize write and file sizes using below spark configs
+
+        <img width="888" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0d0e23ff-aa5b-4bae-8380-2ce00d46f425">
+
+   
+      
+
+
+
    
       
 
