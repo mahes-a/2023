@@ -66,6 +66,8 @@
 
 
    - In the Power Query window , select the destination as lakehouse (bottom right corner) . We are not doing any transformations in the dataflow and loading directly to Lakehouse 
+   
+   
         <img width="143" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/729155de-d1d8-43df-a0f4-9c461459f04d">
   
    - Choose the lakehouse and select next and choose your lakehouse created in previous step and provide a new table name  , save the destination settings and mapping , Repeat for all the tables selected and publish the          dataflow
@@ -122,9 +124,8 @@
       <img width="559" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eaad1706-f344-47b0-9585-161f5e60670e">
      
    - In the Lakehouse explorer switch to Sql end point. Select the model tab from left bottom 
-   
-    
-    <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
+        
+       <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
 
  #### Create data model for reporting
    
