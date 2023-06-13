@@ -56,11 +56,16 @@
        <img width="525" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/fee9c03c-8c5a-4fd7-9277-1d01bf863c75">
     
    - In the choose data window Select the tables to ingested and click on create    
+   
+       <img width="1127" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/fa08c9fe-05f8-402a-8dde-2b66f1ed59e5">
+
+
+
 
    - In the Power Query window , select the destination as lakehouse (bottom right corner) . We are not doing any transformations in the dataflow and loading directly to Lakehouse 
         <img width="143" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/729155de-d1d8-43df-a0f4-9c461459f04d">
   
-   - Choose the lakehouse and select next and choose your lakehouse created in previous step and provide a new table name , save the destination settings and mapping , Repeat for all the tables selected and publish the          dataflow
+   - Choose the lakehouse and select next and choose your lakehouse created in previous step and provide a new table name  , save the destination settings and mapping , Repeat for all the tables selected and publish the          dataflow
 
         
         <img width="598" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7795db7f-370a-4c4b-b399-840166fdbea9">
@@ -74,6 +79,10 @@
    - Wait for the dataflow to complete and open the lakehouse and validate the tables are created under the tables section and validate the data 
 
         <img width="207" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ee3aa803-7907-4b35-ab5d-08129383319b">
+        
+        
+        <img width="616" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/fab62f63-2302-4afc-9f4e-ee6bece88fab">
+
    
    
    - These will be our bronze layer tables ingested from source.  
@@ -83,18 +92,65 @@
       <img width="646" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/00fd54fb-36ac-43fc-9842-200fc61bf246">
       
       
-   - While the bronze layer contains the entire data history in a nearly raw state, the silver layer represents a validated, enriched version of our data that can be trusted for downstream analytics.
+   - While the bronze layer contains the entire data history in a nearly raw state, the silver layer represents a validated, enriched ,cleaned version of our data that can be trusted for downstream analytics.
    
    -  In the notebook , we can enable Vorder and Optimize write and file sizes using below spark configs
-         <img width="888" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0d0e23ff-aa5b-4bae-8380-2ce00d46f425">
+        <img width="581" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b8ede13d-a5b8-4e37-a3ee-c77ddad44213">
+
          
-   - We can remove duplicates , remove unused columns, create a 3rd-Normal Form like data models in silver layer , the sliver layer forms the enterprise view of the data by joining and transforming the bronze tables
+   - As an example in the sliver layer State and City raw tables can be joined and invoice and invoicelines can be joined. select only columns that is needed for anlaytics purposes from bronze layer and create sliver  datasets. Run the notebook and validate the data from lakehouse explorer
+   
+       <img width="890" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a14ca230-c6df-46f3-8685-3b28b2b3961a">
+
+       
+       <img width="520" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8032593f-5b58-45e5-828c-9af543ab0c13">
+
+
    
    - Data in the Gold layer of the lakehouse is typically organized in consumption-ready structures with a data model like star schema applied. Data is aggregated based on business and reporting needs ready to be served 
    
-   - As an example , the 4 tables shown above can be used to create a Fact Sales table by combining Invoice and Invoicelines table and City dimension can be created by joining the state and city bronze tables
+   - In our sample lets create a sample star schema model in gold layer by creating a Dimension city table and Fact Sales table from Silver layer. As part of gold layer create a surrogate key for city dimension and add the surrogate key to fact table using a notebook 
+      <img width="902" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3dd18203-7662-4a81-b4e6-a2f90aa053b9">
+
+   -  Validate the gold layer data in the lakehouse explorer 
+
+        <img width="559" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eaad1706-f344-47b0-9585-161f5e60670e">
+     
+   - In the Lakehouse explorer switch to Sql end point. Select the model tab from left bottom 
+       <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
+
    
-   - The Star schema concept of Surrogate Keys , SCD 1 , SCD 2 needs to be followed for 
+   - For this data model, you need to define the relationship between different tables so that you can create reports and visualizations based on data coming across different tables. From the fact_sales table, drag the CityKey field and drop it on the CityKey field in the dim_city table to create a relationship. Check the “Assume referential integrity” and select Confirm to establish the relationship. Note - When defining relationships, make sure you have many to one relationship from the fact to the dimension and not vice versa
+   
+   <img width="436" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/9812d78f-1427-445e-b6f4-42a175fbf07c">
+
+   
+   - On the Create Relationship settings:
+
+    Table 1 is populated with fact_sales and the column of CityKey.
+
+    Table 2 is populated with dim_city and the column of CityKey.
+
+    Cardinality: Many to one (*:1)
+
+    Cross filter direction: Single
+
+    Leave the box next to Make this relationship active checked.
+
+    Check the box next to Assume referential integrity.
+
+    Select Confirm.
+    
+
+<img width="541" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f11d6bab-93c9-4b43-b138-bf45001694f6">
+
+    
+ ggg
+
+   
+     
+     
+
 
 
    
