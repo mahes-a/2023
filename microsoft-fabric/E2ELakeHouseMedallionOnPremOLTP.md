@@ -114,10 +114,12 @@
 
    -  Validate the gold layer data in the lakehouse explorer 
 
-        <img width="559" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eaad1706-f344-47b0-9585-161f5e60670e">
+      <img width="559" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eaad1706-f344-47b0-9585-161f5e60670e">
      
    - In the Lakehouse explorer switch to Sql end point. Select the model tab from left bottom 
-       <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
+   
+    
+   - <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
 
    
    - For this data model, you need to define the relationship between different tables so that you can create reports and visualizations based on data coming across different tables. From the fact_sales table, drag the CityKey field and drop it on the CityKey field in the dim_city table to create a relationship. Check the “Assume referential integrity” and select Confirm to establish the relationship. Note - When defining relationships, make sure you have many to one relationship from the fact to the dimension and not vice versa
@@ -145,7 +147,33 @@
 <img width="541" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f11d6bab-93c9-4b43-b138-bf45001694f6">
 
     
- ggg
+- On the reporting tab select "New Power BI dataset" , provide dataset name and select the fact and dimension table
+
+  <img width="898" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8a4c13bc-69dc-4e6a-8235-f9f5a9138646">
+  
+  
+  
+  <img width="427" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a0989511-a3d5-450b-91b5-4a6e79ed3546">
+
+  
+
+- Rename the dataset to your liking 
+
+
+   <img width="419" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cc6169c9-9e0a-4a91-bf56-3c104aa9be00">
+
+- Go to your workspace and open the datset created and select Auto create report and pre- select the dimesnion and fact fields to create the report. Save the report 
+  
+  <img width="1116" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8beb9c0c-7d90-4a40-aa1e-117be7435f55">
+  
+  
+  
+  <img width="805" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d4843d68-3f1b-491f-ae5b-66ba4ab907c1">
+  
+  
+  <img width="1133" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8eca6838-acb1-4eba-9cef-9dbe69f75215">
+
+
 
    
      
