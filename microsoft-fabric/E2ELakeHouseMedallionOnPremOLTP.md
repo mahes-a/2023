@@ -128,12 +128,14 @@
    -  Validate the gold layer data in the lakehouse explorer 
 
       <img width="559" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eaad1706-f344-47b0-9585-161f5e60670e">
-     
+ 
+ #### Create data model for reporting using SQL endpoint
+  
    - In the Lakehouse explorer switch to Sql end point. Select the model tab from left bottom 
         
        <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
 
- #### Create data model for reporting
+
    
    - For this data model, you need to define the relationship between different tables so that you can create reports and visualizations based on data coming across different tables. From the fact_sales table, drag the CityKey field and drop it on the CityKey field in the dim_city table to create a relationship. Check the “Assume referential integrity” and select Confirm to establish the relationship. Note - When defining relationships, make sure you have many to one relationship from the fact to the dimension and not vice versa
    
