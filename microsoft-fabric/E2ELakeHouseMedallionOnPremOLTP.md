@@ -87,7 +87,7 @@
 
 
 
-   - Wait for the dataflow to complete and open the lakehouse and validate the tables are created under the tables section and validate the data 
+   - Wait for the dataflow to complete and open the lakehouse and validate the tables are created under the tables section and validate the data . Here the tables are named as "bronze_" , "Silver_" in the tutorial just to provide easy visual reference 
 
         <img width="207" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ee3aa803-7907-4b35-ab5d-08129383319b">
         
@@ -96,7 +96,7 @@
 
    
    
-   - These will be our bronze layer tables ingested from source. Here the tables are named as "bronze_" , "Silver_" in the tutorial just to provide easy visual reference 
+   - These will be our bronze layer tables ingested from source. 
    
    - For curating the silver layer , Notebooks can be used
    
