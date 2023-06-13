@@ -96,7 +96,7 @@
 
    
    
-   - These will be our bronze layer tables ingested from source.  
+   - These will be our bronze layer tables ingested from source. Here the tables are named as "bronze_" , "Silver_" in the tutorial just to provide easy visual reference 
    
    - For curating the silver layer , Notebooks can be used
    
