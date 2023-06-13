@@ -50,6 +50,8 @@
 
 #### Create Dataflow and ingest data into bronze layer
 
+  ##### The table names in the tutorial are prefixed with "bronze_" , "Silver_" just to provide easy visual reference and to emphasize the differences/need for each layer 
+
  - Select New Dataflow Gen 2 to open the Dataflow screen
  
       <img width="646" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/04911b7f-4f2f-4ab3-85ec-bc2efc3b9dd5">
@@ -87,7 +89,7 @@
 
 
 
-   - Wait for the dataflow to complete and open the lakehouse and validate the tables are created under the tables section and validate the data . Here the tables are named as "bronze_" , "Silver_" in the tutorial just to provide easy visual reference 
+   - Wait for the dataflow to complete and open the lakehouse and validate the tables are created under the tables section and validate the data . 
 
         <img width="207" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ee3aa803-7907-4b35-ab5d-08129383319b">
         
