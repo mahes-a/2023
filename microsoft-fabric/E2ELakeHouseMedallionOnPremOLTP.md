@@ -28,7 +28,9 @@
 
   
   - If you have not setup the On-premises data gateway to establish connection between the on-prem SQL and Power BI (Fabric) service. Please do by following instructions  [here](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-install)
-  
+
+#### Create Lakehouse 
+
   - Browse to your Fabric enabled workspace in Power Bi and switch to Data Engineering persona
       
       <img width="71" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2151ab70-9876-48d7-83b9-42a15490021c">
@@ -40,6 +42,7 @@
       
       <img width="254" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ab4a450d-320a-4de1-9f11-f819dea4c2e8">
 
+#### Create Dataflow and ingest data into bronze layer
 
  - Select New Dataflow Gen 2 to open the Dataflow screen
  
@@ -91,6 +94,7 @@
    
       <img width="646" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/00fd54fb-36ac-43fc-9842-200fc61bf246">
       
+  #### Create Silver layer using notebooks
       
    - While the bronze layer contains the entire data history in a nearly raw state, the silver layer represents a validated, enriched ,cleaned version of our data that can be trusted for downstream analytics.
    
@@ -106,6 +110,7 @@
        <img width="520" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8032593f-5b58-45e5-828c-9af543ab0c13">
 
 
+ #### Create Gold layer using notebooks
    
    - Data in the Gold layer of the lakehouse is typically organized in consumption-ready structures with a data model like star schema applied. Data is aggregated based on business and reporting needs ready to be served 
    
@@ -119,8 +124,9 @@
    - In the Lakehouse explorer switch to Sql end point. Select the model tab from left bottom 
    
     
-   - <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
+    <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
 
+ #### Create data model for reporting
    
    - For this data model, you need to define the relationship between different tables so that you can create reports and visualizations based on data coming across different tables. From the fact_sales table, drag the CityKey field and drop it on the CityKey field in the dim_city table to create a relationship. Check the “Assume referential integrity” and select Confirm to establish the relationship. Note - When defining relationships, make sure you have many to one relationship from the fact to the dimension and not vice versa
    
@@ -146,7 +152,8 @@
 
 <img width="541" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f11d6bab-93c9-4b43-b138-bf45001694f6">
 
-    
+#### Create data set and power bi report
+  
 - On the reporting tab select "New Power BI dataset" , provide dataset name and select the fact and dimension table
 
   <img width="898" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8a4c13bc-69dc-4e6a-8235-f9f5a9138646">
