@@ -1,7 +1,7 @@
 
 # Microsoft Fabric : Build end-to-end Medallion Lakehouse architecture  from On-Premise OLTP Source
 
-## Architecture
+## High-level Architecture
 
 
 ![image](https://github.com/mahes-a/2023/assets/120069348/dfa357df-5eae-4769-97ea-1cfd585e820a)
