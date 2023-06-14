@@ -24,7 +24,7 @@
   
  ## Steps
  
-  This is an just an example to show how lakehouse medallion architecture can be created in Fabric Lakehouse 
+  This Solution is an example to show how lakehouse medallion architecture can be created in Fabric Lakehouse 
   
   #### Choose the OLTP Data Set for ingestion
   
