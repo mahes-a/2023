@@ -24,7 +24,17 @@
   
  ## Steps
  
-  This Solution is an example to show how lakehouse medallion architecture can be created in Fabric Lakehouse 
+  - This Solution is an getting started article to show how lakehouse medallion architecture can be created in Fabric Lakehouse . 
+ -  Fabric provides many ways to ingest data (Pipelines, Dataflow2,Shortcuts,uploading files) , we will use dataflow in this sample
+  - The sample uses SQL end point of Lakehouse for  Analysis of Medallion data , Refer below for more details
+
+    https://learn.microsoft.com/en-us/fabric/data-warehouse/get-started-lakehouse-sql-endpoint
+    
+    https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing#compare-different-warehousing-capabilities
+    
+  -  We create a data model with gold tables using dataset for sharing/self- service analytics and also to show case the feature of auto creating a report (and pre-selecting your data) from dataset. 
+  
+  
   
   #### Choose the OLTP Data Set for ingestion
   
