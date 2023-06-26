@@ -4,6 +4,10 @@
 
 ![image](https://github.com/mahes-a/2023/assets/120069348/b9d169e4-49e0-45a3-8720-7a2d089629a8)
 
+## High-level Bot Conversation Flow
+
+![image](https://github.com/mahes-a/2023/assets/120069348/2a0618c5-4415-4c87-b525-3553013393a1)
+
 ## Prerequisites
 
 - Bot Composer , can be installed from [here](https://learn.microsoft.com/en-us/composer/install-composer?tabs=windows). 
