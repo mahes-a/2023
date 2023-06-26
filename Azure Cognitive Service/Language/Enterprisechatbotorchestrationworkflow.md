@@ -19,8 +19,10 @@
 
 ## Functionality and Data flow 
 
-- In this sample , our conversational bot retreives relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence
-- By understanding the  
+- In this sample , our conversational bot retreives relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence.
+- Sample bot based on user Input will either provide appropriate answers from customer provided corpus , retreive flight information , retreive weather 
+  
+  
 
   
   
