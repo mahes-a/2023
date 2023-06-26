@@ -8,6 +8,11 @@
 
 ![image](https://github.com/mahes-a/2023/assets/120069348/2a0618c5-4415-4c87-b525-3553013393a1)
 
+## Getting Started
+
+- In this sample , our conversational bot retreives relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence.
+- Sample bot based on user Input will either provide appropriate answers from customer provided corpus , retreive flight information , retreive weather 
+
 ## Prerequisites
 
 - Bot Composer , can be installed from [here](https://learn.microsoft.com/en-us/composer/install-composer?tabs=windows). 
@@ -21,10 +26,7 @@
   
 - **Optional** - Azure subscription with access enabled for the Azure OpenAI service as an optional resource. You can request access [here](https://aka.ms/oaiapply).
 
-## Functionality and Data flow 
 
-- In this sample , our conversational bot retreives relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence.
-- Sample bot based on user Input will either provide appropriate answers from customer provided corpus , retreive flight information , retreive weather 
   
   
 
