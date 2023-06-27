@@ -41,6 +41,8 @@
   
 - **Optional** - Azure subscription with access enabled for the Azure OpenAI service as an optional resource. You can request access [here](https://aka.ms/oaiapply).
 
+  
+## Things to consider
 
   
   
