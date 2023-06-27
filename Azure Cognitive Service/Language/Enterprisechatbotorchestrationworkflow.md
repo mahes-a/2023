@@ -6,7 +6,8 @@
 
 ## High-level Bot Conversation Flow
 
-![image](https://github.com/mahes-a/2023/assets/120069348/2a0618c5-4415-4c87-b525-3553013393a1)
+![image](https://github.com/mahes-a/2023/assets/120069348/c470b7ac-c29a-4598-ae3e-dedcd1855ee4)
+
 
 ## Getting Started
 
