@@ -8,6 +8,10 @@
 
 ![image](https://github.com/mahes-a/2023/assets/120069348/c470b7ac-c29a-4598-ae3e-dedcd1855ee4)
 
+## Sample Bot repsonses via Teams Channel
+
+![image](https://github.com/mahes-a/2023/assets/120069348/b495f7b7-37e7-4601-a7c8-712f99d66e5f)
+
 
 ## Flow and Getting Started
 
