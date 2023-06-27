@@ -15,7 +15,7 @@
 - Sample bot based on user Input will either provide appropriate answers from customer provided corpus or classify as flight booking intent and extract entities for flight information or classify as weather intent and extract entities for retreive weather info.
 - Based on the intent and entities extracted respective API's are executed and info is returned back to user
 
-## Components used
+## Required Components
 
 - **Azure Bot Service**- Microsoft Bot Framework and Azure Bot Service are a collection of libraries, tools, and services that let you build, test, deploy, and manage intelligent bots. The Bot Framework includes a modular and extensible SDK for building bots and connecting to AI services. With this framework, developers can create bots that use speech, understand natural language, answer questions, and more. Learn more [here](https://learn.microsoft.com/en-us/azure/bot-service/bot-service-overview?view=azure-bot-service-4.0)
   
@@ -24,6 +24,8 @@
 - **Azure Cognitive Service for Language Conversational language understanding (CLU)** enables users to build custom natural language understanding models to predict the overall intention of an incoming utterance and extract important information from it. CLU only provides the intelligence to understand the input text for the client application and doesn't perform any actions. Learn more [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/overview)
 
 - **Azure Cognitive Service for Language Orchestration workflow** is a cloud-based API service that applies machine-learning intelligence to enable you to build orchestration models to connect Conversational Language Understanding (CLU), Question Answering projects and LUIS applications. Learn more [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/orchestration-workflow/overview)
+
+- **Flight booking and Weather API** from Rapid API
   
 
 ## Prerequisites
