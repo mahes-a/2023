@@ -9,10 +9,11 @@
 ![image](https://github.com/mahes-a/2023/assets/120069348/c470b7ac-c29a-4598-ae3e-dedcd1855ee4)
 
 
-## Getting Started
+## Flow and Getting Started
 
 - In this sample , our conversational bot retreives relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence.
 - Sample bot based on user Input will either provide appropriate answers from customer provided corpus or classify as flight booking intent and extract entities for flight information or classify as weather intent and extract entities for retreive weather info.
+- Based on the intent and entities extracted respective API's are executed and info is returned back to user
 
 ## Components used
 
