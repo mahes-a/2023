@@ -48,11 +48,40 @@
   
 ## Things to Note
 
-- The sample is created using Empty bot template rather than using language templates for simplicity 
-- The idea behnd the sample is the understand the user intent and retrieve relevant info , this is showcased using Public API calls but this very weel can be internal systems API calls
+- The sample is created using Empty bot template rather than using language templates for simplicity
   
+- The idea behnd the sample is the understand the user intent and retrieve relevant info , this is showcased using Public API calls but this very weel can be internal
+  systems API calls
   
+- The same intent classification and Question answering can be done via Azure Open AI
+  
+## Steps 
 
+- Go to Language Studio https://language.cognitive.azure.com/home and sign in to your subscription and choose Custom Answering
+
+  <img width="1073" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e015a203-5837-4f0f-bf78-bd6c1399c262">
+
+- Click Create new project
+
+     <img width="523" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/26bca51c-1c77-4401-94ac-a43172519c5c">
+
+- Type Project Name , description and Default answer and click Review and Finish and create the project
+   
+     <img width="658" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/11503629-7b36-4a82-bbb4-f5d0df14f4d0">
+
+  - Add sources (corpus) to answer queries from
+      <img width="550" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/213af89f-97c6-4a00-8070-d81d7a98e258">
+
+  - For example , you can add Azure Pricing site
   
+   <img width="1126" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a1c93bf4-2404-4363-97d5-4a4269ac09ce">
+
+  - Click on the "Edit Knowledge base" section to look at the Question and Answer pairs created 
+  -
+  - f
+
+
+
+
   
     
