@@ -137,13 +137,23 @@
     <img width="757" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/95a42294-73aa-4dfc-8ab2-95082fb13485">
 
 -  Click on the Model Performance to understand our model performance , Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/evaluation-metrics) to understand evaluation metrics
-- 
--  Add more lables and utternces to better train the model, in thos sample we are not adding more lables 
+  
+ <img width="1073" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0398d554-5c0e-4b3c-af3e-52c192f513d4">
 
- 
 
-- dd
-- dd 
+- Add more lables and utternces to better train the model, in this sample we are not adding more lables 
+
+- Move to Deployment section to deploy a model based on the training
+
+  <img width="922" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/57aaf3e1-adae-4f4e-886a-7b004140f522">
+
+
+- Move to Testing tab to test the model with sample questions
+  
+  <img width="586" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a55aeca7-1558-4bea-bd9d-c151736784e5">
+
+ - Now the Model predicts the Top intent by confidence score and the associated entities extracted 
+
 
 
 
