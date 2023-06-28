@@ -152,9 +152,19 @@
   
   <img width="586" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a55aeca7-1558-4bea-bd9d-c151736784e5">
 
- - Now the Model predicts the Top intent by confidence score and the associated entities extracted 
+- Now the Model predicts the Top intent by confidence score and the associated entities extracted 
 
+### Create Conversational Language Understanding
 
+- Lets move to the home page of the Language studio and open Orchestration workflow project to orchestrate both CLU & Q&A resources we craeted in above steps 
+
+  <img width="956" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a4edfdf0-cc5b-42b7-8a31-99c9f39d8a0e">
+
+- Create new Orchestration project
+
+  <img width="715" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0b1c9e30-dbb6-43ed-8780-cf0b2d1d7cc0">
+
+- 
 
 
 
