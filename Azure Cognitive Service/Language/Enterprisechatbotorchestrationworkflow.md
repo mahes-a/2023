@@ -50,12 +50,16 @@
 
 - The sample is created using Empty bot template rather than using language templates for simplicity
   
-- The idea behnd the sample is the understand the user intent and retrieve relevant info , this is showcased using Public API calls but this very weel can be internal
+- The idea behind the sample is the understand the user intent and retrieve relevant info , this is showcased using Public API calls but this very well can be internal
   systems API calls
   
 - The same intent classification and Question answering can be done via Azure Open AI
   
 ## Steps 
+
+**Lets Create a Q&A resource first followed by CLU resource and then use orchestrtion workflow to integrate both projects**
+
+### Create Custom question answering
 
 - Go to Language Studio https://language.cognitive.azure.com/home and sign in to your subscription and choose Custom Answering
 
@@ -69,16 +73,54 @@
    
      <img width="658" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/11503629-7b36-4a82-bbb4-f5d0df14f4d0">
 
-  - Add sources (corpus) to answer queries from
+- Add sources (corpus) to answer queries from
       <img width="550" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/213af89f-97c6-4a00-8070-d81d7a98e258">
 
-  - For example , you can add Azure Pricing site
+- For example , you can add Azure Pricing site
   
    <img width="1126" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a1c93bf4-2404-4363-97d5-4a4269ac09ce">
 
-  - Click on the "Edit Knowledge base" section to look at the Question and Answer pairs created 
-  -
-  - f
+- Click on the "Edit Knowledge base" section to validate   the Question and Answer pairs created
+
+    <img width="953" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6bb966ee-b1af-47c3-bbc0-2947fc3f3418">
+
+    
+ - You can add our own question and answer
+
+    <img width="950" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7894a9a1-a95d-46d2-acef-7b101fb12689">
+    
+- Click on test icon to test the feature , after testing save the project
+  
+      <img width="308" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d46abc60-147f-49d2-917e-4494fe034aed">
+
+- Once tested move to the deploy tab and deploy the knowledge base , If we plan to use only Q&A feature in the bot , you could create a bot right from this screen with no code and deploy to your subscription
+  
+  <img width="502" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3e78694d-d7d2-403f-bb6f-4721b0d8d9ab">
+  
+### Create Conversational Language Understanding
+
+- Go to Language Studio https://language.cognitive.azure.com/home and sign in to your subscription and choose Conversational Language Understanding
+
+  <img width="1073" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e015a203-5837-4f0f-bf78-bd6c1399c262">
+
+  
+- Create a new project, provide information and create the project
+  
+  <img width="617" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d149b4d3-be48-4e05-a66f-02b768644f2c">
+
+- For building the sample lets use the Flight and weather sample by importing the FlightBooking.json from [here](https://github.com/Azure-Samples/cognitive-service-language-samples/blob/main/CoreBotWithCLU/CognitiveModels/FlightBooking.json)
+  
+  <img width="491" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4b7bd514-3d4f-4a56-b9a2-0a7e20155e90">
+
+  
+- The Json file incluses Book Flight, Get Weather, and None intents and flightdate , fromcity , tocity entities
+  
+  <img width="622" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cd5ce9a4-c4d9-44ea-aa8c-a0ae5c40d5d7">
+  
+-  Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/how-to/build-schema) to learn more about intents and enitities
+  
+-  f
+
 
 
 
