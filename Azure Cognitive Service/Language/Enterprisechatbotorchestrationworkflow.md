@@ -164,7 +164,29 @@
 
   <img width="715" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0b1c9e30-dbb6-43ed-8780-cf0b2d1d7cc0">
 
-- 
+
+- After creating the project add intent and add the CLU and Q&A project created in above steps
+  
+    <img width="579" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/17fe5e46-b987-4365-b705-1fe91548b027">
+    
+
+    <img width="578" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff815c6b-4a92-47e4-89cd-0439ef2f9ac6">
+
+- Since , We have already labled our CLU , move on to training and create a training job
+
+    <img width="1139" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/97dd3492-3b2b-4ac7-b033-f578241fd175">
+    
+- Go to Model performance to evaluate the model performnace after training
+    <img width="923" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4889d67b-6a0d-42c1-90a6-0594004099b3">
+
+-Deploy the trained model and note down the prediction url and the OCP- APIM SUbscription Key for usage in the bot
+    <img width="462" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/402789f2-bbc0-4d21-9c83-a3f24464a118">
+
+- You can test the model in the Testing deployments tab
+
+  ### Create the bot and connect to Orchestration workflow endpoint 
+
+
 
 
 
