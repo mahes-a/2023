@@ -119,7 +119,31 @@
   
 -  Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/how-to/build-schema) to learn more about intents and enitities
   
--  f
+-  Go the Data labeling tab to understand the label utternces and enities extracted
+
+   <img width="1133" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a45c1e66-7989-48cc-97fe-bc58d89c4ec7">
+
+   <img width="523" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/735e1a45-7769-4654-8192-26ca4cac40cf">
+
+
+-  If you have Azure Open AI resource available , click on "Suggest utternces" to get the sample utternces from Open AI , review and save them
+
+  <img width="242" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a3fb6332-118c-4155-95fa-0ed1fb2e883c">
+
+- Move to Training jobs section , Training is the process where the model learns from your labeled utterances. Start a training job by providing the model name
+
+   <img width="1127" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d1109485-4b9d-490f-a331-e6ef1ca37f33">
+
+    <img width="757" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/95a42294-73aa-4dfc-8ab2-95082fb13485">
+
+-  Click on the Model Performance to understand our model performance , Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/evaluation-metrics) to understand evaluation metrics
+- 
+-  Add more lables and utternces to better train the model, in thos sample we are not adding more lables 
+
+ 
+
+- dd
+- dd 
 
 
 
