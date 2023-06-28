@@ -167,10 +167,11 @@
 
 - After creating the project add intent and add the CLU and Q&A project created in above steps
   
+  
     <img width="579" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/17fe5e46-b987-4365-b705-1fe91548b027">
     
 
-    <img width="578" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff815c6b-4a92-47e4-89cd-0439ef2f9ac6">
+     <img width="578" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff815c6b-4a92-47e4-89cd-0439ef2f9ac6">
 
 - Since , We have already labled our CLU , move on to training and create a training job
 
@@ -179,14 +180,25 @@
 - Go to Model performance to evaluate the model performnace after training
     <img width="923" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4889d67b-6a0d-42c1-90a6-0594004099b3">
 
--Deploy the trained model and note down the prediction url and the OCP- APIM SUbscription Key for usage in the bot
+- Deploy the trained model and note down the prediction url and the OCP- APIM SUbscription Key for usage in the bot
     <img width="462" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/402789f2-bbc0-4d21-9c83-a3f24464a118">
 
 - You can test the model in the Testing deployments tab
 
   ### Create the bot and connect to Orchestration workflow endpoint 
 
+- Go to bot composer and create a empty bot. As we are using the orchestration workflow that integrates both CLU & Q&A functionlities , We are going to make a HTTP request and detremine  the intent . This sample doesnot use Language/Q&A bot templates 
+  
+  <img width="739" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7d876a70-69f5-41e4-a36d-b63c8c580bb6">
 
+- Open the configuration section and toggle on Advanced Settings and fill the keys and the endpoints
+  
+  <img width="1195" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e93ccb2-1b12-4b4d-b7ae-0a178de26816">
+ 
+  
+-  Open your bot "Unknown Intent" flow , for simplicity we are not defining dialog corresponding to intents , We could also use message recived Activity 
+  
+- 
 
 
 
