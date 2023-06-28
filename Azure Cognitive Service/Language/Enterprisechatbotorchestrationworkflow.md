@@ -46,8 +46,10 @@
 - **Optional** - Azure subscription with access enabled for the Azure OpenAI service as an optional resource. You can request access [here](https://aka.ms/oaiapply).
 
   
-## Things to consider
+## Things to Note
 
+- The sample is created using Empty bot template rather than using language templates for simplicity 
+- The idea behnd the sample is the understand the user intent and retrieve relevant info , this is showcased using Public API calls but this very weel can be internal systems API calls
   
   
 
