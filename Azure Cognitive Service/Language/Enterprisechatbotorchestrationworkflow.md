@@ -241,7 +241,7 @@
 
 - The participantId can be empty or hardcoded for now , Please refer [here](https://learn.microsoft.com/en-us/answers/questions/1279841/query-model-clu-how-do-we-generate-the-participant)
   
-- The Orchestration workflow recognizes the intents and responds back, body of the http request should be below format when answered from the Custom Q&A resource
+- The Orchestration workflow recognizes the intents and responds back, the response should be below format when answered from the Custom Q&A resource
   ```{
 
   "“lgType”": "“Activity”",
