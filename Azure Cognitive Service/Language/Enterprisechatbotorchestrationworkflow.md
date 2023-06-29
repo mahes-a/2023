@@ -542,8 +542,10 @@
 
   <img width="538" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ae3c5340-f4f7-4ba3-abea-a444338d5431">
 
+  <img width="682" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b513598b-392e-4909-9441-23a892b5f702">
+
 - API to get IATA code https://skyscanner44.p.rAPIdAPI.com/autocomplete?query=**cityname**
-<img width="682" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b513598b-392e-4909-9441-23a892b5f702">
+
 
 - Once Price is fetched from API , validate , format and respond back to user
 
