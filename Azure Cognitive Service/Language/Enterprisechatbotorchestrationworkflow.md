@@ -225,27 +225,7 @@
 
     "headers": {
 
-      "Cache-Control": "no-store, proxy-revalidate, no-cache, max-age=0, private",
-
-      "Transfer-Encoding": "chunked",
-
-      "Pragma": "no-cache",
-
-      "request-id": "c4a7aaa0-d59a-4336-af0f-1f185c7607ac",
-
-      "APIm-request-id": "c4a7aaa0-d59a-4336-af0f-1f185c7607ac",
-
-      "csp-billing-usage": "CognitiveServices.TextAnalytics.Language.OrchestrationWorkflow.Prediction=1",
-
-      "x-envoy-upstream-service-time": "1472",
-
-      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
-
-      "X-Content-Type-Options": "nosniff",
-
-      "x-ms-region": "East US",
-
-      "Date": "Sun, 25 Jun 2023 01:26:43 GMT"
+      .....
 
     },
 
@@ -255,7 +235,7 @@
 
       "result": {
 
-        "query": "azure hybrid benefit",
+        "query": "User question here",
 
         "prediction": {
 
@@ -352,7 +332,7 @@
 
               "result": {
 
-                "query": "price for flight between la and nyc on july 4 2021",
+                "query": "price for flight between City1 and City2 on **date**",
 
                 "prediction": {
 
@@ -402,7 +382,7 @@
 
                       "category": "fromCity",
 
-                      "text": "la",
+                      "text": "City1",
 
                       "offset": 25,
 
@@ -416,7 +396,7 @@
 
                       "category": "toCity",
 
-                      "text": "nyc",
+                      "text": "City2",
 
                       "offset": 32,
 
@@ -430,7 +410,7 @@
 
                       "category": "flightDate",
 
-                      "text": "july 4 2023",
+                      "text": "date from user input",
 
                       "offset": 39,
 
@@ -452,7 +432,7 @@
   <img width="324" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eeb16e67-0459-4d95-99a6-13bdc689432c">
 
 
-- Our Clu has two related intents and entities from same project, Book flight and get weather. For best practices refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
+- Our Clu has two related intents and entities from same project, Book flight and get weather. For best practices for intents refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
   
 - We could define two dialogs for each intent and call the dialog from unknown intent, here for simplicity we keep the conversation in the same dialog
   
@@ -496,7 +476,7 @@
 
                       "category": "fromCity",
 
-                      "text": "la",
+                      "text": "Source City",
 
                       "offset": 25,
 
@@ -510,7 +490,7 @@
 
                       "category": "toCity",
 
-                      "text": "nyc",
+                      "text": "Destination City",
 
                       "offset": 32,
 
@@ -524,15 +504,21 @@
 
                       "category": "flightDate",
 
-                      "text": "july 4 2023",
+                      "text": "date",
 
 
-- Use the entities extracted in the query string of the API URL and execute the API and respond to user. The API takes in only IATA codes, City to IATA codes API can be used to retrieve the IATA code from user provided city.
+- The entities extracted are passed along the query string of the API URL . The API takes in only IATA codes, City to IATA codes API can be used to retrieve the IATA code from user provided city.
+
+  <img width="538" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ae3c5340-f4f7-4ba3-abea-a444338d5431">
 
 - API to get IATA code https://skyscanner44.p.rAPIdAPI.com/autocomplete?query=**cityname**
 <img width="682" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b513598b-392e-4909-9441-23a892b5f702">
 
-<img width="538" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ae3c5340-f4f7-4ba3-abea-a444338d5431">
+- Once Price is fetched from API , validate , format and respond back to user
+
+
+<img width="545" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c4b7948e-812c-4feb-8b45-75564ca68c97">
+
 
 ##  Publishing and Temas channel for the bot
 
