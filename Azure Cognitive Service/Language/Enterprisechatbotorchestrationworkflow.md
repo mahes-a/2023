@@ -102,6 +102,8 @@
   
 ### Create Conversational Language Understanding
 
+-Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/overview#project-development-lifecycle) to undesrtand the CLU devlopment lifecycle 
+
 - Go to Language Studio https://language.cognitive.azure.com/home and sign in to your subscription and choose Conversational Language Understanding
 
   <img width="1073" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e015a203-5837-4f0f-bf78-bd6c1399c262">
