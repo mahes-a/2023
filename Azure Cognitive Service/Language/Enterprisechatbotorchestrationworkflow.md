@@ -454,5 +454,84 @@
 
 - Our Clu has two related intents and entities from same project, Book flight and get weather. For best practices refre [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
   
-- We could define two dialogs for each intent and execute the dialog, here for simplicity we keep the conversation in the same unknown intent trigger
+- We could define two dialogs for each intent and call the dialog from unknown intent, here for simplicity we keep the conversation in the same dialog
+  
+- Add a branch/switch using the "=turn.cluapiresponse.content.result.prediction.intents.BookFlightWeather.result.prediction.topIntent" to direct the flow for wether and flight
+
+  <img width="261" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/287bda67-57f1-4e54-ad55-7e9ec53eb592">
+
+- Retreive the related enitities from the response json , the entities are present within the below properties of Json
+  =turn.cluapiresponse.content.result.prediction.intents.BookFlightWeather.result.prediction.entities
+  
+**For the weather flow**
+
+ <img width="362" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c906431d-d67a-410e-879e-22b88df69961">
+
+- Set the weather city to a property
+  
+  <img width="379" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8c1d6836-e9a2-462b-9c09-cad0cc149d00">
+  
+- Call the weather api by passing the city to retrive weather information
+
+  <img width="562" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d5e98c86-189b-447f-a435-9d2547bb796f">
+
+- The url for weather would be https://open-weather13.p.rapidapi.com/city/**city name** , ensure to pass the api key in the header property X-RapidAPI-Key
+
+- Validate the result from api and send response
+
+    <img width="331" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cc42bf0e-48d1-4ffb-851e-38e402f21ace">
+
+**For the Booking flight flow**
+
+<img width="298" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ba7ada58-7ee4-48fd-ae7a-2d4ccf3f4e15">
+
+- The flight url is of below format
+  https://skyscanner44.p.rapidapi.com/search?adults=1&origin=**Fromcity**&destination=**tocity**&departureDate=**date**&currency=EUR&locale=en-GB&market=UK
+  
+- The CLU will respond with the extracted entities in the json result 
+
+     "entities": [
+
+                    {
+
+                      "category": "fromCity",
+
+                      "text": "la",
+
+                      "offset": 25,
+
+                      "length": 2,
+
+                      "confidenceScore": 1
+
+                    },
+
+                    {
+
+                      "category": "toCity",
+
+                      "text": "nyc",
+
+                      "offset": 32,
+
+                      "length": 3,
+
+                      "confidenceScore": 1
+
+                    },
+
+                    {
+
+                      "category": "flightDate",
+
+                      "text": "july 4 2023",
+
+
+- Use the entities call the api and respond to user. The api takes in only IATA codes , City to IATA codes API can be used to retrive the IATA code from user provided city
+
+- API to get IATA code https://skyscanner44.p.rapidapi.com/autocomplete?query=**cityname**
+<img width="682" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b513598b-392e-4909-9441-23a892b5f702">
+
+<img width="538" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ae3c5340-f4f7-4ba3-abea-a444338d5431">
+
 
