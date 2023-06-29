@@ -212,7 +212,7 @@
   <img width="475" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/40b97a23-2a91-4126-8dd6-8ad5dff88cdc">
 
   
-- The body of the http request should be below format
+- The Orchestrationw orkflow recognizes the intents and responds back ,  body of the http request should be below format when answered from the Custom Q&A resource
   ```{
 
   "“lgType”": "“Activity”",
@@ -333,7 +333,111 @@
 
     }
   } }
+
   
+  
+- The reposne body when it is detremined as flight booking intent and the extracyted entities are as below (truncated body for brevity)
+
+    ``` "topIntent": "BookFlightWeather",
+
+          "projectKind": "Orchestration",
+
+          "intents": {
+
+            "BookFlightWeather": {
+
+              "confidenceScore": 0.9304501,
+
+              "targetProjectKind": "Conversation",
+
+              "result": {
+
+                "query": "price for flight between la and nyc on july 4 2021",
+
+                "prediction": {
+
+                  "topIntent": "BookFlight",
+
+                  "projectKind": "Conversation",
+
+                  "intents": [
+
+                    {
+
+                      "category": "BookFlight",
+
+                      "confidenceScore": 0.7823027
+
+                    },
+
+                    {
+
+                      "category": "GetWeather",
+
+                      "confidenceScore": 0.49844158
+
+                    },
+
+                    {
+
+                      "category": "None",
+
+                      "confidenceScore": 0.39740455
+
+                    },
+
+                    {
+
+                      "category": "Cancel",
+
+                      "confidenceScore": 0.12159197
+
+                    }
+
+                  ],
+
+                  "entities": [
+
+                    {
+
+                      "category": "fromCity",
+
+                      "text": "la",
+
+                      "offset": 25,
+
+                      "length": 2,
+
+                      "confidenceScore": 1
+
+                    },
+
+                    {
+
+                      "category": "toCity",
+
+                      "text": "nyc",
+
+                      "offset": 32,
+
+                      "length": 3,
+
+                      "confidenceScore": 1
+
+                    },
+
+                    {
+
+                      "category": "flightDate",
+
+                      "text": "july 4 2023",
+
+                      "offset": 39,
+
+                      "length": 11,
+
+                      "confidenceScore": 1,
+
 - We add a branch switch condition based on the output from Orchestration workflow result json 
   
 - ddd
