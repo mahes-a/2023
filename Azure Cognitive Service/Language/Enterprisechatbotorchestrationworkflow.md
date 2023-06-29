@@ -196,16 +196,19 @@
   
   <img width="739" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7d876a70-69f5-41e4-a36d-b63c8c580bb6">
 
-- Open the configuration section and toggle on Advanced Settings and fill the keys and the endpoints
-  
-    <img width="254" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e3d3f33-30d0-4c7c-97c1-0f5c00b5ea31">
+- Open the configuration section and toggle on Advanced Settings and add the settings listed in image  the keys and the endpoints
+
+<img width="1196" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7a62be78-b126-40cb-84ec-5341464d8822">
+
+
+ <img width="254" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e3d3f33-30d0-4c7c-97c1-0f5c00b5ea31">
 
 
 - The Cognitive_service_endpoint and cognitive_API_key can be retrieved from the orchestration prediction url and the OCP- APIM Subscription Key
   
 - When you register with the Rapid API , you will get the API_key , the Weather_endpoint and flights_API endpoint are from Rapid API
   
-- Open your bot "Unknown Intent" flow, for simplicity we are not defining dialog corresponding to intents, We could also use message received Activity 
+- Open your bot "Unknown Intent" flow, for simplicity we are not defining dialog corresponding to intents
   
 - Make a HTTP request to the orchestration prediction url using the Ocp-APIm-Subscription-Key
 
