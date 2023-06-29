@@ -50,8 +50,7 @@
 
 - The sample is created using General bot template for simplicity
   
-- The idea behind the sample is the understand the user intent and retrieve relevant info, this is showcased using Public API calls but this very well can be internal
-  systems API calls
+- The idea behind the sample is the understand the user intent and retrieve relevant info, this is showcased using Public API calls 
   
 - Azure Open AI Can handle intent classification and entity extraction and Q&A over your own data (RAG pattern) 
 
