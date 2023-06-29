@@ -455,6 +455,7 @@
 - Our Clu has two related intents and entities from same project , Book flight and get weather . For best practices refre [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
   
 - We could define two dialog for each intent and execute the dialog , here for simplicity we keep the conversation in the same unknown intent trigger
+- 
 
 
 
