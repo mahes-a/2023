@@ -168,7 +168,7 @@
   <img width="715" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0b1c9e30-dbb6-43ed-8780-cf0b2d1d7cc0">
 
 
-- After creating the project add intent and add the CLU and Q&A project created in above steps
+- After creating the project add intent  and add the CLU and Q&A project created in above steps
   
   
     <img width="579" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/17fe5e46-b987-4365-b705-1fe91548b027">
@@ -176,7 +176,7 @@
 
      <img width="578" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff815c6b-4a92-47e4-89cd-0439ef2f9ac6">
 
-- Since , We have already labled our CLU , move on to training and create a training job
+- Since , We have already labled our CLU & QA, move on to training and create a training job
 
     <img width="1139" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/97dd3492-3b2b-4ac7-b033-f578241fd175">
     
@@ -438,9 +438,19 @@
 
                       "confidenceScore": 1,
 
-- We add a branch switch condition based on the output from Orchestration workflow result json 
+- We add a branch switch condition based on the topintent from Orchestration workflow result json , The condition to retrieve is
   
-- ddd
+- =turn.cluapiresponse.content.result.prediction.topIntent
+
+  <img width="536" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/bc64b7f4-d160-4541-a616-ef05280cd165">
+
+  <img width="260" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/527defb9-1364-467a-984e-c78c065d5a81">
+
+
+- If the intent is from Q&A , we respond with the answer to user
+
+  <img width="324" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eeb16e67-0459-4d95-99a6-13bdc689432c">
+
 
 
 
