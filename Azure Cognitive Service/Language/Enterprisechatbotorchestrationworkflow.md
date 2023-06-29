@@ -210,11 +210,148 @@
    
    https://youropenai.openai.azure.com/openai/deployments/chatgpt35/chat/completions?api-version=2023-03-15-preview
    
-- The Cognitive service endpoint and 
+- The Cognitive_service_endpoint and cognitive_api_key can be retrived from the orchestration prediction url and the OCP- APIM SUbscription Key
+  
+- When you register with the Rapid API , you will get the api_key , the Weather_endpoint and flights_api endpoint are from Rapid api
   
 -  Open your bot "Unknown Intent" flow , for simplicity we are not defining dialog corresponding to intents , We could also use message recived Activity 
   
--  Make a HTTP request to the orchestration prediction url  
+-  Make a HTTP request to the orchestration prediction url using the Ocp-Apim-Subscription-Key
+
+  <img width="348" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d7b6f66e-d1d4-499e-927d-6eb118b594c8">
+  
+  <img width="475" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/40b97a23-2a91-4126-8dd6-8ad5dff88cdc">
+
+  
+- The body of the http request should be below format
+  ```{
+
+  "“lgType”": "“Activity”",
+
+  "“text”": {
+
+    "statusCode": 200,
+
+    "reasonPhrase": "OK",
+
+    "headers": {
+
+      "Cache-Control": "no-store, proxy-revalidate, no-cache, max-age=0, private",
+
+      "Transfer-Encoding": "chunked",
+
+      "Pragma": "no-cache",
+
+      "request-id": "c4a7aaa0-d59a-4336-af0f-1f185c7607ac",
+
+      "apim-request-id": "c4a7aaa0-d59a-4336-af0f-1f185c7607ac",
+
+      "csp-billing-usage": "CognitiveServices.TextAnalytics.Language.OrchestrationWorkflow.Prediction=1",
+
+      "x-envoy-upstream-service-time": "1472",
+
+      "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+
+      "X-Content-Type-Options": "nosniff",
+
+      "x-ms-region": "East US",
+
+      "Date": "Sun, 25 Jun 2023 01:26:43 GMT"
+
+    },
+
+    "content": {
+
+      "kind": "ConversationResult",
+
+      "result": {
+
+        "query": "azure hybrid benefit",
+
+        "prediction": {
+
+          "topIntent": "PricingQA",
+
+          "projectKind": "Orchestration",
+
+          "intents": {
+
+            "PricingQA": {
+
+              "confidenceScore": 1,
+
+              "targetProjectKind": "QuestionAnswering",
+
+              "result": {
+
+                "answers": [
+
+                  {
+
+                    "questions": [
+
+                      "Question from User"
+
+                    ],
+
+                    "answer": "Answer from Q&A",
+
+                    "confidenceScore": 1.0,
+
+                    "id": 17,
+
+                    "source": "source url",
+
+                    "metadata": {},
+
+                    "dialog": {
+
+                      "isContextOnly": false,
+
+                      "prompts": []
+
+                    }
+
+                  }
+
+                ]
+
+              }
+
+            },
+
+            "BookFlightWeather": {
+
+              "confidenceScore": 0.2100786,
+
+              "targetProjectKind": "Conversation"
+
+            },
+
+            "None": {
+
+              "confidenceScore": 0,
+
+              "targetProjectKind": "NonLinked"
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+  }
+
+}
+
+
+  
+- We add a branch switch condition based on the output from Orchestration workflow result json 
+  
+- ddd
 
 
 
