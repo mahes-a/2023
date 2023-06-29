@@ -53,14 +53,14 @@
 - The idea behind the sample is the understand the user intent and retrieve relevant info, this is showcased using Public API calls but this very well can be internal
   systems API calls
   
-- The same intent classification and Question answering can be done via Azure Open AI
+- The same intent classification and Question answering can be done using Azure Open AI too (RAG pattern) 
 
 - UI can be PVA bot 
 
   
 ## Steps 
 
-**Let’s Create a Q&A resource first followed by CLU resource and then use orchestration workflow to integrate both projects**
+**Let’s Create a Custom Q&A resource first followed by CLU resource and then use orchestration workflow to integrate both projects**
 
 ### Create Custom question answering
 
