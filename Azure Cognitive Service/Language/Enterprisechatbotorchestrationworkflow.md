@@ -53,7 +53,7 @@
 - The idea behind the sample is the understand the user intent and retrieve relevant info, this is showcased using Public API calls but this very well can be internal
   systems API calls
   
-- Azure Open AI Can handle intent classificationa nd entirty extraction and Q&A over your own data (RAG pattern) 
+- Azure Open AI Can handle intent classification and entity extraction and Q&A over your own data (RAG pattern) 
 
 - UI can be PVA bot 
 
@@ -102,7 +102,7 @@
   
 ### Create Conversational Language Understanding
 
--Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/overview#project-development-lifecycle) to undesrtand the CLU devlopment lifecycle 
+-Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/overview#project-development-lifecycle) to understand the CLU development lifecycle 
 
 - Go to Language Studio https://language.cognitive.azure.com/home and sign in to your subscription and choose Conversational Language Understanding
 
@@ -210,7 +210,7 @@
   
 - When you register with the Rapid API , you will get the API_key , the Weather_endpoint and flights_API endpoint are from Rapid API
   
-- Open your bot "Unknown Intent" flow, for simplicity/brevity , we are not defining intents in our bot matching to CLU intents or creating seperate dialog for each intent
+- Open your bot "Unknown Intent" flow, for simplicity/brevity , we are not defining intents in our bot matching to CLU intents or creating separate  dialog for each intent
   
 - Make a HTTP request to the orchestration prediction url using the Ocp-APIm-Subscription-Key
 
@@ -557,5 +557,5 @@
 
 -  Publish the Bot to Azure from bot composer [refer here](https://learn.microsoft.com/en-us/composer/how-to-publish-bot?tabs=v2x)
 
--  To Acess the bot in teams channel [refer here](https://techcommunity.microsoft.com/t5/modern-work-app-consult-blog/publish-bot-app-to-teams-channel-with-bot-framework-composer-and/ba-p/3341876)
+-  To Access  the bot in teams channel [refer here](https://techcommunity.microsoft.com/t5/modern-work-app-consult-blog/publish-bot-app-to-teams-channel-with-bot-framework-composer-and/ba-p/3341876)
 
