@@ -447,7 +447,9 @@
 
                       "confidenceScore": 1,
 
-- We add a branch switch condition based on the top intent from Orchestration workflow result Json , The condition to retrieve is , the sample intents are hard coded in the branch switch statement 
+- We add a branch switch condition based on the top intent from Orchestration workflow result Json ,  , the sample intents are hard coded in the branch switch statement
+
+- The condition in the switch statement for topIntent  is as below 
   
   =turn.cluAPIresponse.content.result.prediction.topIntent
 
