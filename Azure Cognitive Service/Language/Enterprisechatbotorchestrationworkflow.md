@@ -1,4 +1,4 @@
-# Azure Cognitive Service for Language : Build Multifunctional Chat Bot powered by Orchestration Workflow integrating Custom question answering and Conversational Language Understanding 
+# Azure Cognitive Service for Language: Build Multifunctional Chat Bot powered by Orchestration Workflow integrating Custom question answering and Conversational Language Understanding 
 
 ## High-level Architecture
 
@@ -8,16 +8,16 @@
 
 ![image](https://github.com/mahes-a/2023/assets/120069348/c470b7ac-c29a-4598-ae3e-dedcd1855ee4)
 
-## Sample Bot repsonses via Teams Channel
+## Sample Bot responses via Teams Channel
 
 ![image](https://github.com/mahes-a/2023/assets/120069348/b495f7b7-37e7-4601-a7c8-712f99d66e5f)
 
 
 ## Flow and Getting Started
 
-- In this sample , our conversational bot retreives relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence.
-- Sample bot based on user Input will either provide appropriate answers from customer provided corpus or classify as flight booking intent and extract entities for flight information or classify as weather intent and extract entities for retreive weather info.
-- Based on the intent and entities extracted respective API's are executed and info is returned back to user
+- In this sample, our conversational bot retrieves relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence.
+- Sample bot based on user Input will either provide appropriate answers from customer provided corpus or classify as flight booking intent and extract entities for flight information or classify as weather intent and extract entities for retrieve weather info.
+- Based on the intent and entities extracted respective APIs are executed and info is returned back to user
 
 ## Required Components
 
@@ -34,8 +34,8 @@
 
 ## Prerequisites
 
-- Bot Composer , can be installed from [here](https://learn.microsoft.com/en-us/composer/install-composer?tabs=windows). 
-- Language Studio , access from [here](https://language.cognitive.azure.com/home)
+- Bot Composer, can be installed from [here](https://learn.microsoft.com/en-us/composer/install-composer?tabs=windows). 
+- Language Studio, access from [here](https://language.cognitive.azure.com/home)
 - Sign up for free Weather and Flight API from Rapid API
   
   
@@ -50,7 +50,7 @@
 
 - The sample is created using Empty bot template rather than using language/CLU templates for simplicity
   
-- The idea behind the sample is the understand the user intent and retrieve relevant info , this is showcased using Public API calls but this very well can be internal
+- The idea behind the sample is the understand the user intent and retrieve relevant info, this is showcased using Public API calls but this very well can be internal
   systems API calls
   
 - The same intent classification and Question answering can be done via Azure Open AI
@@ -60,11 +60,11 @@
   
 ## Steps 
 
-**Lets Create a Q&A resource first followed by CLU resource and then use orchestrtion workflow to integrate both projects**
+**Let’s Create a Q&A resource first followed by CLU resource and then use orchestration workflow to integrate both projects**
 
 ### Create Custom question answering
 
-- Go to Language Studio https://language.cognitive.azure.com/home and sign in to your subscription and choose Custom Answering
+- Go to Language Studio https://language.cognitive.azure.com/home and sign into your subscription and choose Custom Answering
 
   <img width="1073" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e015a203-5837-4f0f-bf78-bd6c1399c262">
 
@@ -72,14 +72,14 @@
 
      <img width="523" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/26bca51c-1c77-4401-94ac-a43172519c5c">
 
-- Type Project Name , description and Default answer and click Review and Finish and create the project
+- Type Project Name, description and Default answer and click Review and Finish and create the project
    
      <img width="658" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/11503629-7b36-4a82-bbb4-f5d0df14f4d0">
 
 - Add sources (corpus) to answer queries from
       <img width="550" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/213af89f-97c6-4a00-8070-d81d7a98e258">
 
-- For example , you can add Azure Pricing site
+- For example, you can add Azure Pricing site
   
    <img width="1126" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a1c93bf4-2404-4363-97d5-4a4269ac09ce">
 
@@ -92,11 +92,11 @@
 
     <img width="950" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7894a9a1-a95d-46d2-acef-7b101fb12689">
     
-- Click on test icon to test the feature , after testing save the project
+- Click on test icon to test the feature, after testing save the project
   
       <img width="308" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d46abc60-147f-49d2-917e-4494fe034aed">
 
-- Once tested move to the deploy tab and deploy the knowledge base , If we plan to use only Q&A feature in the bot , you could create a bot right from this screen with no code and deploy to your subscription
+- Once tested move to the deploy tab and deploy the knowledge base, If we plan to use only Q&A feature in the bot , you could create a bot right from this screen with no code and deploy to your subscription
   
   <img width="502" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3e78694d-d7d2-403f-bb6f-4721b0d8d9ab">
   
@@ -111,7 +111,7 @@
   
   <img width="617" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d149b4d3-be48-4e05-a66f-02b768644f2c">
 
-- For building the sample lets use the Flight and weather sample by importing the FlightBooking.json from [here](https://github.com/Azure-Samples/cognitive-service-language-samples/blob/main/CoreBotWithCLU/CognitiveModels/FlightBooking.json)
+- For building the sample let’s use the Flight and weather sample by importing the FlightBooking.json from [here](https://github.com/Azure-Samples/cognitive-service-language-samples/blob/main/CoreBotWithCLU/CognitiveModels/FlightBooking.json)
   
   <img width="491" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4b7bd514-3d4f-4a56-b9a2-0a7e20155e90">
 
@@ -129,11 +129,11 @@
    <img width="523" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/735e1a45-7769-4654-8192-26ca4cac40cf">
 
 
--  If you have Azure Open AI resource available , click on "Suggest utternces" to get the sample utternces from Open AI , review and save them
+-  If you have Azure Open AI resource available, click on "Suggest utterances" to get the sample utterances from Open AI , review and save them
 
   <img width="242" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a3fb6332-118c-4155-95fa-0ed1fb2e883c">
 
-- Move to Training jobs section , Training is the process where the model learns from your labeled utterances. Start a training job by providing the model name
+- Move to Training jobs section , Training is the process where the model learns from your labeled utterances. Start a training job by providing the model name.
 
    <img width="1127" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d1109485-4b9d-490f-a331-e6ef1ca37f33">
 
@@ -144,9 +144,9 @@
  <img width="1073" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0398d554-5c0e-4b3c-af3e-52c192f513d4">
 
 
-- Add more lables and utternces to better train the model, in this sample we are not adding more lables 
+- Add more labels and utterances to better train the model, in this sample we are not adding more labels 
 
-- Move to Deployment section to deploy a model based on the training
+- Move to the Deployment section to deploy a model based on the training
 
   <img width="922" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/57aaf3e1-adae-4f4e-886a-7b004140f522">
 
@@ -159,7 +159,7 @@
 
 ### Create Conversational Language Understanding
 
-- Lets move to the home page of the Language studio and open Orchestration workflow project to orchestrate both CLU & Q&A resources we craeted in above steps 
+- Lets move to the home page of the Language studio and open Orchestration workflow project to orchestrate both CLU & Q&A resources we created in above steps 
 
   <img width="956" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a4edfdf0-cc5b-42b7-8a31-99c9f39d8a0e">
 
@@ -168,7 +168,7 @@
   <img width="715" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0b1c9e30-dbb6-43ed-8780-cf0b2d1d7cc0">
 
 
-- After creating the project add intent  and add the CLU and Q&A project created in above steps
+- After creating the project add intent and add the CLU and Q&A project created in above steps
   
   
     <img width="579" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/17fe5e46-b987-4365-b705-1fe91548b027">
@@ -176,21 +176,21 @@
 
      <img width="578" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff815c6b-4a92-47e4-89cd-0439ef2f9ac6">
 
-- Since , We have already labled our CLU & QA, move on to training and create a training job
+- Since, we have already labeled our CLU & QA, move on to training and create a training job
 
     <img width="1139" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/97dd3492-3b2b-4ac7-b033-f578241fd175">
     
-- Go to Model performance to evaluate the model performnace after training
+- Go to Model performance to evaluate the model performance after training
     <img width="923" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4889d67b-6a0d-42c1-90a6-0594004099b3">
 
-- Deploy the trained model and note down the prediction url and the OCP- APIM SUbscription Key for usage in the bot
+- Deploy the trained model and note down the prediction url and the OCP- APIM Subscription Key for usage in the bot
     <img width="462" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/402789f2-bbc0-4d21-9c83-a3f24464a118">
 
 - You can test the model in the Testing deployments tab
 
   ### Create the bot and connect to Orchestration workflow endpoint 
 
-- Go to bot composer and create a empty bot. As we are using the orchestration workflow that integrates both CLU & Q&A functionlities , We are going to make a HTTP request and detremine  the intent . This sample doesnot use Language/Q&A bot templates 
+- Go to bot composer and create a empty bot. As we are using the orchestration workflow that integrates both CLU & Q&A functionalities, We are going to make a HTTP request and determine the intent . This sample does not use Language/Q&A bot templates. 
   
   <img width="739" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7d876a70-69f5-41e4-a36d-b63c8c580bb6">
 
@@ -199,20 +199,20 @@
     <img width="254" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e3d3f33-30d0-4c7c-97c1-0f5c00b5ea31">
 
 
-- The Cognitive_service_endpoint and cognitive_api_key can be retrived from the orchestration prediction url and the OCP- APIM SUbscription Key
+- The Cognitive_service_endpoint and cognitive_api_key can be retrieved from the orchestration prediction url and the OCP- APIM Subscription Key
   
 - When you register with the Rapid API , you will get the api_key , the Weather_endpoint and flights_api endpoint are from Rapid api
   
--  Open your bot "Unknown Intent" flow , for simplicity we are not defining dialog corresponding to intents , We could also use message recived Activity 
+- Open your bot "Unknown Intent" flow, for simplicity we are not defining dialog corresponding to intents, We could also use message received Activity 
   
--  Make a HTTP request to the orchestration prediction url using the Ocp-Apim-Subscription-Key
+- Make a HTTP request to the orchestration prediction url using the Ocp-Apim-Subscription-Key
 
   <img width="348" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d7b6f66e-d1d4-499e-927d-6eb118b594c8">
   
   <img width="475" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/40b97a23-2a91-4126-8dd6-8ad5dff88cdc">
 
   
-- The Orchestrationw orkflow recognizes the intents and responds back ,  body of the http request should be below format when answered from the Custom Q&A resource
+- The Orchestrationw orkflow recognizes the intents and responds back, body of the http request should be below format when answered from the Custom Q&A resource
   ```{
 
   "“lgType”": "“Activity”",
@@ -336,7 +336,7 @@
 
   
   
-- The reposne body when it is detremined as flight booking intent and the extracyted entities are as below (truncated body for brevity)
+- The response body when it is determined as flight booking intent and the extracted entities are as below (truncated body for brevity)
 
     ``` "topIntent": "BookFlightWeather",
 
@@ -438,7 +438,7 @@
 
                       "confidenceScore": 1,
 
-- We add a branch switch condition based on the topintent from Orchestration workflow result json , The condition to retrieve is
+- We add a branch switch condition based on the top intent from Orchestration workflow result json , The condition to retrieve is
   
   =turn.cluapiresponse.content.result.prediction.topIntent
 
@@ -452,12 +452,7 @@
   <img width="324" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eeb16e67-0459-4d95-99a6-13bdc689432c">
 
 
-- Our Clu has two related intents and entities from same project , Book flight and get weather . For best practices refre [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
+- Our Clu has two related intents and entities from same project, Book flight and get weather. For best practices refre [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
   
-- We could define two dialog for each intent and execute the dialog , here for simplicity we keep the conversation in the same unknown intent trigger
-- 
+- We could define two dialogs for each intent and execute the dialog, here for simplicity we keep the conversation in the same unknown intent trigger
 
-
-
-  
-    
