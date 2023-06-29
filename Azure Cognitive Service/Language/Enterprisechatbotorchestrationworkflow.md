@@ -48,7 +48,7 @@
   
 ## Things to Note
 
-- The sample is created using Empty bot template rather than using language templates for simplicity
+- The sample is created using Empty bot template rather than using language/CLU templates for simplicity
   
 - The idea behind the sample is the understand the user intent and retrieve relevant info , this is showcased using Public API calls but this very well can be internal
   systems API calls
@@ -440,7 +440,7 @@
 
 - We add a branch switch condition based on the topintent from Orchestration workflow result json , The condition to retrieve is
   
-- =turn.cluapiresponse.content.result.prediction.topIntent
+  =turn.cluapiresponse.content.result.prediction.topIntent
 
   <img width="536" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/bc64b7f4-d160-4541-a616-ef05280cd165">
 
@@ -452,6 +452,9 @@
   <img width="324" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eeb16e67-0459-4d95-99a6-13bdc689432c">
 
 
+- Our Clu has two related intents and entities from same project , Book flight and get weather . For best practices refre [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
+  
+- We could define two dialog for each intent and execute the dialog , here for simplicity we keep the conversation in the same unknown intent trigger
 
 
 
