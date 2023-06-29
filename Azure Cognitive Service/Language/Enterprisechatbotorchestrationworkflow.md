@@ -176,7 +176,7 @@
 
      <img width="578" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff815c6b-4a92-47e4-89cd-0439ef2f9ac6">
 
-- Since, we have already labeled our CLU & QA, move on to training and create a training job
+- Since, we have already labeled our CLU , move on to training and create a training job
 
     <img width="1139" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/97dd3492-3b2b-4ac7-b033-f578241fd175">
     
