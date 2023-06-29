@@ -39,9 +39,9 @@
 - Sign up for free Weather and Flight API from Rapid API
   
   
-    https://rapidapi.com/worldapi/api/open-weather13
+    https://rAPIdAPI.com/worldAPI/API/open-weather13
   
-    https://rapidapi.com/3b-data-3b-data-default/api/skyscanner44
+    https://rAPIdAPI.com/3b-data-3b-data-default/API/skyscanner44
   
 - **Optional** - Azure subscription with access enabled for the Azure OpenAI service as an optional resource. You can request access [here](https://aka.ms/oaiapply).
 
@@ -96,7 +96,7 @@
   
       <img width="308" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d46abc60-147f-49d2-917e-4494fe034aed">
 
-- Once tested move to the deploy tab and deploy the knowledge base, If we plan to use only Q&A feature in the bot , you could create a bot right from this screen with no code and deploy to your subscription
+- Once tested move to the deploy tab and deploy the knowledge base, If we plan to use only Q&A feature in the bot, you could create a bot right from this screen with no code and deploy to your subscription
   
   <img width="502" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3e78694d-d7d2-403f-bb6f-4721b0d8d9ab">
   
@@ -116,13 +116,13 @@
   <img width="491" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4b7bd514-3d4f-4a56-b9a2-0a7e20155e90">
 
   
-- The Json file incluses Book Flight, Get Weather, and None intents and flightdate , fromcity , tocity entities
+- The Json file includes Book Flight, Get Weather, and None intents and flightdate , fromcity , tocity entities
   
   <img width="622" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cd5ce9a4-c4d9-44ea-aa8c-a0ae5c40d5d7">
   
--  Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/how-to/build-schema) to learn more about intents and enitities
+-  Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/how-to/build-schema) to learn more about intents and entities
   
--  Go the Data labeling tab to understand the label utternces and enities extracted
+-  Go the Data labeling tab to understand the label utterances and entities extracted
 
    <img width="1133" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a45c1e66-7989-48cc-97fe-bc58d89c4ec7">
 
@@ -157,7 +157,7 @@
 
 - Now the Model predicts the Top intent by confidence score and the associated entities extracted 
 
-### Create Conversational Language Understanding
+### Create Orchestration workflow
 
 - Lets move to the home page of the Language studio and open Orchestration workflow project to orchestrate both CLU & Q&A resources we created in above steps 
 
@@ -199,20 +199,20 @@
     <img width="254" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e3d3f33-30d0-4c7c-97c1-0f5c00b5ea31">
 
 
-- The Cognitive_service_endpoint and cognitive_api_key can be retrieved from the orchestration prediction url and the OCP- APIM Subscription Key
+- The Cognitive_service_endpoint and cognitive_API_key can be retrieved from the orchestration prediction url and the OCP- APIM Subscription Key
   
-- When you register with the Rapid API , you will get the api_key , the Weather_endpoint and flights_api endpoint are from Rapid api
+- When you register with the Rapid API , you will get the API_key , the Weather_endpoint and flights_API endpoint are from Rapid API
   
 - Open your bot "Unknown Intent" flow, for simplicity we are not defining dialog corresponding to intents, We could also use message received Activity 
   
-- Make a HTTP request to the orchestration prediction url using the Ocp-Apim-Subscription-Key
+- Make a HTTP request to the orchestration prediction url using the Ocp-APIm-Subscription-Key
 
   <img width="348" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d7b6f66e-d1d4-499e-927d-6eb118b594c8">
   
   <img width="475" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/40b97a23-2a91-4126-8dd6-8ad5dff88cdc">
 
   
-- The Orchestrationw orkflow recognizes the intents and responds back, body of the http request should be below format when answered from the Custom Q&A resource
+- The Orchestration workflow recognizes the intents and responds back, body of the http request should be below format when answered from the Custom Q&A resource
   ```{
 
   "“lgType”": "“Activity”",
@@ -233,7 +233,7 @@
 
       "request-id": "c4a7aaa0-d59a-4336-af0f-1f185c7607ac",
 
-      "apim-request-id": "c4a7aaa0-d59a-4336-af0f-1f185c7607ac",
+      "APIm-request-id": "c4a7aaa0-d59a-4336-af0f-1f185c7607ac",
 
       "csp-billing-usage": "CognitiveServices.TextAnalytics.Language.OrchestrationWorkflow.Prediction=1",
 
@@ -438,9 +438,9 @@
 
                       "confidenceScore": 1,
 
-- We add a branch switch condition based on the top intent from Orchestration workflow result json , The condition to retrieve is
+- We add a branch switch condition based on the top intent from Orchestration workflow result Json , The condition to retrieve is
   
-  =turn.cluapiresponse.content.result.prediction.topIntent
+  =turn.cluAPIresponse.content.result.prediction.topIntent
 
   <img width="536" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/bc64b7f4-d160-4541-a616-ef05280cd165">
 
@@ -452,16 +452,16 @@
   <img width="324" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/eeb16e67-0459-4d95-99a6-13bdc689432c">
 
 
-- Our Clu has two related intents and entities from same project, Book flight and get weather. For best practices refre [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
+- Our Clu has two related intents and entities from same project, Book flight and get weather. For best practices refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/concepts/best-practices)
   
 - We could define two dialogs for each intent and call the dialog from unknown intent, here for simplicity we keep the conversation in the same dialog
   
-- Add a branch/switch using the "=turn.cluapiresponse.content.result.prediction.intents.BookFlightWeather.result.prediction.topIntent" to direct the flow for wether and flight
+- Add a branch/switch using the "=turn.cluAPIresponse.content.result.prediction.intents.BookFlightWeather.result.prediction.topIntent" to direct the flow for weather and flight
 
   <img width="261" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/287bda67-57f1-4e54-ad55-7e9ec53eb592">
 
-- Retreive the related enitities from the response json , the entities are present within the below properties of Json
-  =turn.cluapiresponse.content.result.prediction.intents.BookFlightWeather.result.prediction.entities
+- Retrieve the related entities from the response Json , the entities are present within the below properties of Json
+  =turn.cluAPIresponse.content.result.prediction.intents.BookFlightWeather.result.prediction.entities
   
 **For the weather flow**
 
@@ -471,13 +471,13 @@
   
   <img width="379" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8c1d6836-e9a2-462b-9c09-cad0cc149d00">
   
-- Call the weather api by passing the city to retrive weather information
+- Call the weather API by passing the city to retrieve weather information
 
   <img width="562" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d5e98c86-189b-447f-a435-9d2547bb796f">
 
-- The url for weather would be https://open-weather13.p.rapidapi.com/city/**city name** , ensure to pass the api key in the header property X-RapidAPI-Key
+- The url for weather would be https://open-weather13.p.rAPIdAPI.com/city/**city name** , ensure to pass the API key in the header property X-RAPIdAPI-Key
 
-- Validate the result from api and send response
+- Validate the result from API and send response
 
     <img width="331" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cc42bf0e-48d1-4ffb-851e-38e402f21ace">
 
@@ -485,10 +485,10 @@
 
 <img width="298" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ba7ada58-7ee4-48fd-ae7a-2d4ccf3f4e15">
 
-- The flight url is of below format
-  https://skyscanner44.p.rapidapi.com/search?adults=1&origin=**Fromcity**&destination=**tocity**&departureDate=**date**&currency=EUR&locale=en-GB&market=UK
+- The flight URL is of below format
+  https://skyscanner44.p.rAPIdAPI.com/search?adults=1&origin=**Fromcity**&destination=**tocity**&departureDate=**date**&currency=EUR&locale=en-GB&market=UK
   
-- The CLU will respond with the extracted entities in the json result 
+- The CLU will respond with the extracted entities in the Json result 
 
      "entities": [
 
@@ -527,11 +527,16 @@
                       "text": "july 4 2023",
 
 
-- Use the entities call the api and respond to user. The api takes in only IATA codes , City to IATA codes API can be used to retrive the IATA code from user provided city
+- Use the entities extracted in the query string of the API URL and execute the API and respond to user. The API takes in only IATA codes, City to IATA codes API can be used to retrieve the IATA code from user provided city.
 
-- API to get IATA code https://skyscanner44.p.rapidapi.com/autocomplete?query=**cityname**
+- API to get IATA code https://skyscanner44.p.rAPIdAPI.com/autocomplete?query=**cityname**
 <img width="682" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b513598b-392e-4909-9441-23a892b5f702">
 
 <img width="538" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ae3c5340-f4f7-4ba3-abea-a444338d5431">
 
+##  Publishing and Temas channel for the bot
+
+-  Publish the Bot to Azure from bot composer [refer here](https://learn.microsoft.com/en-us/composer/how-to-publish-bot?tabs=v2x)
+
+-  To Acess the bot in teams channel [refer here](https://techcommunity.microsoft.com/t5/modern-work-app-consult-blog/publish-bot-app-to-teams-channel-with-bot-framework-composer-and/ba-p/3341876)
 
