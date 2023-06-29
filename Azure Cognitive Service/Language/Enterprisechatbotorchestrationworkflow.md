@@ -553,7 +553,7 @@
 <img width="545" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c4b7948e-812c-4feb-8b45-75564ca68c97">
 
 
-##  Publishing and Temas channel for the bot
+##  Publishing and Teams channel for the bot
 
 -  Publish the Bot to Azure from bot composer [refer here](https://learn.microsoft.com/en-us/composer/how-to-publish-bot?tabs=v2x)
 
