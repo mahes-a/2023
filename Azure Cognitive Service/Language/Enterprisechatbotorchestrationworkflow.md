@@ -208,7 +208,7 @@
   
 - When you register with the Rapid API , you will get the API_key , the Weather_endpoint and flights_API endpoint are from Rapid API
   
-- Open your bot "Unknown Intent" flow, for simplicity we are not defining dialog corresponding to intents
+- Open your bot "Unknown Intent" flow, for simplicity/brevity , we are not defining intents in our bot matching to CLU intents or creating seperate dialog for each intent
   
 - Make a HTTP request to the orchestration prediction url using the Ocp-APIm-Subscription-Key
 
