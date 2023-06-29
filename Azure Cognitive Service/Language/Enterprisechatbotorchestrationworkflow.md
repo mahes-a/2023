@@ -16,7 +16,7 @@
 ## Flow and Getting Started
 
 - In this sample, our conversational bot retrieves relevant info by routing incoming requests to the correct service by utilizing Natural Language Processing (NLP) & Natural Language Understanding (NLU) and machine-learning intelligence.
-- Sample bot based on user Input will either provide appropriate answers from customer provided corpus or classify as flight booking intent and extract entities for flight information or classify as weather intent and extract entities for retrieve weather info.
+- Sample bot based on user Input will either provide appropriate answers from customer provided corpus or classify as flight booking intent and extract entities for flight information or classify as weather intent and extract entities to retrieve weather info.
 - Based on the intent and entities extracted respective APIs are executed and info is returned back to user
 
 ## Required Components
