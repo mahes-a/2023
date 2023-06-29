@@ -48,12 +48,12 @@
   
 ## Things to Note
 
-- The sample is created using Empty bot template rather than using language/CLU templates for simplicity
+- The sample is created using General bot template for simplicity
   
 - The idea behind the sample is the understand the user intent and retrieve relevant info, this is showcased using Public API calls but this very well can be internal
   systems API calls
   
-- The same intent classification and Question answering can be done using Azure Open AI too (RAG pattern) 
+- Azure Open AI Can handle intent classificationa nd entirty extraction and Q&A over your own data (RAG pattern) 
 
 - UI can be PVA bot 
 
