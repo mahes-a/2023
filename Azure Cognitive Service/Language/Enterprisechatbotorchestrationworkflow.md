@@ -94,7 +94,7 @@
     
 - Click on test icon to test the feature, after testing save the project
   
-      <img width="308" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d46abc60-147f-49d2-917e-4494fe034aed">
+  <img width="308" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d46abc60-147f-49d2-917e-4494fe034aed">
 
 - Once tested move to the deploy tab and deploy the knowledge base, If we plan to use only Q&A feature in the bot, you could create a bot right from this screen with no code and deploy to your subscription
   
