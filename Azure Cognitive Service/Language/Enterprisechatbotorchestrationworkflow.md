@@ -39,9 +39,9 @@
 - Sign up for free Weather and Flight API from Rapid API
   
   
-    https://rAPIdAPI.com/worldAPI/API/open-weather13
+    https://rapidAPI.com/worldAPI/API/open-weather13
   
-    https://rAPIdAPI.com/3b-data-3b-data-default/API/skyscanner44
+    https://rapidAPI.com/3b-data-3b-data-default/API/skyscanner44
   
 - **Optional** - Azure subscription with access enabled for the Azure OpenAI service as an optional resource. You can request access [here](https://aka.ms/oaiapply).
 
