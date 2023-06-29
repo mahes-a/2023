@@ -217,7 +217,29 @@
   <img width="348" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d7b6f66e-d1d4-499e-927d-6eb118b594c8">
   
   <img width="475" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/40b97a23-2a91-4126-8dd6-8ad5dff88cdc">
+  
+- The http request body will be of below format
 
+        {
+        "kind": "Conversation",
+        "analysisInput": {
+          "conversationItem": {
+            "id": "${turn.activity.from.id}",
+            "text": "${turn.activity.text}",
+            "modality": "text",
+            "language": "en-us",
+            "participantId": "${participantId}"
+          }
+        },
+        "parameters": {
+          "projectName": "enter your orchestration project name",
+          "verbose": true,
+          "deploymentName": "enter your orchestration project deployment name",
+          "stringIndexType": "TextElement_V8"
+        }
+      }
+
+- The participantId can be empty or hardcoded for now , Please refer [here](https://learn.microsoft.com/en-us/answers/questions/1279841/query-model-clu-how-do-we-generate-the-participant)
   
 - The Orchestration workflow recognizes the intents and responds back, body of the http request should be below format when answered from the Custom Q&A resource
   ```{
