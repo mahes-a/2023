@@ -201,10 +201,12 @@
 <img width="1196" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7a62be78-b126-40cb-84ec-5341464d8822">
 
 
- <img width="254" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e3d3f33-30d0-4c7c-97c1-0f5c00b5ea31">
-
+ 
 
 - The Cognitive_service_endpoint and cognitive_API_key can be retrieved from the orchestration prediction url and the OCP- APIM Subscription Key
+
+  <img width="254" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e3d3f33-30d0-4c7c-97c1-0f5c00b5ea31">
+
   
 - When you register with the Rapid API , you will get the API_key , the Weather_endpoint and flights_API endpoint are from Rapid API
   
