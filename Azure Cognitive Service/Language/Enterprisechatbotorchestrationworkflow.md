@@ -54,6 +54,9 @@
   systems API calls
   
 - The same intent classification and Question answering can be done via Azure Open AI
+
+- UI can be PVA bot 
+
   
 ## Steps 
 
@@ -207,10 +210,11 @@
    
    https://youropenai.openai.azure.com/openai/deployments/chatgpt35/chat/completions?api-version=2023-03-15-preview
    
+- The Cognitive service endpoint and 
   
 -  Open your bot "Unknown Intent" flow , for simplicity we are not defining dialog corresponding to intents , We could also use message recived Activity 
   
--  Make a 
+-  Make a HTTP request to the orchestration prediction url  
 
 
 
