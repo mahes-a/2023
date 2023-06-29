@@ -194,11 +194,23 @@
 - Open the configuration section and toggle on Advanced Settings and fill the keys and the endpoints
   
   <img width="1195" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0e93ccb2-1b12-4b4d-b7ae-0a178de26816">
- 
+
+- **Optional- The Azure Open AI is optional , if you have one configure** The OPENAI_API_KEY and endpoint can be retrieved from Azure Portal Azure OpenAI resource under Keys and Endpoint section
+    
+  <img width="620" alt="image" src="https://github.com/mahes-a/Wingman/assets/120069348/646b0ebf-bf99-45cd-bc90-ee0fcf384b1c">
+    
+- The OPENAI_API_ENDPOINT should be combination of your Azure Open AI Endpoint followed by ChatGPT deployment name followed by the api version 
+    
+   https://**endpointname**/deployments/**deploymentname**/chat/completions?api-version=2023-03-15-preview
+
+   Example
+   
+   https://youropenai.openai.azure.com/openai/deployments/chatgpt35/chat/completions?api-version=2023-03-15-preview
+   
   
 -  Open your bot "Unknown Intent" flow , for simplicity we are not defining dialog corresponding to intents , We could also use message recived Activity 
   
-- 
+-  Make a 
 
 
 
