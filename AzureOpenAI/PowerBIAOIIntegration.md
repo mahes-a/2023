@@ -25,6 +25,6 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
 ## Technical Flow 
 
-- In this sample, we build an Azure Function App which receives prompts from Power BI, executes the Azure Open AI API and responds with data results from Azure Open AI in a JSON format
+- In this sample, we build an Azure Function App which receives prompts as Inputs, executes the Azure Open AI API and responds with data results from Azure Open AI in a JSON format
 - Power Query (within Power BI) will make Http Post calls to the function App with the prompts and transforms the results from Azure Open AI into a table
 - Using the tables , Power BI Visuals are created to gain insights  
