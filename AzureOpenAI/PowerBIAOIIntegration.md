@@ -107,13 +107,29 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
   <img width="379" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8336fa5d-be7c-4a76-8078-8d3b51feba5c">
 
-- We will code to make the post calls to the Function app from the window , we use the prompt parameter and function app url to make the post call
+- We will code to make the post calls to the Function app from the window , we use the prompt parameter and function app url to make the post call and click done
   
   <img width="756" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a41752a0-da46-4ac3-8b57-09d0362ca71f">
  
-- d
-- d
-- d
+- The Power query editor will list all the Json documents from the Azure Open AI API result via the function app
+  
+  <img width="521" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2cbf050a-2d30-4560-a38a-436c56b7a046">
+ 
+- Select "To table"  to convert the Json documents to table
+  <img width="599" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/76bc57bf-d7c7-4bfa-8a68-a5121d68b107">
+
+- All the Json records would be displayed now
+  <img width="545" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/1bdbadb7-83cb-43e0-b2d0-2971be7dc248">
+
+- Click the expand colum icon to expand all the records to table columns
+  <img width="208" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b54fe3c2-9c3c-45f1-a62a-db1dce425cf5">
+  
+- The Json elements retrieved are now avialable in Tabular format  
+<img width="877" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/877da3b3-1d94-45a1-8c3b-b85d5e90c968">
+
+  
+- hj
+- 
 
    - 
     
