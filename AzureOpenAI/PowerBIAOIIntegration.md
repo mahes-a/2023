@@ -69,7 +69,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
 **Prompt Engineering to produce Json Array from Azure Open AI API**
 
-  - For this example , the prompt is engineered in a way OpenAI returns the results only in a Json Array without any other qualifying perfix/suffixes
+  - For this example , the prompt is engineered in a way OpenAI returns the results only in a Json Array without any other qualifying prefix/suffixes
     
   - This can be done providing proper prompt tempalate consisting of System messages , Output format , Providing examples . Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/system-message) for Prompt Engineering tips
 
@@ -80,3 +80,9 @@ The combination of information retrieval from OpenAI and visualizing it in Power
          Only list  top country names by Population do not respond with any other response rather than the country and Population, Do not include any explanations, only provide a  RFC8259 compliant JSON response following this format without deviation. [{"Country":"USA","Population":"12222"},{"Country":"China","Population":"333"}]   
   
 **Power Query Post to Function App and transformations**
+
+  - Open a Power BI Desktop and Go to
+    
+    
+    
+
