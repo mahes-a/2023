@@ -1,6 +1,7 @@
 # Unlock Data-Driven Insights with Power BI and Azure Open AI Integration
 
-Using Power BI with OpenAI models can help you unlock the full potential of your data, gain deeper insights, and make data-driven decisions more effectively. 
+Using Power BI with OpenAI models can help you unlock the full potential of your data, gain deeper insights, and make data-driven decisions more effectively. This article will demonstrate the complete step-by-step process of integrating Power BI with Azure OpenAI. By following this guide, you will learn how to seamlessly combine the power of Power BI's data visualization capabilities with Azure OpenAI's advanced natural language processing, enabling you to unlock new insights and make data-driven decisions.
+
 
 ## High-level Architecture
 
@@ -14,4 +15,3 @@ Using Power BI with OpenAI models can help you unlock the full potential of your
 
 ## Getting Started
 
-This sample aims to guide you through the process of analyzing customer feedback to gain insights into the sentiment surrounding your products . By leveraging OpenAI models, sentiment classification becomes more accurate, while Power BI enables effective data visualization to monitor sentiment trends and make informed decisions.
