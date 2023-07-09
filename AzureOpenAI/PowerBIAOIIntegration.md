@@ -31,7 +31,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
 - In this example , we generate customer feedback samples Open AI with customer sentinment for simplicity but this can be designed in a way that true customer feedback can be sent to Open AI to perform sentiment analysis
   
-- 
+- This is a sample approach to integrate Open AI insghts and enable advanced anlaytics by visualizng them uisng Power BI
 
 ## Technical Flow 
 
