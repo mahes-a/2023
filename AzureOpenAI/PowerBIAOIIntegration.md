@@ -69,6 +69,13 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
 **Prompt Engineering to produce Json Array from Azure Open AI API**
 
-   - ff
-  - For this example , the prompt is engineered in a way OpenAI returns the results only in a Json Array without any other qualifying perfix/suffixes 
-  - d
+  - For this example , the prompt is engineered in a way OpenAI returns the results only in a Json Array without any other qualifying perfix/suffixes
+    
+  - This can be done providing proper prompt tempalate consisting of System messages , Output format , Providing examples . Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/system-message) for Prompt Engineering tips
+
+ - Some samples for prompts to get Json array from the Azure Open AI interface is as below 
+      
+       ``` Generate Json array with 25 elements with sentiment analysis, you will respond with the sample as a JSON object. Here's the output format [{ "CustomerFeedback": " I-love-the-product", "Sentiment": "Positive" ,"Score":".9"},{ "CustomerFeedback": " I-hate-the-product", "Sentiment": "Negative" ,"Score":".9"}]  ```
+
+       ``` Only list  top country names by Population do not respond with any other response rather than the country and Population, Do not include any explanations, only provide a  RFC8259 compliant JSON response following this format without deviation. [{"Country":"USA","Population":"12222"},{"Country":"China","Population":"333"}]  ``` 
+  
