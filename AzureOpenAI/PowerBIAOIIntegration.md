@@ -31,7 +31,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
 - In this example , we generate customer feedback samples Open AI with customer sentinment for simplicity but this can be designed in a way that true customer feedback can be sent to Open AI to perform sentiment analysis
   
-- This is a sample approach to integrate Open AI insghts and enable advanced anlaytics by visualizng them uisng Power BI
+- This is a sample approach to integrate Open AI insghts and enable advanced anlaytics by visualizng them using Power BI
 
 ## Technical Flow 
 
@@ -149,11 +149,16 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
   <img width="1058" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6bfe6b0c-792f-49e1-93ac-924c57d1ea2f">
 
-- f
-- f
-- 
+- We could create a prompt for information retrieval (Sample uses Top 10 populations and Top 10 GDP countries, refer above section for prompt to to get top 10 populous countries) , the retreived information can be converted into a table using the above mentioned steps
+  
+ <img width="1076" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2f88455d-4bfc-421f-9ced-0ca00eb25e1f">
 
-   - 
+  
+- Refer [here](https://learn.microsoft.com/en-us/shows/docs-azure/deploy-azure-functions-from-visual-studio-code) to publish function app to azure
+  
+- Publish the Power BI report to Power BI service and since we have configured the prompts and Function app url as parameters, we could modify the parameters after publish under dataset settings
+
+  
     
 
 
