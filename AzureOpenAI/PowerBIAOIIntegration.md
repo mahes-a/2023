@@ -23,3 +23,8 @@ By leveraging OpenAI's natural language processing capabilities and Power BI's d
 2.	Information Retrieval:
 The combination of information retrieval from OpenAI and visualizing it in Power BI offers businesses the advantage of efficiently extracting and presenting relevant information in a visually compelling way. By leveraging OpenAI's advanced natural language processing capabilities and Power BI's data visualization tools, businesses can quickly retrieve and analyze data, gain valuable insights from research papers, news articles, or other textual sources and make informed decisions
 
+## Technical Flow 
+
+- In this sample, we build an Azure Function App which receives prompts from Power BI, executes the Azure Open AI API and responds with data results from Azure Open AI in a JSON format
+- Power Query (within Power BI) will make Http Post calls to the function App with the prompts and transforms the results from Azure Open AI into a table
+- Using the tables , Power BI Visuals are created to gain insights  
