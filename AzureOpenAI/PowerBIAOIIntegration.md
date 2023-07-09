@@ -81,8 +81,44 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
 **Power Query Post to Function App and transformations**
 
-  - Open a Power BI Desktop and Go to
+  - Open a Power BI Desktop , Click on Transform Data-> Transform Data from home ribbon
+
+  <img width="827" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a1fd0cbe-8aa5-4a3f-9de4-4a04f4c1b6b3">
+
+- Open a Power BI Desktop , Click on Transform Data-> Transform Data from home ribbon
+
+  
+- In the Power Query editor from Manage parameters , add new parameter
     
+    <img width="1193" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c344ec68-b6de-4b4f-8532-5bc9839366f7">
+
+- In the Power Query editor from Manage parameters , add new parameter URL and provide the function app url
     
+    <img width="479" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6f7c2c66-2969-4cbd-a272-c698d1502f95">
+    
+- Repeat by adding Parameters for the prompts to be passed , The customer sentiment analysis prompt is provided in above section
+     <img width="461" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4111063f-9728-4721-a801-5fd953a50d60">
+
+-  From New Source ribbeon , select "Blank Query"
+
+   ![image](https://github.com/mahes-a/2023/assets/120069348/070ef26a-6874-4ba1-ba19-9490fb94a744)
+
+- Once the query opens , use the Advanced editor to open the Advanced Editor window
+  
+  <img width="379" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8336fa5d-be7c-4a76-8078-8d3b51feba5c">
+
+- We will code to make the post calls to the Function app from the window , we use the prompt parameter and function app url to make the post call
+  
+  <img width="756" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a41752a0-da46-4ac3-8b57-09d0362ca71f">
+ 
+- d
+- d
+- d
+
+   - 
+    
+
+
+
     
 
