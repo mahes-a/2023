@@ -131,8 +131,16 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
   <img width="877" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/877da3b3-1d94-45a1-8c3b-b85d5e90c968">
 
+- Click "Close and apply" from the menu to close power query editor and apply changes on the Power BI to make the data model available for visualization
   
-- hj
+   <img width="305" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d9dbc0fe-963d-423a-9a10-8ea95017705d">
+ 
+- Now create visuals to to provide insights to users
+
+  <img width="1058" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6bfe6b0c-792f-49e1-93ac-924c57d1ea2f">
+
+- f
+- f
 - 
 
    - 
