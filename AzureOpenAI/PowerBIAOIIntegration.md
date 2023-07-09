@@ -23,6 +23,16 @@ By leveraging OpenAI's natural language processing capabilities and Power BI's d
 2.	Information Retrieval:
 The combination of information retrieval from OpenAI and visualizing it in Power BI offers businesses the advantage of efficiently extracting and presenting relevant information in a visually compelling way. By leveraging OpenAI's advanced natural language processing capabilities and Power BI's data visualization tools, businesses can quickly retrieve and analyze data, gain valuable insights from research papers, news articles, or other textual sources and make informed decisions
 
+## Things to Note 
+
+- The Function App acts as a wrapper, facilitating the use of other tools such as API management gateway, to enable load balancing, scaling out, and overcoming token limitations by executing  multi-region Azure Open AI resources (if regulations permit) in a straightforward round-robin fashion., Furthermore, Function App with APIM can assist with chargebacks, auditing, monitoring, and provide a secure abstraction layer.
+  
+- Function App becomes a facade serving layer and provides simple data integration end points for any client tool.
+  
+- In this example , we generate customer feedback samples Open AI with customer sentinment for simplicity but this can be designed in a way that true customer feedback can be sent to Open AI to perform sentiment analysis
+  
+- 
+
 ## Technical Flow 
 
 - In this sample, we build an Azure Function App which receives prompts as Inputs, executes the Azure Open AI API and responds with data results from Azure Open AI in a JSON format
