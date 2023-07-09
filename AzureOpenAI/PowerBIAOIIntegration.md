@@ -79,3 +79,4 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
          Only list  top country names by Population do not respond with any other response rather than the country and Population, Do not include any explanations, only provide a  RFC8259 compliant JSON response following this format without deviation. [{"Country":"USA","Population":"12222"},{"Country":"China","Population":"333"}]   
   
+**Power Query Post to Function App and transformations**
