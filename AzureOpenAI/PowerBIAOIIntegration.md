@@ -15,3 +15,11 @@ Using Power BI with OpenAI models can help you unlock the full potential of your
 
 ## Getting Started
 
+This article showcases the powerful combination of OpenAI and Power BI for two essential tasks: Customer feedback analysis and Knowledge extraction and summarization. Let's delve deeper into the benefits of integrating these technologies:
+
+1.	Customer feedback analysis:
+By leveraging OpenAI's natural language processing capabilities and Power BI's data visualization tools, businesses can gain valuable insights from customer feedback. This integration allows for sentiment analysis, identifying positive and negative sentiments expressed by customers. With Power BI's interactive dashboards and visualizations, businesses can track sentiment trends over time, identify patterns, and pinpoint areas requiring improvement.
+
+2.	Knowledge extraction and summarization:
+Combining OpenAI and Power BI enables efficient knowledge extraction and summarization. OpenAI's language models can process large volumes of text data, extracting key information and summarizing it concisely. By integrating this capability with Power BI, businesses can quickly analyze and gain insights from research papers, news articles, or other textual sources. This streamlines knowledge management processes, saves time, and facilitates data-driven decision-making based on comprehensive and concise summaries.
+
