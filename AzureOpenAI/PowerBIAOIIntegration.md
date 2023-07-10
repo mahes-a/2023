@@ -21,7 +21,7 @@ This article showcases the powerful combination of OpenAI and Power BI for two e
 By leveraging OpenAI's natural language processing capabilities and Power BI's data visualization tools, businesses can gain valuable insights from customer feedback. This integration allows for sentiment analysis, identifying positive and negative sentiments expressed by customers. With Power BI's interactive dashboards and visualizations, businesses can track sentiment trends over time, identify patterns, and pinpoint areas requiring improvement.
 
 2.	Information Retrieval:
-The combination of information retrieval from OpenAI and visualizing it in Power BI offers businesses the advantage of efficiently extracting and presenting relevant information in a visually compelling way. By leveraging OpenAI's advanced natural language processing capabilities and Power BI's data visualization tools, businesses can quickly retrieve and analyze data, gain valuable insights from research papers, news articles, or other textual sources and make informed decisions
+The combination of information retrieval from OpenAI and visualizing it in Power BI offers businesses the advantage of efficiently extracting and presenting relevant information in a visually compelling way. By leveraging OpenAI's advanced natural language processing capabilities and Power BI's data visualization tools, businesses can quickly retrieve and analyze data, gain valuable insights from research papers, news articles, or other textual sources and make informed decisions.
 
 ## Things to Note 
 
@@ -29,9 +29,9 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
 - Function App becomes a facade serving layer and provides simple data integration end points for any client tool.
   
-- In this example , we generate customer feedback samples Open AI with customer sentinment for simplicity but this can be designed in a way that true customer feedback can be sent to Open AI to perform sentiment analysis
+- In this example , we generate customer feedback samples Open AI with customer sentiment for simplicity but this can be designed in a way that true customer feedback can be sent to Open AI to perform sentiment analysis
   
-- This is a sample approach to integrate Open AI insghts and enable advanced anlaytics by visualizng them using Power BI
+- This is a sample approach to integrate Open AI insights and enable advanced analytics by visualizing them using Power BI
 
 ## Technical Flow 
 
@@ -64,7 +64,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
   - Install the Azure Open AI.NET client library , Refer [here](https://learn.microsoft.com/en-us/dotnet/api/overview/azure/ai.openai-readme?view=azure-dotnet-preview) for installation instructions
     
-  - Next step is to pass the prompt receieved from HTTP post method to execute the Open AI ChatCompletion API and return the response.
+  - Next step is to pass the prompt received from HTTP post method to execute the Open AI ChatCompletion API and return the response.
 
     <img width="884" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/45e787bf-944e-4ba9-b296-007467e2ae69">
 
@@ -81,7 +81,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
   - For this example , the prompt is engineered in a way OpenAI returns the results only in a Json Array without any other qualifying prefix/suffixes
     
-  - This can be done providing proper prompt tempalate consisting of System messages , Output format , Providing examples . Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/system-message) for Prompt Engineering tips
+  - This can be done providing proper prompt template consisting of System messages , Output format , Providing examples . Refer [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/system-message) for Prompt Engineering tips.
 
  - Some samples for prompts to get only Json array from the Azure Open AI interface can be
       
@@ -107,9 +107,10 @@ The combination of information retrieval from OpenAI and visualizing it in Power
     <img width="479" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6f7c2c66-2969-4cbd-a272-c698d1502f95">
     
 - Repeat by adding Parameters for the prompts to be passed , The customer sentiment analysis prompt is provided in above section
+  
      <img width="461" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4111063f-9728-4721-a801-5fd953a50d60">
 
--  From New Source ribbeon , select "Blank Query"
+-  From New Source ribbon , select "Blank Query"
 
    ![image](https://github.com/mahes-a/2023/assets/120069348/070ef26a-6874-4ba1-ba19-9490fb94a744)
 
@@ -117,7 +118,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
     <img width="379" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8336fa5d-be7c-4a76-8078-8d3b51feba5c">
 
-- We will code to make the post calls to the Function app from the window , we use the prompt parameter and function app url to make the post call and click done
+- We will code to make the post calls to the Function app from the window , we use the prompt parameter and function app URL to make the post call and click done
   
     <img width="756" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a41752a0-da46-4ac3-8b57-09d0362ca71f">
  
@@ -133,11 +134,11 @@ The combination of information retrieval from OpenAI and visualizing it in Power
 
     <img width="545" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/1bdbadb7-83cb-43e0-b2d0-2971be7dc248">
 
-- Click the expand colum icon to expand all the records to table columns
+- Click the expand Column icon to expand all the records to table columns
 
     <img width="208" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b54fe3c2-9c3c-45f1-a62a-db1dce425cf5">
   
-- The Json elements retrieved are now avialable in Tabular format  
+- The Json elements retrieved are now available in Tabular format  
 
   <img width="877" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/877da3b3-1d94-45a1-8c3b-b85d5e90c968">
 
@@ -145,18 +146,18 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
    <img width="305" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d9dbc0fe-963d-423a-9a10-8ea95017705d">
  
-- Now create visuals to to provide insights to users
+- Now create visuals to provide insights to users
 
   <img width="1058" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6bfe6b0c-792f-49e1-93ac-924c57d1ea2f">
 
-- We could create a prompt for information retrieval (Sample uses Top 10 populations and Top 10 GDP countries, refer above section for prompt to to get top 10 populous countries) , the retreived information can be converted into a table using the above mentioned steps
+- We could create a prompt for information retrieval (Sample uses Top 10 populations and Top 10 GDP countries, refer above section for prompt to get top 10 populous countries) , the retrieved information can be converted into a table using the above mentioned steps
   
  <img width="1076" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2f88455d-4bfc-421f-9ced-0ca00eb25e1f">
 
   
 - Refer [here](https://learn.microsoft.com/en-us/shows/docs-azure/deploy-azure-functions-from-visual-studio-code) to publish function app to azure
   
-- Publish the Power BI report to Power BI service and since we have configured the prompts and Function app url as parameters, we could modify the parameters after publish under dataset settings
+- Publish the Power BI report to Power BI service and since we have configured the prompts and Function app URL as parameters, we could modify the parameters after publishing under dataset settings
 
   
     
