@@ -152,7 +152,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
  <img width="1076" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2f88455d-4bfc-421f-9ced-0ca00eb25e1f">
 
   
-- Refer [here](https://learn.microsoft.com/en-us/azure/azure-functions/run-functions-from-deployment-package) for a zip file based  publish approach function app to azure
+- Refer [here](https://learn.microsoft.com/en-us/azure/azure-functions/run-functions-from-deployment-package) for a zip file based   approach to publish function app to azure
   
 - Publish the Power BI report to Power BI service and since we have configured the prompts and Function app URL as parameters, we could modify the parameters after publishing under dataset settings
 
