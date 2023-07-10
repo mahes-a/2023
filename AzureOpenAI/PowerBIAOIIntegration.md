@@ -94,9 +94,6 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   - Open a Power BI Desktop , Click on Transform Data-> Transform Data from home ribbon
 
   <img width="827" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a1fd0cbe-8aa5-4a3f-9de4-4a04f4c1b6b3">
-
-- Open a Power BI Desktop , Click on Transform Data-> Transform Data from home ribbon
-
   
 - In the Power Query editor from Manage parameters , add new parameter
     
