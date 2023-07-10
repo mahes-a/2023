@@ -29,7 +29,7 @@ The combination of information retrieval from OpenAI and visualizing it in Power
   
 - Function App becomes a facade serving layer and provides simple data integration end points for any client tool.
   
-- In this example , we generate customer feedback samples Open AI with customer sentiment for simplicity but this can be designed in a way that true customer feedback can be sent to Open AI to perform sentiment analysis
+- In this example , we generate customer feedback with sentiment samples from Azure Open AI for simplicity but this can be designed in a way that true customer feedback can be sent to Open AI to perform sentiment analysis
   
 - This is a sample approach to integrate Open AI insights and enable advanced analytics by visualizing them using Power BI
 
