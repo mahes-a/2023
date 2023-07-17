@@ -129,6 +129,15 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
    <img width="860" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/5c6b8579-4b0a-4511-ba21-82b7ed6b4c16">
 
 
-- f
+- Let's add a surrogate key to the lookup table by proving english instruction and repeat the same process of validating sql query and viusally validating the results
+
+  <img width="821" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2d517e4d-ab2d-47a3-892f-6fc7c2f56b60">
+
+
+- d
+- d
+- d
+- d
+- d
 
   
