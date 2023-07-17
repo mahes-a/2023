@@ -55,4 +55,80 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
   
 - From the dataset , Reports are auto created. 
   
--  
+## Steps 
+
+**Code-Free Data ingestion -- Create a Fabric Lakehouse and copy source files using OneLake File Explorer**
+
+- Login into Fabric portal [here](https://app.fabric.microsoft.com/) and choose Data Engineering persona
+  
+   <img width="244" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c2e9fdfb-7f50-4612-b096-83d473a35e58">
+
+    
+ - Create a Lakehouse or select your existing lakehouse
+
+   <img width="491" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8913d2f8-d253-4314-a289-317e57776f31">
+
+ - This tutorial uses NYC green taxi trip data parquet files and Taxi Zone Lookup Table (CSV) file, Find them [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+
+- Download the source files in your system and copy them into your OneLake-> workspace->Your Lakehouse -> Files - location using the OneLake file explorer
+
+  <img width="605" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/992ea513-1e43-4a0b-bfd9-a6fcfb562f6f">
+
+- Switch back to your Lakehouse explorer in fabric and validate all the files are now synced. Please use refresh option if you dont see the files
+  
+   <img width="937" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/43ab5075-62aa-4638-a901-aa992ca1b33f">
+
+**Using English as a programming language for big data transformations**
+
+- Open a New notebook
+  
+   <img width="525" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8fdea60b-b85e-408d-8678-5d78436faa35">
+
+- Install the required python libraries through in-line installation (in-line for simplicity) , Refer [here](https://learn.microsoft.com/en-us/fabric/data-engineering/library-management) all the other options for installing libraries on your workspace
+  
+  <img width="870" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/9edf0917-be3d-4109-aa71-a50e28fe2918">
+
+- Optional vorder enabling and optimizeWrite , Refer [here](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) to undesratnd more on the optimizations
+  
+  <img width="893" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/258067c3-1e4f-4977-ba63-5926c07adf2e">
+
+- Inport the reference packages
+  
+  <img width="866" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/07103c01-9244-47da-b7e0-a2984cec6a1f">
+
+- Setup your AzureChatOpenAI function with open ai endpoint , open ai key , deployment name (use GPT 3.5 turbo or GPT 4 models) , Follow below for creating and retrieving the required details
+
+  <img width="467" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c2955cb0-3b88-47ab-a089-d106a6fdd52a">
+
+- For Example , In Azure Open AI Create a GPT 3.5 deployment 
+
+   <img width="864" alt="image" src="https://github.com/mahes-a/Wingman/assets/120069348/dd9b5f1e-7ee2-47aa-9ade-bd2c750ffa62">
+
+- Note down the OPENAI_API_KEY and endpoint, they can be retrieved from Azure Portal Azure OpenAI resource under Keys and Endpoint section
+    
+    <img width="620" alt="image" src="https://github.com/mahes-a/Wingman/assets/120069348/646b0ebf-bf99-45cd-bc90-ee0fcf384b1c">
+
+- Initialize the  English SDK for Apache Spark by ensuring it uses the Azure Open AI models instantiated in above step , By enabling the verbose option, the English SDK provides visibility into the underlying SQL operations used to create DataFrames from English prompts. This can help to validate the process and prevent errors, while also introducing an additional safety measure by allowing users to review the tool's internal operations.
+    
+   <img width="712" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/1ebc5e28-7c94-4f92-b153-93d9f4dbf54c">
+
+- Read the source files into dataframes
+
+  <img width="758" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8fc14024-c0aa-47f9-9822-5889c0c54a04">
+
+**Let's begin data transformations in English!**
+
+- We select only the required columns and add date column from timestamp columns , Since we enabled verbose mode underlying sql query for the requested data transformation is displayed , validate the query
+
+  <img width="880" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/636f4209-c571-418c-89d3-543102534184">
+
+- Once SQL query is validated , we could use display function to visually validate the results
+
+   <img width="664" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3f572d87-28d9-439b-acaa-56b8a44890f6">
+
+   <img width="860" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/5c6b8579-4b0a-4511-ba21-82b7ed6b4c16">
+
+
+- f
+
+  
