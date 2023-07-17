@@ -44,3 +44,15 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
   https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse
 
   https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing#compare-different-warehousing-capabilities
+
+## Technical Flow
+
+- In this sample, Source data is copied into the OneLake File Explorer there by automatically syncing the files to your Fabric workspace lakehouse
+  
+- In Microsoft Fabric notebook , the source files are read and transformed using English instructions to craete a Star schema model and the model is persisted in lakehouse  
+  
+- Using the SQL Endpoint for the lakehouse relationship between fact and dimension tables are established and a dataset is created selecting only the required tables
+  
+- From the dataset , Reports are auto created. 
+  
+-  
