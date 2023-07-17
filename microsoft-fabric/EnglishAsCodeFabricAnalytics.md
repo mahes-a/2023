@@ -4,7 +4,8 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
 ## High-level Architecture
 
-<img width="728" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/7942c343-fb9e-4150-8155-44ccba673d9f">
+<img width="720" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cb2e4243-682c-443a-9254-24b3ebc15c92">
+
 
 
 ## Prerequisites
