@@ -25,7 +25,7 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
 ## Things to Note 
 
-- Please note that this tutorial with English instructions being converted into Pyspark Dataframe is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure validity, compatibility with your specific use case and technical environment.
+- Please note that this tutorial with English instructions being converted into Pyspark Dataframe is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure accuracy, validity, compatibility with your specific use case and technical environment.
   
 - Please be aware that the English prompt instructions shown are not intended to be a correct and complete representation of the prompts that should be used with your applications in production. They are provided for informational purposes only and may not be suitable for all use cases. It is important to carefully consider your specific requirements and design appropriate prompts that meet your users' needs and expectations.
   
