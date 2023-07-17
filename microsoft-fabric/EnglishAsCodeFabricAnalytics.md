@@ -162,9 +162,28 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
   <img width="556" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cad09d00-eeab-4a92-812e-35f03f8853ec">
 
+-  On the reporting tab select "New Power BI dataset" , provide dataset name and select the fact and dimension table
 
-     
-- 
+   <img width="898" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8a4c13bc-69dc-4e6a-8235-f9f5a9138646">
    
-   
+  
+   <img width="445" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4202709f-1999-4ee6-aa12-bc549d390fcf">
 
+   
+ - Rename the dataset to your liking 
+
+   <img width="419" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cc6169c9-9e0a-4a91-bf56-3c104aa9be00">
+
+- Go to your workspace and open the datset created and select Auto create report and pre- select the dimesnion and fact fields to create the report. Save the report 
+
+
+  <img width="1116" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8beb9c0c-7d90-4a40-aa1e-117be7435f55">
+
+  
+  
+  <img width="805" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d4843d68-3f1b-491f-ae5b-66ba4ab907c1">
+
+
+  <img width="1138" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e906eec0-1398-46f0-b53d-297b7e9e224e">
+
+  
