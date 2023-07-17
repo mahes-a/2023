@@ -147,8 +147,24 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 - To ensure safety , let's validate the dataframe for any duplicates by provding english instruction , this adds a addiitonal layer of validation before writing to table
 
     <img width="659" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2f00d883-dc92-4feb-a3f6-a5cbbe755496">
+    
 
+**Auto-create Reports -- Data Model Star Schema dataset and auto-create reports**
 
-- d
+- In the Lakehouse explorer switch to Sql end point. Select the model tab from left bottom 
+        
+     <img width="290" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/384a3c07-0b3b-4e8f-8abc-8707b3b2a99d">
 
+- For this data model, you need to define the relationship between different tables so that you can create reports and visualizations based on data coming across different tables. From the fact_taxitrip table, drag the pickup_location_surrogate field and drop it on the pickup_location_surrogate field in the dim_pickuplocs table to create a relationship. Check the “Assume referential integrity” and select Confirm to establish the relationship. Note - When defining relationships, make sure you have many to one relationship from the fact to the dimension and not vice versa , repeat the same for dropoff_location_surrogate from fact_taxitrip to dropoff_location_surrogate in dim_dropofflocs table
+
+  <img width="557" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/88b098ae-8af2-4c12-8654-668f84b6fc25">
   
+
+  <img width="556" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/cad09d00-eeab-4a92-812e-35f03f8853ec">
+
+
+     
+- 
+   
+   
+
