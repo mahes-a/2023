@@ -88,7 +88,9 @@ The combination of information retrieval from OpenAI and visualizing it in Power
          Generate Json array with 25 elements with sentiment analysis, you will respond with the sample as a JSON object. Here's the output format [{ "CustomerFeedback": " I-love-the-product", "Sentiment": "Positive" ,"Score":".9"},{ "CustomerFeedback": " I-hate-the-product", "Sentiment": "Negative" ,"Score":".9"}]  
 
          Only list  top country names by Population do not respond with any other response rather than the country and Population, Do not include any explanations, only provide a  RFC8259 compliant JSON response following this format without deviation. [{"Country":"USA","Population":"12222"},{"Country":"China","Population":"333"}]   
-  
+
+ - _Please be aware that the  prompt instructions shown are not intended to be a correct and complete representation of the prompts that should be used with your applications in production. They are provided for informational purposes only and may not be suitable for all use cases. It is important to carefully consider your specific requirements and design appropriate prompts that meet your users' needs and expectations._
+   
 **Power Query Post to Function App and transformations**
 
   - Open a Power BI Desktop , Click on Transform Data-> Transform Data from home ribbon
