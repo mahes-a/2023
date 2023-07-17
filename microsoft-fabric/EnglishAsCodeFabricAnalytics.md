@@ -35,4 +35,4 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
   https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse
 
-  https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse
+  https://learn.microsoft.com/en-us/fabric/data-warehouse/data-warehousing#compare-different-warehousing-capabilities
