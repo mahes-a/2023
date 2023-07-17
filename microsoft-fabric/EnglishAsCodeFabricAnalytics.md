@@ -118,7 +118,7 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
 **Let's begin data transformations in English!**
 
-- We select only the required columns and add date column from timestamp columns , Since we enabled verbose mode underlying sql query for the requested data transformation is displayed , validate the query
+- By provding english instructions , we select only the required columns and add date column from timestamp columns , Since we enabled verbose mode underlying sql query for the requested data transformation is displayed , validate the query
 
   <img width="880" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/636f4209-c571-418c-89d3-543102534184">
 
@@ -134,10 +134,21 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
   <img width="821" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2d517e4d-ab2d-47a3-892f-6fc7c2f56b60">
 
 
-- d
-- d
-- d
-- d
+- Let's create role playing dimension table for pickup and dropoff location details by provding english instructions from the lookup table , validate the sql query and data before writing to table
+
+   <img width="835" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/dcb39606-e26b-4d84-b92d-245443c0ab90">
+
+
+-  By provding english instructions let's create a fact table for taxi trips using the surrogate key from the dimension tables and write to table after validating the sql query and data
+
+  <img width="866" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff3f5eca-68a5-40ce-85d7-3aff0757315b">
+
+
+- To ensure safety , let's validate the dataframe for any duplicates by provding english instruction , this adds a addiitonal layer of validation before writing to table
+
+    <img width="659" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2f00d883-dc92-4feb-a3f6-a5cbbe755496">
+
+
 - d
 
   
