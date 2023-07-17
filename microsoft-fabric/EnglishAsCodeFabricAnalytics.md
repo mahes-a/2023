@@ -1,6 +1,6 @@
 # End-to-End Big Data Analytics with English as Programming Language for Apache Spark in Microsoft Fabric, Powered by Azure Open AI
 
-Let English be your programming language! With Microsoft Fabric, Azure Open AI, and English SDK for Apache Spark, you can convert simple English instructions to big data transformations and accelerate your time to insights with low-code/no-code Data ingestion and automatic report creation. Empower your big data transformations with English and revolutionize the way you analyze data!
+Let English be your programming language! With Microsoft Fabric, Azure Open AI, and English SDK for Apache Spark, you can convert simple English instructions to big data transformations and accelerate your time to insights with low-code/no-code data ingestion and automatic report creation. Empower your big data transformations with English and revolutionize the way you analyze data!
 
 ## High-level Architecture
 
