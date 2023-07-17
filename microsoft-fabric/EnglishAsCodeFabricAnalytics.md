@@ -96,7 +96,7 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
   
   <img width="866" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/07103c01-9244-47da-b7e0-a2984cec6a1f">
 
-- Setup your AzureChatOpenAI function with open ai endpoint, open ai key , deployment name (use GPT 3.5 turbo or GPT 4 models) , Follow below for creating and retrieving the required details
+- Setup your AzureChatOpenAI function with Azure open ai endpoint, Azure open ai key , deployment name (use GPT 3.5 turbo or GPT 4 models) , Follow below for creating and retrieving the required details
 
   <img width="467" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c2955cb0-3b88-47ab-a089-d106a6fdd52a">
 
