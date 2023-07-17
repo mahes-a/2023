@@ -37,9 +37,9 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
 - Fabric provides many ways to ingest data (Pipelines, Dataflow,Shortcuts,uploading files, File sync) , we will use OneLake file explorer sync for ingestion in this tutorial
   
-- In this example , We use SQL Endpoint of the Lakehouse to model data and create a dataset to show case the feature of auto creating a report (and pre-selecting your data) from dataset , there are many other options in fabric to create reports
+- In this example, We use SQL Endpoint of the Lakehouse to model data and create a dataset to show case the feature of auto creating a report (and pre-selecting your data) from dataset , there are many other options in fabric to create reports
   
-- Refer below for decision guides for capabilities and use cases
+- Refer below for decision guides for capabilities and use cases for Fabric lakehouse , sql end point and ware house
 
   https://learn.microsoft.com/en-us/fabric/get-started/decision-guide-warehouse-lakehouse
 
@@ -49,11 +49,11 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
 - In this sample, Source data is copied into the OneLake File Explorer there by automatically syncing the files to your Fabric workspace lakehouse
   
-- In Microsoft Fabric notebook , the source files are read and transformed using English instructions to craete a Star schema model and the model is persisted in lakehouse  
+- In Microsoft Fabric notebook, the source files are read and transformed using English instructions to create a Star schema model and the model is persisted in lakehouse  
   
 - Using the SQL Endpoint for the lakehouse relationship between fact and dimension tables are established and a dataset is created selecting only the required tables
   
-- From the dataset , Reports are auto created. 
+- From the dataset, Reports are auto created. 
   
 ## Steps 
 
@@ -74,7 +74,7 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
   <img width="605" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/992ea513-1e43-4a0b-bfd9-a6fcfb562f6f">
 
-- Switch back to your Lakehouse explorer in fabric and validate all the files are now synced. Please use refresh option if you dont see the files
+- Switch back to your Lakehouse explorer in fabric and validate all the files are now synced. Please use refresh option if you don’t see the files
   
    <img width="937" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/43ab5075-62aa-4638-a901-aa992ca1b33f">
 
@@ -88,15 +88,15 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
   
   <img width="870" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/9edf0917-be3d-4109-aa71-a50e28fe2918">
 
-- Optional vorder enabling and optimizeWrite , Refer [here](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) to undesratnd more on the optimizations
+- Optional vorder enabling and optimizeWrite , Refer [here](https://learn.microsoft.com/en-us/fabric/data-engineering/delta-optimization-and-v-order?tabs=sparksql) to understand more on the optimizations
   
   <img width="893" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/258067c3-1e4f-4977-ba63-5926c07adf2e">
 
-- Inport the reference packages
+- Import the reference packages
   
   <img width="866" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/07103c01-9244-47da-b7e0-a2984cec6a1f">
 
-- Setup your AzureChatOpenAI function with open ai endpoint , open ai key , deployment name (use GPT 3.5 turbo or GPT 4 models) , Follow below for creating and retrieving the required details
+- Setup your AzureChatOpenAI function with open ai endpoint, open ai key , deployment name (use GPT 3.5 turbo or GPT 4 models) , Follow below for creating and retrieving the required details
 
   <img width="467" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c2955cb0-3b88-47ab-a089-d106a6fdd52a">
 
@@ -108,7 +108,7 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
     
     <img width="620" alt="image" src="https://github.com/mahes-a/Wingman/assets/120069348/646b0ebf-bf99-45cd-bc90-ee0fcf384b1c">
 
-- Initialize the  English SDK for Apache Spark by ensuring it uses the Azure Open AI models instantiated in above step , By enabling the verbose option, the English SDK provides visibility into the underlying SQL operations used to create DataFrames from English prompts. This can help to validate the process and prevent errors, while also introducing an additional safety measure by allowing users to review the tool's internal operations.
+- Initialize the English SDK for Apache Spark by ensuring it uses the Azure Open AI models instantiated in above step , By enabling the verbose option, the English SDK provides visibility into the underlying SQL operations used to create DataFrames from English prompts. This can help to validate the process and prevent errors, while also introducing an additional safety measure by allowing users to review the tool's internal operations.
     
    <img width="712" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/1ebc5e28-7c94-4f92-b153-93d9f4dbf54c">
 
@@ -118,7 +118,7 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
 **Let's begin data transformations in English!**
 
-- By provding english instructions , we select only the required columns and add date column from timestamp columns , Since we enabled verbose mode underlying sql query for the requested data transformation is displayed , validate the query
+- By providing English instructions , we select only the required columns and add date column from timestamp columns , Since we enabled verbose mode underlying sql query for the requested data transformation is displayed , validate the query
 
   <img width="880" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/636f4209-c571-418c-89d3-543102534184">
 
@@ -129,22 +129,22 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
    <img width="860" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/5c6b8579-4b0a-4511-ba21-82b7ed6b4c16">
 
 
-- Let's add a surrogate key to the lookup table by proving english instruction and repeat the same process of validating sql query and viusally validating the results
+- Let's add a surrogate key to the lookup table by proving English instruction and repeat the same process of validating sql query and visually validating the results
 
   <img width="821" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2d517e4d-ab2d-47a3-892f-6fc7c2f56b60">
 
 
-- Let's create role playing dimension table for pickup and dropoff location details by provding english instructions from the lookup table , validate the sql query and data before writing to table
+- Let's create role playing dimension table for pickup and dropoff location details by providing English instructions from the lookup table , validate the sql query and data before writing to table
 
    <img width="835" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/dcb39606-e26b-4d84-b92d-245443c0ab90">
 
 
--  By provding english instructions let's create a fact table for taxi trips using the surrogate key from the dimension tables and write to table after validating the sql query and data
+-  By providing English instructions let's create a fact table for taxi trips using the surrogate key from the dimension tables and write to table after validating the sql query and data
 
   <img width="866" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ff3f5eca-68a5-40ce-85d7-3aff0757315b">
 
 
-- To ensure safety , let's validate the dataframe for any duplicates by provding english instruction , this adds a addiitonal layer of validation before writing to table
+- To ensure safety , let's validate the dataframe for any duplicates by providing English instruction , this adds a additional layer of validation before writing to table
 
     <img width="659" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2f00d883-dc92-4feb-a3f6-a5cbbe755496">
     
