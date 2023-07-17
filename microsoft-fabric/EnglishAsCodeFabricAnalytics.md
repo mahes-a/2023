@@ -25,6 +25,8 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
   
 - While LLMs have tremendous potential across many industries and use cases, it is essential to ensure that they are built in a safe and responsible manner. This includes taking steps to mitigate potential risks and ensure that the model will not cause harm to users or result in reputational damage to organizations. It is important to carefully consider the ethical implications of LLMs and to develop appropriate safeguards to protect against potential harms.
   
+- Refer [here](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy) for details regarding how data provided by you to the Azure OpenAI service is processed, used, and stored
+  
 - The English SDK for Apache Spark has Data Ingestion capabilities to ingest data directly from bing and other search API's , We will focus on the data transformation feature of the SDK in this tutorial
 
 - Fabric provides many ways to ingest data (Pipelines, Dataflow,Shortcuts,uploading files, File sync) , we will use OneLake file explorer sync for ingestion in this tutorial
