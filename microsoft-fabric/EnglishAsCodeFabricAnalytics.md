@@ -15,7 +15,13 @@ Let English be your programming language! With Microsoft Fabric, Azure Open AI, 
 
 ## Getting Started
 
+- The English SDK for Apache Spark takes English instructions and compiles them into PySpark objects like DataFrames using the Power of LLM.
+
+  - The English SDK for Apache Spark aims to simplify the use of Spark and make it more accessible to users with varying levels of technical expertise. By enabling users to provide instructions in plain English, the tool allows them to focus on the analysis and interpretation of their data, rather than on the complexities of the underlying code. This can help users to gain insights more quickly and effectively, accelerating their data-driven decision-making processes.
+  
 - The English SDK for Apache Spark is developed as part of Databricks Labs projects , The entire code for this project is available on GitHub and is licensed under the Apache 2.0 license. The repository has multiple contributors and contains all the source code, functions, and documentation needed to use the SDK.  Check it out here: https://github.com/databrickslabs/pyspark-ai/
+  
+
 
 ## Things to Note 
 
