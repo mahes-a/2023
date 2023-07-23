@@ -5,7 +5,17 @@ Data Activator is a no-code tool part of Microsoft Fabric that allows users to a
 Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for more info.
 
 ## High-level Architecture
-<img width="738" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e0784555-a03d-4f1c-ac0f-3f30fb126a38">
+<img width="734" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c51da9f3-f35d-40b4-8249-9620ac5b1088">
+
+
+## Things to Note 
+- Microsoft Fabric is in public preview and Data Activator is in private preview , Please read [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for complete info including FAQ's , Prerequisites , performance guidelines 
+  
+- The tutorial uses NYC Green Taxi Dataset , Available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) in Parquet format and CSV format dataset can be found Kaggle
+  
+- The tutorial uses a .NET Console app that mimics taxi Streaming device by sending sample rows from  NYC Green Taxi Dataset at preset intervals
+  
+- Please note that this tutorial  is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure accuracy, validity, compatibility with your specific use case and technical environment.
 
 ## Prerequisites
 
