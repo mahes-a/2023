@@ -324,10 +324,6 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 - Create a Reflex item
   
   <img width="452" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f10fb1f0-f611-4163-86fa-8ae21f6cd9ca">
-
-- Click on Get Data and enter a name, Event hub connection string and leave Consumer group as $Default and Time field as empty 
-
-   <img width="979" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a4adc9b0-03d1-456d-a2ba-7cc841e4ba20">
    
     <img width="454" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e684a67a-5962-43e3-89ff-2ff0dd8aa0b7">
 
@@ -335,18 +331,20 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
    <img width="919" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d0323cd9-8fc4-4387-8457-6f813cec02bf">
 
-   <img width="1093" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/afc90d47-5593-4457-8252-ec9c65577ad8">
-
-- We will need at least one of the keys in the event hub Json to uniquely identifies an object. This can be something like device id , package id or taxi meter id , we do not have a taxi meter id in our dataset and we did not send unique events to EventHub in this demo  but we will use Signal.Id event hub event data property that identifies unique event through Guid, In real-world applications , there would be unique id sent from the signal , it may be tracking id , package id , device id etc., 
-
-- As we mimic the data streaming , we don’t have a unique id in our demo and are using the event hub internal property of Signal.Id , this would not be the case in real-world streaming apps.
-
-- Click on three dots on the Signal.ID property and add create object and name the object 
-
-<img width="329" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4122b08a-ffa9-4d3a-840d-13909460d504">
+    <img width="753" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/bb72d8d2-3b02-4cf2-980e-f12fc495441c">
 
 
-<img width="259" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2333c50d-0847-4138-8106-0d3374e0ffe8">
+- We will need at least one of the keys in the event hub Json data to uniquely identify the data row. This can be something like device id , package id or taxi meter id , we have   UniqueID  property that identifies unique event through Guid
+
+-  we have created a unique id in our console app that mimics streaming 
+
+- Click on three dots on the UniqueID and add create object and name the object 
+
+   <img width="365" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/47d4e514-928f-4420-94cc-5b486171abcf">
+
+    <img width="239" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/002fe7f3-853c-4f8c-8afd-3b74ac22be16">
+
+
 
 - Creating the object would open up the design tab with 5 signal id's selected as reference and available in the graph , The following image shows you the events that were received split out by the unique values from the signal ID column.
 
@@ -376,17 +374,19 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
     <img width="1121" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e6a8dd5f-7aa5-4994-8915-0554f8173bb2">
 
-- Enter the value as 4 in the value field , the value of 4 is represented in the graph , if you do not see value in the graph then chose the signal id which has payment_type of 4 by looking up the value from data tab, when selecting the data tab , save the progress 
+- Enter the value as 4 in the value field , the value of 4 is represented in the graph , if you do not see value in the graph then chose the UniqueID which has payment_type of 4 by looking up the value from data tab, when selecting the data tab , save the progress 
 
   <img width="889" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/59c4a7e3-11ec-4ddc-ab65-60cf73047ff4">
 
   <img width="631" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f00da54c-dcfa-433c-b412-c194ff7bf70a">
   
-  <img width="901" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/bdb239c8-074e-402e-9641-9bd3d102d062">
+   <img width="917" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4cc368d3-c3af-4f79-a03b-091d149e7e2e">
 
-  <img width="922" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/68d87469-fb82-4b26-8a1a-14bb19c0c3ef">
+    <img width="716" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/5b483c00-0bdb-45b6-86af-ff01e0db7032">
 
-  <img width="932" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/55e1c0d8-08e5-44fc-80e9-7b4f85fed3d4">
+    <img width="961" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/9dc9bb9d-a059-4d4f-813b-ce2ceb0c7009">
+
+
 
  - If you don’t see value of 4 in your data, we could stream more data from the console app or use a available payment_type or other value for alerting
 
