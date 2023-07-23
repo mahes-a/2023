@@ -246,5 +246,73 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
  <img width="1127" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d5d60bae-14dc-4e5f-ab9a-c375b943f938">
 
    
+**Add property to track and create alerts**
+
+- Click on new propety from the top that you want to monitor and respond to. Name the property from 
+
+  <img width="1109" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ce617322-86ca-4d68-8c55-911ec6621b97">
+
+- For our case , we will monitor the payment_type property ,Name the property accordingly  
 
 
+  <img width="1092" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3983df96-6556-4c96-8465-52f0c85e8101">
+
+  <img width="269" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3c1bd747-6af6-4db4-a866-8fd94be1b240">
+
+  <img width="921" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b0d14c3f-a489-4f14-9fe0-2c531ba134a0">
+
+- From the NYC Green Taxi data dictionary , below are the payment type descriptions for each number
+
+    <img width="519" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ae118fd8-d73a-4de2-8a57-579fdb4b185c">
+
+- We will monitor the payment_type and create and send alerts when payment_type is 4 that is dispute , this is done by clicking on detect and add is equal
+
+    <img width="1121" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e6a8dd5f-7aa5-4994-8915-0554f8173bb2">
+
+- Enter the value as 4 in the value field , the value of 4 is represnted in the graph , if you do not see value in the graph then chose the signal id which has payment_type of 4 by looking up the value from data tab, when selecting the data tab , save the progress 
+
+  <img width="889" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/59c4a7e3-11ec-4ddc-ab65-60cf73047ff4">
+
+  <img width="631" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f00da54c-dcfa-433c-b412-c194ff7bf70a">
+  
+  <img width="901" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/bdb239c8-074e-402e-9641-9bd3d102d062">
+
+  <img width="922" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/68d87469-fb82-4b26-8a1a-14bb19c0c3ef">
+
+  <img width="932" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/55e1c0d8-08e5-44fc-80e9-7b4f85fed3d4">
+
+ - If you dont see value of 4 in your data , we could stream more data from the console app or use a available payment_type or other value for alerting
+
+ - In this detect mode , we are tracking at every event the has payment_type as dispute. Lets change the every time option to Number of times and establish the window of time , for example detect when Payment_type of 4 (dispute) happens 5 times over 1 minute 
+
+   <img width="929" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6f8c4e77-d3db-4fe4-9668-e2f4bae34653">
+
+ 
+ - In the next step click on Act and send email to create a trigger
+
+   <img width="913" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f93ee1b6-0c3d-4738-8cc0-e8cde9cb9bdb">
+   
+ - From the send email section , we can click on "Send email to me" to send a test notification 
+
+   <img width="916" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/dbe0ad1d-65d9-43f5-a38b-a9f2d1ed04d8">
+
+   <img width="790" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f1e30af9-b3f5-4c57-afdc-948782715e01">
+
+  
+ - Below is the one sample email recieved
+
+    <img width="974" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/61ba2a2a-b53f-44ce-9a8d-9cda975c4ccc">
+
+
+- We could update subject , headline , optional message to  better match the alerting conditon  
+
+   <img width="904" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/261fdf89-f007-4982-a2c8-c62fd0547d96">
+
+- We could update subject , headline , optional message to  better match the alerting conditon and click start 
+ 
+    <img width="914" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/857e1718-6317-4a8e-b225-83fc63ca0800">
+
+- We could stream the data using console app and when ever the condition of when Payment_type of 4 (dispute) happens 5 times over 1 minute the emails would be sent. Please ensure the numbers are higher (like 100 times over 1 minute) to prevent inbox being flooded with alert emails when condiiton is met
+  
+  
+- 
