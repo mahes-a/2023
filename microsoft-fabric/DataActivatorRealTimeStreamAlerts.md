@@ -204,6 +204,10 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
   
 - Build the solution and run the console app , close the app after confirming the events are sent , please note the app sends 50 events every 6 seconds and does 10 loops , stop after seeing events sent message
 
- <img width="860" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8424e2df-874e-4727-9d65-c66d48b8143c">
+  <img width="860" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8424e2df-874e-4727-9d65-c66d48b8143c">
 
-**Create Data Activator from Microsoft Fabric**
+**Create No-code Data Activator to send alerts from Microsoft Fabric**
+
+- Login into Fabric portal [here](https://app.fabric.microsoft.com/) and choose Data Activator persona
+
+  <img width="259" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d590d94f-452d-402d-9166-2fc2144579b8">
