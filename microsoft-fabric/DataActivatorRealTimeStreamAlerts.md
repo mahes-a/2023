@@ -60,7 +60,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
       <img width="267" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/62fa4d2e-c150-43ff-8d72-2ca7718324fd">
 
 - In the Console App, Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to EventHub. 
-      ```
+     
       
       using System.Text.Json;
       
@@ -416,9 +416,12 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
    <img width="904" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4ab246c9-c5b7-45d8-8837-c12563063d25">
 
+- Now to publish the draft trigger click on start and click on continue to publish and have the trigger running
+
+  <img width="776" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/04f7fb1f-0fac-4a05-ae99-12ac695e9269">
 
 
-- We could stream the data using console app and whenever the condition of when Payment_type of 4 (dispute) happens 5 times over 1 minute the emails would be sent. Please ensure set the alert criteria  higher (like 100 times over 1 minute) to prevent inbox being flooded with alert emails when condition is met
+- We could stream the data using console app and whenever the condition of when Payment_type of 4 (dispute) happens 5 times over 1 minute the emails would be sent. Please ensure set the alert criteria  higher (like 100 times over 1 minute) to prevent inbox being flooded with alert emails when condition is met , Stop the trigger when done
   
     <img width="664" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/af3056b3-2ac8-43c1-8b20-edf65d043c45">
 
