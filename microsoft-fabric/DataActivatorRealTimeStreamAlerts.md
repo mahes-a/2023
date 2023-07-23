@@ -61,12 +61,13 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 -  In the Console App, Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to EventHub. 
       ```
+      
       using System.Text.Json;
-  
-  
+      
+      
       namespace SendToAzureEventHub
       {
-          internal class NycGreenTaxiData
+          internal class NycGreenTaxiDataFromFile
           {
               public int VendorID { get; set; }
               public DateTime lpep_pickup_datetime { get; set; }
@@ -121,6 +122,68 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
       
               public string congestion_surcharge { get; set; }
       
+      
+          
+      
+          }
+      
+          internal class NycGreenTaxiData
+          {
+              public int VendorID { get; set; }
+              public DateTime Lpep_pickup_datetime { get; set; }
+              public DateTime Lpep_dropoff_datetime { get; set; }
+              public string Store_and_fwd_flag { get; set; }
+              public string RatecodeID { get; set; }
+      
+              public string PULocationID { get; set; }
+      
+              public string Pickup_borough { get; set; }
+      
+              public string Pickup_zone { get; set; }
+      
+              public string Pickup_service_zone { get; set; }
+      
+              public string DOLocationID { get; set; }
+      
+              public string Dropoff_borough { get; set; }
+      
+              public string Dropoff_zone { get; set; }
+      
+              public string Dropoff_service_zone { get; set; }
+      
+              public string Passenger_count { get; set; }
+      
+              public double Trip_distance { get; set; }
+      
+              public double Direct_distance { get; set; }
+      
+      
+              public double Fare_amount { get; set; }
+      
+              public double Extra { get; set; }
+      
+              public double MTA_tax { get; set; }
+      
+              public double Tip_amount { get; set; }
+      
+              public double Tolls_amount { get; set; }
+      
+              public string eHail_fee { get; set; }
+      
+              public double Improvement_surcharge { get; set; }
+      
+              public double Total_amount { get; set; }
+      
+              public string Payment_type { get; set; }
+      
+      
+              public string Trip_type { get; set; }
+      
+      
+              public string Congestion_surcharge { get; set; }
+      
+              public string? UniqueID { get; set; }
+      
               public override string ToString()
               {
                   return JsonSerializer.Serialize(this);
@@ -128,6 +191,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
       
           }
       }
+
 
 
 - Add the CsvHelper package via Nuget, Refer [here](https://www.nuget.org/packages/CsvHelper/)
@@ -139,18 +203,20 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
         using CsvHelper;
         using System.Globalization;
         
+        
         namespace SendToAzureEventHub
         {
             internal class Program
             {
-                public static List<NycGreenTaxiData> taxiDataLst = new List<NycGreenTaxiData>();
+                //created two objects one for file and one for having uniqueid for data activator
+                public static List<NycGreenTaxiDataFromFile> taxiDataLst = new List<NycGreenTaxiDataFromFile>();
                 public static List<NycGreenTaxiData> taxiDataLstOut = new List<NycGreenTaxiData>();
                 public static List<NycGreenTaxiData> sendToHub = new List<NycGreenTaxiData>();
                 static void Main(string[] args)
                 {
                     //read data from csv file
                     PrepStream();
-                    //stop after 10 calls if left running
+                    //make 10 calls if left running
                     for (int i = 0; i < 10; i++)
                     {
                         //send to event hub
@@ -164,13 +230,16 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
                 static void SendEvents()
                 {
                     Random random = new Random();
-                    //return random index between zero and 50 records less than total rows in dataset , no check for exceptions done
+                    //return random index between zero and 50 records less than total rows in dataset ,
+                    //no check for exceptions done
                     int minnum = random.Next(0, taxiDataLstOut.Count() - 50);
-                    //get 50 random rows to be sent to eventhub based on index , doesnot do duplicate checks reads 50 rows at random , no check for exceptions done
+                    //get 50 random rows to be sent to eventhub based on index , doesnot do duplicate checks reads 50 rows at random ,
+                    //no check for exceptions done
                     sendToHub = taxiDataLstOut.GetRange(minnum, 50);
         
         
-                    //connection string to eventhub
+                   
+                    //connection string to eventhib
                     EventHubProducerClient _client = new EventHubProducerClient("your eventhub connection string here");
                     EventDataBatch _batch = _client.CreateBatchAsync().GetAwaiter().GetResult();
                     //send each row as a event to eventhub , ToString() creates Json format , log the rows sent
@@ -187,17 +256,55 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
         
                 static void PrepStream()
                 {
-        
+              
                     var rootDir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
         
                     //Change the file path if needed , added the file cia copy always option
                     using (var reader = new StreamReader(@rootDir + "\\GreenTaxidataenh.csv"))
                     using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                     {
-                        taxiDataLst = csv.GetRecords<NycGreenTaxiData>().ToList();
+                        taxiDataLst = csv.GetRecords<NycGreenTaxiDataFromFile>().ToList();
                     }
-                    
-                    taxiDataLstOut = taxiDataLst.ToList();
+                    //taxiDataLst = taxiDataLst.Where(r => r.payment_type== "4").ToList();
+                    foreach (var taxi in taxiDataLst)
+                    {
+                        taxiDataLstOut.Add(new NycGreenTaxiData
+                        {
+                            Congestion_surcharge = taxi.congestion_surcharge,
+                            Direct_distance = taxi.direct_distance,
+                            DOLocationID = taxi.DOLocationID,
+                            Dropoff_borough = taxi.dropoff_borough,
+                            Dropoff_service_zone = taxi.dropoff_service_zone,
+                            Dropoff_zone = taxi.dropoff_zone
+                            ,
+                            eHail_fee = taxi.ehail_fee,
+                            Extra = taxi.extra,
+                            Fare_amount = taxi.fare_amount,
+                            Improvement_surcharge = taxi.improvement_surcharge
+                            ,
+                            Lpep_dropoff_datetime = taxi.lpep_dropoff_datetime,
+                            Lpep_pickup_datetime = taxi.lpep_pickup_datetime,
+                            MTA_tax = taxi.mta_tax,
+                            Passenger_count = taxi.passenger_count,
+                            Payment_type = taxi.payment_type,
+                            Pickup_borough = taxi.pickup_borough,
+                            Pickup_service_zone = taxi.pickup_service_zone,
+                            Pickup_zone = taxi.pickup_zone,
+                            PULocationID = taxi.PULocationID,
+                            RatecodeID = taxi.RatecodeID,
+                            Store_and_fwd_flag = taxi.store_and_fwd_flag,
+                            Tip_amount = taxi.tip_amount,
+                            Tolls_amount = taxi.tolls_amount,
+                            Total_amount = taxi.total_amount,
+                            Trip_distance = taxi.trip_distance,
+                            Trip_type = taxi.trip_type,
+                            UniqueID = Guid.NewGuid().ToString(),
+                            VendorID = taxi.VendorID
+        
+                        }
+        
+                           );
+                    }
         
                 }
             }
