@@ -248,7 +248,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
    
 **Add property to track and create alerts**
 
-- Click on new property from the top that you want to monitor and respond to. Name the property from 
+- Click on new property from the top that you want to monitor and respond to.
 
   <img width="1109" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ce617322-86ca-4d68-8c55-911ec6621b97">
 
