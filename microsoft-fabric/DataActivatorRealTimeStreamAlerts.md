@@ -46,7 +46,8 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
   
 - Please note , we would be using the .NET app to send events and would not be recieing events from event hub , so please exclude Receive events from the event hub section in the above link
 
- <img width="701" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d41fe46b-0043-4085-b528-7c176f99e372">
+  <img width="413" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3eb8d1fe-b13a-44b0-aa5e-cbba8e9d6f39">
+
 
 
 -  Copy the NYC Green Taxi dataset in CSV format into the Console app and ensure "Copy always" option is selected for the file in Copy to output directory in the file properties
@@ -54,6 +55,5 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
       <img width="267" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/62fa4d2e-c150-43ff-8d72-2ca7718324fd">
 
 
- 
- -  d
+
   
