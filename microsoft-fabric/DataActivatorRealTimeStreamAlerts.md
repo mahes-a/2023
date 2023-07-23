@@ -51,13 +51,13 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
   <img width="413" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3eb8d1fe-b13a-44b0-aa5e-cbba8e9d6f39">
 
+- For more details , you could watch "AZ-204 - Connect and Consume Services - Azure Event Hubs" youtube video by Alan Rodrigues  [here](https://www.youtube.com/watch?v=HwZldR8KlKM)
 
 -  Copy the NYC Green Taxi dataset in CSV format into the Console app and ensure "Copy always" option is selected for the file in Copy to output directory in the file properties.
   
       <img width="267" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/62fa4d2e-c150-43ff-8d72-2ca7718324fd">
 
--  In the Console App , Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to eventhub , For more details , you could watch "AZ-204 - Connect and Consume Services - Azure Event Hubs" youtube video by Alan Rodrigues  [here](https://www.youtube.com/watch?v=HwZldR8KlKM)
-
+-  In the Console App , Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to eventhub. 
       ```
       using System.Text.Json;
   
