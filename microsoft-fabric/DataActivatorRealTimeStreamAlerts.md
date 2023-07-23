@@ -17,7 +17,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 ## Technical Flow
 
-- In this sample, A sample .NET console app  reads subset of  NYC Taxi Dataset at pre-set intervals and Send events to Azure Event Hubs
+- A sample .NET console app  reads subset of  NYC Taxi Dataset at pre-set intervals and Send events to Azure Event Hubs
   
 - In Data Activator gets data from Azure Event Hub , creates trigger based on data patterns and sends email alerts when data patterns are matched
   
