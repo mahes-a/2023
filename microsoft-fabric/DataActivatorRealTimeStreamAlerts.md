@@ -210,7 +210,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 **Create No-code Data Activator to send alerts from Microsoft Fabric**
 
-- Login into Fabric portal [here](https://app.fabric.microsoft.com/) and choose Data Activator persona , This assumes you have signed up for the private preview of Data Activator
+- Login into Fabric portal [here](https://app.fabric.microsoft.com/) and choose Data Activator workload , This assumes you have signed up for the private preview of Data Activator
 
   <img width="259" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d590d94f-452d-402d-9166-2fc2144579b8">
   
