@@ -148,8 +148,8 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
                 {
                     //read data from csv file
                     PrepStream();
-                    //stop after 100 calls if left running
-                    for (int i = 0; i < 100; i++)
+                    //stop after 10 calls if left running
+                    for (int i = 0; i < 10; i++)
                     {
                         //send to event hub
                         SendEvents();
@@ -200,3 +200,10 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
                 }
             }
         }
+- Add your event hub connection string in EventHubProducerClient _client = new EventHubProducerClient("your eventhub connection string here"); section
+  
+- Build the solution and run the console app , close the app after confirming the events are sent , please note the app sends 50 events every 6 seconds and does 10 loops , stop after seeing events sent message
+
+ <img width="860" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8424e2df-874e-4727-9d65-c66d48b8143c">
+
+**Create Data Activator from Microsoft Fabric**
