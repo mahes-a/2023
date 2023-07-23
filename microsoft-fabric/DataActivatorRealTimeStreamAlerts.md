@@ -9,11 +9,11 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 
 ## Things to Note 
-- Microsoft Fabric is in public preview and Data Activator is in private preview , Please read [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for complete info including FAQ's , Prerequisites , performance guidelines 
+- Microsoft Fabric and Data Activator are in preview , Please read [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for complete info including FAQ's , Prerequisites , performance guidelines 
   
 - The tutorial uses NYC Green Taxi Dataset , Available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) in Parquet format and CSV format dataset can be found Kaggle , The tutorial uses CSV format , Please convert Parquet to CSV format or use csv format dataset from Kaggle
   
-- The tutorial uses a .NET Console app that mimics taxi Streaming device by sending sample rows from NYC Green Taxi Dataset at preset intervals
+- The tutorial uses a .NET Console app that mimics taxi Streaming device by sending few rows from NYC Green Taxi Dataset at preset intervals
   
 - Please note that this tutorial is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure accuracy, validity, compatibility with your specific use case and technical environment.
 
@@ -23,7 +23,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 - Azure subscription with Azure Event Hub resource. 
 - Microsoft Fabric You can enable free trial [here](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial).
-- Data Activator is in private preview , you can request access [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRzMF5NSZnI1CrCTbAYcvUW9UM1NWWUUzVlpEVVZJS0lSM1ZWUDBSTkMyVi4u)
+- Data Activator is in preview , you can request access [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRzMF5NSZnI1CrCTbAYcvUW9UM1NWWUUzVlpEVVZJS0lSM1ZWUDBSTkMyVi4u)
 - Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md#faq-things-to-know-before-using-data-activator) for things to know before using Data Activator
 - Visual Studio
 
@@ -45,7 +45,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 **Create an .NET Console App to send data to EventHub**
 
-*Please note this sample console app tries to mimic a streaming app by just sending few rows to EventHub at pre-configured intervals, the code does not handle errors , nor production grade authentication and does not guarantee uniqueness of records being sent, this is created just for demo purposes only*
+*Please note this sample console app tries to mimic a streaming app by just sending few random rows to EventHub at pre-configured intervals, the code does not handle errors , nor use production grade authentication and does not guarantee uniqueness of records being sent, this is created just for demo purposes only*
 
 - Follow the steps listed [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send?tabs=connection-string%2Croles-azure-portal) to setup the C# console app to send the events to EventHub created as part of above step, we will use the connection string option for event hub authentication
   
