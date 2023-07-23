@@ -296,17 +296,19 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
    <img width="916" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/dbe0ad1d-65d9-43f5-a38b-a9f2d1ed04d8">
 
-   <img width="790" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f1e30af9-b3f5-4c57-afdc-948782715e01">
+   <img width="790" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a09c3d6f-74ab-4292-86ad-ea123995275d">
 
   
  - Below is the one sample email recieved
 
-    <img width="974" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/61ba2a2a-b53f-44ce-9a8d-9cda975c4ccc">
+    <img width="974" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/379ad72b-f3f8-4f96-b77f-04291900d98d">
+
 
 
 - We could update subject , headline , optional message to  better match the alerting conditon  
 
-   <img width="904" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/261fdf89-f007-4982-a2c8-c62fd0547d96">
+   <img width="904" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4ab246c9-c5b7-45d8-8837-c12563063d25">
+
 
 - We could update subject , headline , optional message to  better match the alerting condition and click start 
  
