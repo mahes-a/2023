@@ -211,3 +211,26 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 - Login into Fabric portal [here](https://app.fabric.microsoft.com/) and choose Data Activator persona , This assumes you have signed for the private preview of Data Activator
 
   <img width="259" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d590d94f-452d-402d-9166-2fc2144579b8">
+  
+- Create a Reflex item
+  
+  <img width="452" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f10fb1f0-f611-4163-86fa-8ae21f6cd9ca">
+
+- Click on Get Data and enter a name , Event hub connection string and leave Consumer group as $Default and Time field as empty 
+
+   <img width="979" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a4adc9b0-03d1-456d-a2ba-7cc841e4ba20">
+   
+    <img width="454" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e684a67a-5962-43e3-89ff-2ff0dd8aa0b7">
+
+- The data would be loaded from the event hubs
+
+   <img width="919" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d0323cd9-8fc4-4387-8457-6f813cec02bf">
+
+   <img width="1093" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/afc90d47-5593-4457-8252-ec9c65577ad8">
+
+
+
+
+   
+
+
