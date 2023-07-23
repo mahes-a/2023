@@ -1,6 +1,6 @@
-# Microsoft Fabric : No-Code Alerting on Real-time Streams using Data Activator
+# Microsoft Fabric: No-Code Alerting on Real-time Streams using Data Activator
 
-Data Activator is a no-code tool part of Microsoft Fabric that allows users to automatically take actions based on  conditions and patterns in  data. It monitors data in Power BI reports and Event Hub data streams, triggering actions such as email alerts. It enables businesses to build a alerting system that can handle data at scale. This tool eliminates the need for manual monitoring and offers a no-code solution for acting on data insights.
+Data Activator is a no-code tool part of Microsoft Fabric that allows users to automatically take actions based on conditions and patterns in data. It monitors data in Power BI reports and Event Hub data streams, triggering actions such as email alerts. It enables businesses to build a alerting system that can handle data on a scale. This tool eliminates the need for manual monitoring and offers a no-code solution for acting on data insights.
 
 Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for more info.
 
@@ -9,31 +9,31 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 
 ## Things to Note 
-- Microsoft Fabric and Data Activator are in preview , Please read [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for complete info including FAQ's , Prerequisites , performance guidelines 
+- Microsoft Fabric and Data Activator are in preview, Please read [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for complete info including FAQ's , Prerequisites , performance guidelines 
   
-- The tutorial uses NYC Green Taxi Dataset , Available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) in Parquet format and CSV format dataset can be found Kaggle , The tutorial uses CSV format , Please convert Parquet to CSV format or use csv format dataset from Kaggle
+- The tutorial uses NYC Green Taxi Dataset, Available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) in Parquet format and CSV format dataset can be found Kaggle , The tutorial uses CSV format , Please convert Parquet to CSV format or use csv format dataset from Kaggle
   
 - The tutorial uses a .NET Console app that mimics taxi Streaming device by sending few rows from NYC Green Taxi Dataset at preset intervals
   
 - Please note that this tutorial is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure accuracy, validity, compatibility with your specific use case and technical environment.
 
-- Data Activator can have Power BI report as source , we focus here on Azure EventHub real time streaming alerts in this article
+- Data Activator can have Power BI report as source, we focus here on Azure EventHub real time streaming alerts in this article
 
 ## Prerequisites
 
 - Azure subscription with Azure Event Hub resource. 
 - Microsoft Fabric You can enable free trial [here](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial).
-- Data Activator is in preview , you can request access [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRzMF5NSZnI1CrCTbAYcvUW9UM1NWWUUzVlpEVVZJS0lSM1ZWUDBSTkMyVi4u)
+- Data Activator is in preview, you can request access [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRzMF5NSZnI1CrCTbAYcvUW9UM1NWWUUzVlpEVVZJS0lSM1ZWUDBSTkMyVi4u)
 - Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md#faq-things-to-know-before-using-data-activator) for things to know before using Data Activator
 - Visual Studio
 
 ## Technical Flow
 
-- A sample .NET console app reads subset of  NYC Taxi Dataset at pre-set intervals and sends events to Azure Event Hubs
+- A sample .NET console app reads subset of NYC Taxi Dataset at pre-set intervals and sends events to Azure Event Hubs
   
-- Data Activator gets data from Azure Event Hub , creates trigger based on data patterns and sends email alerts when data patterns are matched
+- Data Activator gets data from Azure Event Hub, creates trigger based on data patterns and sends email alerts when data patterns are matched
   
-  - Using visual options , when payment type of the streamed taxi data is of type "dispute" emails are sent
+  - Using visual options, when payment type of the streamed taxi data is of type "dispute" emails are sent
 
 ## Steps 
 
@@ -53,13 +53,13 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
   <img width="413" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3eb8d1fe-b13a-44b0-aa5e-cbba8e9d6f39">
 
-- For more details , you could watch "AZ-204 - Connect and Consume Services - Azure Event Hubs" YouTube video by Alan Rodrigues  [here](https://www.youtube.com/watch?v=HwZldR8KlKM)
+- For more details, you could watch "AZ-204 - Connect and Consume Services - Azure Event Hubs" YouTube video by Alan Rodrigues  [here](https://www.youtube.com/watch?v=HwZldR8KlKM)
 
 -  Copy the NYC Green Taxi dataset in CSV format into the Console app and ensure "Copy always" option is selected for the file in Copy to output directory in the file properties.
   
       <img width="267" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/62fa4d2e-c150-43ff-8d72-2ca7718324fd">
 
--  In the Console App, Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to EventHub. 
+- In the Console App, Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to EventHub. 
       ```
       
       using System.Text.Json;
@@ -196,7 +196,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 - Add the CsvHelper package via Nuget, Refer [here](https://www.nuget.org/packages/CsvHelper/)
   
-- In the Console App , Modify the Program.cs file as below to send events to EventHub
+- In the Console App, Modify the Program.cs file as below to send events to EventHub
   
        
         using Azure.Messaging.EventHubs.Producer;
@@ -311,13 +311,13 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
         }
 - Add your event hub connection string in EventHubProducerClient _client = new EventHubProducerClient("your eventhub connection string here"); section
   
-- Build the solution and run the console app , close the app after confirming the events are sent , please note the app sends 50 events every 6 seconds and does 10 loops , stop after seeing events sent message
+- Build the solution and run the console app, close the app after confirming the events are sent , please note the app sends 50 events every 6 seconds and does 10 loops , stop after seeing events sent message
 
   <img width="860" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8424e2df-874e-4727-9d65-c66d48b8143c">
 
 **Create No-code Data Activator to send alerts from Microsoft Fabric**
 
-- Login into Fabric portal [here](https://app.fabric.microsoft.com/) and choose Data Activator workload , This assumes you have signed up for the private preview of Data Activator
+- Login into Fabric portal [here](https://app.fabric.microsoft.com/) and choose Data Activator workload, This assumes you have signed up for the private preview of Data Activator
 
   <img width="259" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d590d94f-452d-402d-9166-2fc2144579b8">
   
@@ -334,11 +334,11 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
     <img width="753" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/bb72d8d2-3b02-4cf2-980e-f12fc495441c">
 
 
-- We will need at least one of the keys in the event hub Json data to uniquely identify the data row. This can be something like device id , package id or taxi meter id , we have   UniqueID  property that identifies unique event through Guid
+- We will need at least one of the keys in the event hub Json data to uniquely identify the data row. This can be something like device id, package id or taxi meter id , we have   UniqueID  property that identifies unique event through Guid
 
--  we have created a unique id in our console app that mimics streaming 
+- we have created a unique id in our console app that mimics streaming 
 
-- Click on three dots on the UniqueID and add create object and name the object 
+- Click on three dots on the UniqueID and add create an object and name the object 
 
    <img width="365" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/47d4e514-928f-4420-94cc-5b486171abcf">
 
@@ -346,7 +346,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 
 
-- Creating the object would open up the design tab with 5 signal id's selected as reference and available in the graph , The following image shows you the events that were received split out by the unique values from the signal ID column.
+- Creating the object would open up the design tab with 5 UniqueID’s selected as reference and available in the graph, The following image shows you the events that were received split out by the unique values from the UniqueID column.
 
  <img width="1127" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d5d60bae-14dc-4e5f-ab9a-c375b943f938">
 
@@ -399,7 +399,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
    <img width="913" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f93ee1b6-0c3d-4738-8cc0-e8cde9cb9bdb">
    
- - From the send email section , we can click on "Send email to me" to send a test notification 
+ - From the send email section, we can click on "Send email to me" to send a test notification 
 
    <img width="916" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/dbe0ad1d-65d9-43f5-a38b-a9f2d1ed04d8">
 
