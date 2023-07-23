@@ -6,3 +6,20 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 ## High-level Architecture
 <img width="738" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e0784555-a03d-4f1c-ac0f-3f30fb126a38">
+
+## Prerequisites
+
+- Azure subscription with Azure Event Hub resource. 
+- Microsoft Fabric You can enable free trial [here](https://learn.microsoft.com/en-us/fabric/get-started/fabric-trial).
+- Data Activator is in private preview , you can request access [here](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbRzMF5NSZnI1CrCTbAYcvUW9UM1NWWUUzVlpEVVZJS0lSM1ZWUDBSTkMyVi4u)
+- Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md#faq-things-to-know-before-using-data-activator) for things to know before using Data Activator
+- Visual Studio
+
+## Technical Flow
+
+- In this sample, A sample .NET console app  reads subset of  NYC Taxi Dataset at pre-set intervals and Send events to Azure Event Hubs
+  
+- In Data Activator gets data from Azure Event Hub , creates trigger based on data patterns and sends email alerts when data patterns are matched
+  
+  - Using visual options , when payment type of the streamed taxi data is of type "dispute" emails are sent
+  
