@@ -128,7 +128,9 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
       }
 
 
--  In the Console App , Modify the Program.cs file as below to send events to eventhub
+- Add the CsvHelper package via Nuget, Refer [here](https://www.nuget.org/packages/CsvHelper/)
+  
+- In the Console App , Modify the Program.cs file as below to send events to eventhub
   
        
         using Azure.Messaging.EventHubs.Producer;
