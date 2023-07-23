@@ -310,9 +310,6 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
    <img width="904" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4ab246c9-c5b7-45d8-8837-c12563063d25">
 
 
-- We could update subject , headline , optional message to  better match the alerting condition and click start 
- 
-    <img width="914" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/857e1718-6317-4a8e-b225-83fc63ca0800">
 
 - We could stream the data using console app and whenever the condition of when Payment_type of 4 (dispute) happens 5 times over 1 minute the emails would be sent. Please ensure set the alert criteria  higher (like 100 times over 1 minute) to prevent inbox being flooded with alert emails when condition is met
   
