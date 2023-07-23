@@ -40,3 +40,9 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 - Follow the steps listed [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create) to create a Azure Event Hub Resource from Azure Portal
   
 - For simplicity , We will use the connection string of event hub resource for authentication in this sample , Please consider using Passwordless (Azure Active Directory authentication) for more secure applications . Refer [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string?source=recommendations#connection-string-for-a-specific-event-hub-in-a-namespace) to get the connection string for the event hub resource
+
+**Create an .NET Console App to send data to eventhub**
+- Follow the steps listed [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send?tabs=connection-string%2Croles-azure-portal) to setup the C# console app to send the events to eventhub created as part of above step, we will use the connection string option for event hub authentication
+  
+- d
+- 
