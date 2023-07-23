@@ -17,6 +17,8 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
   
 - Please note that this tutorial  is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure accuracy, validity, compatibility with your specific use case and technical environment.
 
+- Data Activator can have Power BI report as source , we focus here on Azure eventhub real time streaming alerts in this article
+
 ## Prerequisites
 
 - Azure subscription with Azure Event Hub resource. 
@@ -228,8 +230,20 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
    <img width="1093" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/afc90d47-5593-4457-8252-ec9c65577ad8">
 
+- We will need at least one of the keys in the event hub Json to uniquely identifies an object. This can be something like device id , package id or taxi meter id , we donot have a taxi meter id in our dataset and we didnot send unique events to eventhub in this demo  but we will use Signal.Id event hub eventdata property that identifies unique event through Guid, In real-world applications , there would be unique id sent from the signal , it may be tracking id , package id , device id etc., 
+
+- As we mimic the data streaming , we dont have a unique id in our demo and are using the event hub internal proprty of Signal.Id , this would not be the case in real-world streaming apps.
+
+- Click on three dots on the Signal.ID proprty and add create object and name the object 
+
+<img width="329" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4122b08a-ffa9-4d3a-840d-13909460d504">
 
 
+<img width="259" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2333c50d-0847-4138-8106-0d3374e0ffe8">
+
+- Creating the object would open up the design tab with 5 signal id's selected as reference and available in the graph , The following image shows you the events that were received split out by the unique values from the singal ID column.
+
+ <img width="1127" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d5d60bae-14dc-4e5f-ab9a-c375b943f938">
 
    
 
