@@ -32,4 +32,11 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 - Data Activator gets data from Azure Event Hub , creates trigger based on data patterns and sends email alerts when data patterns are matched
   
   - Using visual options , when payment type of the streamed taxi data is of type "dispute" emails are sent
+
+## Steps 
+
+**Create an event hub using Azure portal**
+
+- Follow the steps listed [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create) to create a Azure Event Hub Resource from Azure Portal
   
+- For simplicity , We will use the connection string of event hub resource for authentication in this sample , Please consider using Passwordless (Azure Active Directory authentication) for more secure applications . Refer [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string?source=recommendations#connection-string-for-a-specific-event-hub-in-a-namespace) to get the connection string for the event hub resource
