@@ -11,7 +11,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 ## Things to Note 
 - Microsoft Fabric is in public preview and Data Activator is in private preview , Please read [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDocs.md) and [here](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/) for complete info including FAQ's , Prerequisites , performance guidelines 
   
-- The tutorial uses NYC Green Taxi Dataset , Available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) in Parquet format and CSV format dataset can be found Kaggle
+- The tutorial uses NYC Green Taxi Dataset , Available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) in Parquet format and CSV format dataset can be found Kaggle , The tutorial uses CSV format , Please convert Parquet to CSV format or use csv format dataset from Kaggle
   
 - The tutorial uses a .NET Console app that mimics taxi Streaming device by sending sample rows from  NYC Green Taxi Dataset at preset intervals
   
@@ -48,5 +48,11 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 - <img width="625" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/69280b6b-3c51-45b5-8412-503cf8bf5a22">
 
--  
-- 
+-  Copy the NYC Green Taxi dataset in CSV format into the Console app and ensure "Copy always" option is selected for the file in Copy to output directory in the file properties
+  
+      <img width="267" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/62fa4d2e-c150-43ff-8d72-2ca7718324fd">
+
+
+ 
+ -  d
+  
