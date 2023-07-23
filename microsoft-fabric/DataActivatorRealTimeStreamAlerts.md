@@ -44,5 +44,9 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 **Create an .NET Console App to send data to eventhub**
 - Follow the steps listed [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send?tabs=connection-string%2Croles-azure-portal) to setup the C# console app to send the events to eventhub created as part of above step, we will use the connection string option for event hub authentication
   
-- d
+- Please note , we would be using the .NET app to send events and would not be recieing events from event hub , so please exclude Receive events from the event hub section in the above link
+
+- <img width="625" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/69280b6b-3c51-45b5-8412-503cf8bf5a22">
+
+-  
 - 
