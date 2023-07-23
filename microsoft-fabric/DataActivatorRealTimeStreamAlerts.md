@@ -13,11 +13,11 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
   
 - The tutorial uses NYC Green Taxi Dataset , Available [here](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) in Parquet format and CSV format dataset can be found Kaggle , The tutorial uses CSV format , Please convert Parquet to CSV format or use csv format dataset from Kaggle
   
-- The tutorial uses a .NET Console app that mimics taxi Streaming device by sending sample rows from  NYC Green Taxi Dataset at preset intervals
+- The tutorial uses a .NET Console app that mimics taxi Streaming device by sending sample rows from NYC Green Taxi Dataset at preset intervals
   
-- Please note that this tutorial  is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure accuracy, validity, compatibility with your specific use case and technical environment.
+- Please note that this tutorial is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and tested to ensure accuracy, validity, compatibility with your specific use case and technical environment.
 
-- Data Activator can have Power BI report as source , we focus here on Azure eventhub real time streaming alerts in this article
+- Data Activator can have Power BI report as source , we focus here on Azure EventHub real time streaming alerts in this article
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 ## Technical Flow
 
-- A sample .NET console app  reads subset of  NYC Taxi Dataset at pre-set intervals and sends events to Azure Event Hubs
+- A sample .NET console app reads subset of  NYC Taxi Dataset at pre-set intervals and sends events to Azure Event Hubs
   
 - Data Activator gets data from Azure Event Hub , creates trigger based on data patterns and sends email alerts when data patterns are matched
   
@@ -43,23 +43,23 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
   
 - For simplicity , We will use the connection string of event hub resource for authentication in this sample , Please consider using Passwordless (Azure Active Directory authentication) for more secure applications . Refer [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string?source=recommendations#connection-string-for-a-specific-event-hub-in-a-namespace) to get the connection string for the event hub resource
 
-**Create an .NET Console App to send data to eventhub**
+**Create an .NET Console App to send data to EventHub**
 
-*Please note this sample console app tries to mimic a streaming app by just sending few rows to eventhub at pre-configred intervals, the code doesnot handle errors , nor production grade authencitaion and doesnot guarantee uniqueness of records being sent, this is created just for demo purposes only*
+*Please note this sample console app tries to mimic a streaming app by just sending few rows to EventHub at pre-configured intervals, the code does not handle errors , nor production grade authentication and does not guarantee uniqueness of records being sent, this is created just for demo purposes only*
 
-- Follow the steps listed [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send?tabs=connection-string%2Croles-azure-portal) to setup the C# console app to send the events to eventhub created as part of above step, we will use the connection string option for event hub authentication
+- Follow the steps listed [here](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send?tabs=connection-string%2Croles-azure-portal) to setup the C# console app to send the events to EventHub created as part of above step, we will use the connection string option for event hub authentication
   
-- Please note , we would be using the .NET app to send events and would not be recieing events from event hub , so please exclude Receive events from the event hub section in the above link
+- Please note, we would be using the .NET app to send events and would not be receiving events from event hub , so please exclude Receive events from the event hub section in the above link
 
   <img width="413" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/3eb8d1fe-b13a-44b0-aa5e-cbba8e9d6f39">
 
-- For more details , you could watch "AZ-204 - Connect and Consume Services - Azure Event Hubs" youtube video by Alan Rodrigues  [here](https://www.youtube.com/watch?v=HwZldR8KlKM)
+- For more details , you could watch "AZ-204 - Connect and Consume Services - Azure Event Hubs" YouTube video by Alan Rodrigues  [here](https://www.youtube.com/watch?v=HwZldR8KlKM)
 
 -  Copy the NYC Green Taxi dataset in CSV format into the Console app and ensure "Copy always" option is selected for the file in Copy to output directory in the file properties.
   
       <img width="267" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/62fa4d2e-c150-43ff-8d72-2ca7718324fd">
 
--  In the Console App , Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to eventhub. 
+-  In the Console App, Add a class to represent the NYC Green Taxi dataset , we are adding the override string ToString() method to return Json object when ToString() is called , this is one way to ensure Json formatted data is sent to EventHub. 
       ```
       using System.Text.Json;
   
@@ -132,7 +132,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
 - Add the CsvHelper package via Nuget, Refer [here](https://www.nuget.org/packages/CsvHelper/)
   
-- In the Console App , Modify the Program.cs file as below to send events to eventhub
+- In the Console App , Modify the Program.cs file as below to send events to EventHub
   
        
         using Azure.Messaging.EventHubs.Producer;
@@ -218,7 +218,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
   
   <img width="452" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f10fb1f0-f611-4163-86fa-8ae21f6cd9ca">
 
-- Click on Get Data and enter a name , Event hub connection string and leave Consumer group as $Default and Time field as empty 
+- Click on Get Data and enter a name, Event hub connection string and leave Consumer group as $Default and Time field as empty 
 
    <img width="979" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/a4adc9b0-03d1-456d-a2ba-7cc841e4ba20">
    
@@ -230,25 +230,25 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
    <img width="1093" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/afc90d47-5593-4457-8252-ec9c65577ad8">
 
-- We will need at least one of the keys in the event hub Json to uniquely identifies an object. This can be something like device id , package id or taxi meter id , we donot have a taxi meter id in our dataset and we didnot send unique events to eventhub in this demo  but we will use Signal.Id event hub eventdata property that identifies unique event through Guid, In real-world applications , there would be unique id sent from the signal , it may be tracking id , package id , device id etc., 
+- We will need at least one of the keys in the event hub Json to uniquely identifies an object. This can be something like device id , package id or taxi meter id , we do not have a taxi meter id in our dataset and we did not send unique events to EventHub in this demo  but we will use Signal.Id event hub event data property that identifies unique event through Guid, In real-world applications , there would be unique id sent from the signal , it may be tracking id , package id , device id etc., 
 
-- As we mimic the data streaming , we dont have a unique id in our demo and are using the event hub internal proprty of Signal.Id , this would not be the case in real-world streaming apps.
+- As we mimic the data streaming , we don’t have a unique id in our demo and are using the event hub internal property of Signal.Id , this would not be the case in real-world streaming apps.
 
-- Click on three dots on the Signal.ID proprty and add create object and name the object 
+- Click on three dots on the Signal.ID property and add create object and name the object 
 
 <img width="329" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/4122b08a-ffa9-4d3a-840d-13909460d504">
 
 
 <img width="259" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2333c50d-0847-4138-8106-0d3374e0ffe8">
 
-- Creating the object would open up the design tab with 5 signal id's selected as reference and available in the graph , The following image shows you the events that were received split out by the unique values from the singal ID column.
+- Creating the object would open up the design tab with 5 signal id's selected as reference and available in the graph , The following image shows you the events that were received split out by the unique values from the signal ID column.
 
  <img width="1127" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d5d60bae-14dc-4e5f-ab9a-c375b943f938">
 
    
 **Add property to track and create alerts**
 
-- Click on new propety from the top that you want to monitor and respond to. Name the property from 
+- Click on new property from the top that you want to monitor and respond to. Name the property from 
 
   <img width="1109" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ce617322-86ca-4d68-8c55-911ec6621b97">
 
@@ -261,7 +261,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
   <img width="921" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/b0d14c3f-a489-4f14-9fe0-2c531ba134a0">
 
-- From the NYC Green Taxi data dictionary , below are the payment type descriptions for each number
+- From the NYC Green Taxi data dictionary, below are the payment type descriptions for each number
 
     <img width="519" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ae118fd8-d73a-4de2-8a57-579fdb4b185c">
 
@@ -269,7 +269,7 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
     <img width="1121" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e6a8dd5f-7aa5-4994-8915-0554f8173bb2">
 
-- Enter the value as 4 in the value field , the value of 4 is represnted in the graph , if you do not see value in the graph then chose the signal id which has payment_type of 4 by looking up the value from data tab, when selecting the data tab , save the progress 
+- Enter the value as 4 in the value field , the value of 4 is represented in the graph , if you do not see value in the graph then chose the signal id which has payment_type of 4 by looking up the value from data tab, when selecting the data tab , save the progress 
 
   <img width="889" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/59c4a7e3-11ec-4ddc-ab65-60cf73047ff4">
 
@@ -281,9 +281,9 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
   <img width="932" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/55e1c0d8-08e5-44fc-80e9-7b4f85fed3d4">
 
- - If you dont see value of 4 in your data , we could stream more data from the console app or use a available payment_type or other value for alerting
+ - If you don’t see value of 4 in your data, we could stream more data from the console app or use a available payment_type or other value for alerting
 
- - In this detect mode , we are tracking at every event the has payment_type as dispute. Lets change the every time option to Number of times and establish the window of time , for example detect when Payment_type of 4 (dispute) happens 5 times over 1 minute 
+ - In this detect mode, we are tracking at every event the has payment_type as dispute. Lets change the every time option to Number of times and establish the window of time , for example detect when Payment_type of 4 (dispute) happens 5 times over 1 minute 
 
    <img width="929" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6f8c4e77-d3db-4fe4-9668-e2f4bae34653">
 
@@ -308,11 +308,11 @@ Refer [here](https://github.com/microsoft/dataActivator/blob/main/ConsolidatedDo
 
    <img width="904" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/261fdf89-f007-4982-a2c8-c62fd0547d96">
 
-- We could update subject , headline , optional message to  better match the alerting conditon and click start 
+- We could update subject , headline , optional message to  better match the alerting condition and click start 
  
     <img width="914" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/857e1718-6317-4a8e-b225-83fc63ca0800">
 
-- We could stream the data using console app and when ever the condition of when Payment_type of 4 (dispute) happens 5 times over 1 minute the emails would be sent. Please ensure the numbers are higher (like 100 times over 1 minute) to prevent inbox being flooded with alert emails when condiiton is met
+- We could stream the data using console app and whenever the condition of when Payment_type of 4 (dispute) happens 5 times over 1 minute the emails would be sent. Please ensure set the alert criteria  higher (like 100 times over 1 minute) to prevent inbox being flooded with alert emails when condition is met
   
-  
-- 
+    <img width="664" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/af3056b3-2ac8-43c1-8b20-edf65d043c45">
+
