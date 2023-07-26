@@ -10,3 +10,4 @@ Overall, the integration of Llama-2-7b-chat model on Azure with Teams, along wit
 
 ## High-level Architecture
 
+ <img width="917" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/9da4c54a-d58d-4637-bb31-a0889f5709bd">
