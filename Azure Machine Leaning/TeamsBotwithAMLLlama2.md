@@ -26,6 +26,8 @@ Overall, the integration of Llama-2-7b-chat model on Azure with Teams, along wit
 
 ## Things to Note 
 
+- The Model catalog in AML with Generative AI Models(like Llama 2) is in Preview
+
 - The bot maintains conversation history to be passed to the model and ensures conversation history is maintained only for pre-configured number of conversation turns to prevent hitting token limits, the state management in the bot is a sample and may not be suited for Production workloads 
 
 - Please note that this tutorial is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and evaluated to ensure accuracy, validity, compatibility with your specific use case and technical environment.
