@@ -54,7 +54,11 @@
   
 - Azure Open AI Can handle intent classification and entity extraction and Q&A over your own data (RAG pattern) 
 
-- UI can be PVA bot 
+- UI can be PVA bot
+  
+- The tutorial uses developer free sample APIs as they are a convenient way to experiment and test integration with various services but  it is crucial to thoroughly validate and test the free sample API before integrating it into your application. This includes checking for error handling, response validation, and understanding any potential limitations or restrictions. There are no warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the information provided.
+  
+- Please note that this tutorial is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and evaluated to ensure accuracy, validity, compatibility with your specific use case and technical environment.
 
   
 ## Steps 
