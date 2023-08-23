@@ -1009,7 +1009,7 @@ The High level flow  involves the following steps:
   
       <img width="1069" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/9052ac4d-944b-4a7d-a53f-e4e6ff17dc9b">
       
-       <img width="876" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/8b78a695-e43b-490d-9a94-9b12e8d121ec">
+      <img width="876" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/8b78a695-e43b-490d-9a94-9b12e8d121ec">
 
 - The parameters are as below
 
