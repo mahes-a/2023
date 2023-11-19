@@ -128,3 +128,16 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
     <img width="877" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/cfd87fef-ec4b-4c86-ac3c-a50f4c5b6564">
 
     <img width="937" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/5ea8d98c-7891-48bc-837c-95317fee6867">
+
+- Lets select the test tab and provide a input Json to test the CodeLlama-13b-hf deployment
+
+   <img width="495" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d8af0959-4fa4-49b2-a9b3-de45cc49f393">
+
+
+  
+- In the endpoints section and click on the CodeLlama-13b-hf endpoint in the Real-time endpoint section and select the Consume tab , Note down the Rest endpoint , deployment name and Authentication key these will be used to make the request from the Bot
+ 
+  <img width="495" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6036c780-5b21-4601-8b4f-1b160d27a138">
+
+
+*If you aren't going use the real time Code Llama  deployment, Please delete the endpoint to prevent overages by following the article [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=azure-cli#delete-the-endpoint-and-the-deployment)*
