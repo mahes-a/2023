@@ -11,3 +11,10 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 ## Custom Copilot Teams channel Screen Grab
 
 ![image](https://github.com/mahes-a/2023/assets/120069348/368fa3ce-57ce-44c4-9f28-3e5c3bcffd84)
+
+## Prerequisites
+
+- Azure subscription with Azure Machine Learning resource
+- Deploying Llama 2 models require GPU compute of V100 / A100 SKUs. You can view and request AzureML compute quota [here](https://ml.azure.com/quota).
+- Copilot Studio , Can be accessed from [here](https://copilotstudio.microsoft.com/).
+- Teams for work or school , You can download from [here](https://go.microsoft.com/fwlink/?linkid=2187327&Lmsrc=groupChatMarketingPageWeb&Cmpid=directDownloadWin64&clcid=0x409&culture=en-us&country=us)
