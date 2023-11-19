@@ -173,3 +173,11 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
  - Add Set Variable activity ,  Name the variable suffix  and add the below as To Value
 
            "         ],         "parameters": {             "top_p": 0.9,             "temperature": 0.1,             "do_sample": true,             "max_new_tokens": 256,             "return_full_text": false,             "repeat_penalty":1.2          }     } }
+
+- Add Set Variable activity ,  Name the variable userinput  and add the below as To Value
+
+        System.LastMessage.Text
+
+- Add Set Variable activity ,  Name the variable body  and add the below as To Value
+
+        Concatenate(Topic.prefix,Topic.userinput,Topic.suffix)
