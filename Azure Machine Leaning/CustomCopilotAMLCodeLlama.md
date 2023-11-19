@@ -197,4 +197,7 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
    <img width="266" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/16dedf19-e0ee-4d05-89d2-d04ba75ea04c">
 
+ - Add a message and send the response from code lama aml endpoint and the value of Index(Topic.output,1).'0'
+
+   <img width="305" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e935e78d-290c-4fc9-acb2-ceeca8ff6699">
 
