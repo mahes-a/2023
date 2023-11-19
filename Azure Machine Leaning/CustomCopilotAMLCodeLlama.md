@@ -203,4 +203,10 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
 **Publish the Conversational plugin , the Copilot and enable the Teams channel**
 
+ - For this sample , for simplicity we will call the conversational plugin from the "On Unknown Intent"
+
+ - Navigate to the Topics section , System topics and open the Fallback topic
+
+    <img width="735" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/af997820-9259-484a-bba4-f3d947bbf792">
+
  - 
