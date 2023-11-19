@@ -201,3 +201,6 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
    <img width="305" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e935e78d-290c-4fc9-acb2-ceeca8ff6699">
 
+**Publish the Conversational plugin , the Copilot and enable the Teams channel**
+
+ - 
