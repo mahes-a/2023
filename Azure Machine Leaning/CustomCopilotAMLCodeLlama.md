@@ -27,3 +27,17 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
 
 - If you aren't going use the real time Llama  deployment any more, Please delete the endpoint by following the article [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=azure-cli#delete-the-endpoint-and-the-deployment)
+
+## Technical Flow
+
+- Copilot Teams channel is enabled and deployed in Teams app. 
+  
+- The Copilot Conversational plugin makes HTTP Post requests with user prompts to the Azure Machine learning real-time inference endpoints  
+  
+- Azure Machine learning real-time inference endpoints hosts the CodeLlama-13b-hf model with built in Azure AI Content Safety monitoring
+  
+- The User prompts are monitored , validated and filtered by  Azure AI Content Safety resource
+  
+- Safe Prompts are sent to CodeLlama-13b-hf model and response from CodeLlama-13b-hf model is also monitored and validated by the Azure AI Content Safety resource
+  
+- Safe Responses are sent back to Teams Copilot via the Azure Machine learning real-time inference endpoints
