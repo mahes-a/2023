@@ -181,3 +181,18 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 - Add Set Variable activity ,  Name the variable body  and add the below as To Value
 
         Concatenate(Topic.prefix,Topic.userinput,Topic.suffix)
+
+- Add an HTTP activity under advanced and make the call to code llama endpoint created in previous section with the authentication key
+
+
+   <img width="284" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2284e20f-16f5-4a09-84aa-27e017d47711">
+
+ - Enter the URL , POST method , Edit the headers and body and add the deployment name and Authentication key from the AML endpoint add the body variable in the Content field , Response data type from sample data and enter the test response from the aml endpoint and create a variable output with table type in the Save Response section  
+
+   ![image](https://github.com/mahes-a/2023/assets/120069348/9041360a-bda4-4624-bb24-d0b1b043192c)
+
+   ![image](https://github.com/mahes-a/2023/assets/120069348/a1790c26-74a6-41ea-a631-108e9e032657)
+
+   ![image](https://github.com/mahes-a/2023/assets/120069348/d1657012-51f3-4d10-81ce-d9c79e0546ef)
+
+
