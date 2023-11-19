@@ -211,7 +211,8 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
  - Remove the activities and add a Redirect activity and select the conversation plugin created
    
-  <img width="837" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/37c5be0b-e2d5-447c-a818-0d029f111479">
+   <img width="629" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/002777f9-156e-46dd-8e8a-fa0a6b376670">
+
 
 
   - Test the copilot and move to publish  to publish the copilot and the plugin and enable the teams channel and open the bot in teams channel to interact with the Copilot
