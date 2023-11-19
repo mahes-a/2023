@@ -156,6 +156,6 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
    <img width="1190" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8426ce45-e80b-405f-9483-f57a269828c0">
 
-- Navigate to Extend Microsoft Copilot (preview) -> Conversational plugins , Refer [here](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-conversational-plugins) to learn more about Conversational plugins
+- Navigate to Extend Microsoft Copilot (preview) -> Conversational plugins and click Add conversational plugin , Refer [here](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-conversational-plugins) to learn more about Conversational plugins
   
    <img width="960" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f5e62fca-6b18-428d-84d2-18befbf67f0b">
