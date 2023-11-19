@@ -18,3 +18,12 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 - Deploying Llama 2 models require GPU compute of V100 / A100 SKUs. You can view and request AzureML compute quota [here](https://ml.azure.com/quota).
 - Copilot Studio , Can be accessed from [here](https://copilotstudio.microsoft.com/).
 - Teams for work or school , You can download from [here](https://go.microsoft.com/fwlink/?linkid=2187327&Lmsrc=groupChatMarketingPageWeb&Cmpid=directDownloadWin64&clcid=0x409&culture=en-us&country=us)
+
+## Things to Note 
+
+- The Model catalog in AML with Generative AI Models(like Code Llama) is in Preview
+
+- Please note that this tutorial is intended for explorative and illustrative purposes only. It is meant to inspire ideas and should not be taken as prescriptive advice. Any implementation of the techniques described in this tutorial as part of your application should be thoroughly validated and evaluated to ensure accuracy, validity, compatibility with your specific use case and technical environment.
+
+
+- If you aren't going use the real time Llama  deployment any more, Please delete the endpoint by following the article [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=azure-cli#delete-the-endpoint-and-the-deployment)
