@@ -166,6 +166,10 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
  - For simplicty , we will use Variables to build the input Json request
    
- - Name the variable body and add the below as To Value 
+ - Name the variable prefix and add the below as To Value 
 
             {     "input_data": {         "input_string": [             "def sortlist(my_list):"         ],         "parameters": {             "top_p": 0.9,                             "temperature": 0.1,             "do_sample": true,             "max_new_tokens": 256,             "return_full_text": false,             "repeat_penalty":1.2          }     } }
+
+ - Add Set Variable activity ,  Name the variable suffix  and add the below as To Value
+
+           "         ],         "parameters": {             "top_p": 0.9,             "temperature": 0.1,             "do_sample": true,             "max_new_tokens": 256,             "return_full_text": false,             "repeat_penalty":1.2          }     } }
