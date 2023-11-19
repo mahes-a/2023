@@ -192,7 +192,9 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
    ![image](https://github.com/mahes-a/2023/assets/120069348/9041360a-bda4-4624-bb24-d0b1b043192c)
 
    ![image](https://github.com/mahes-a/2023/assets/120069348/a1790c26-74a6-41ea-a631-108e9e032657)
-
+ 
    ![image](https://github.com/mahes-a/2023/assets/120069348/d1657012-51f3-4d10-81ce-d9c79e0546ef)
+
+   <img width="266" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/16dedf19-e0ee-4d05-89d2-d04ba75ea04c">
 
 
