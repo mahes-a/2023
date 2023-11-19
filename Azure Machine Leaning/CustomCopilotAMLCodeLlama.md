@@ -59,7 +59,7 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
    <img width="700" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/927899d2-2f6c-45e1-a2fa-417b0f86ebeb">
 
 
-- Choose Llama-2-7b-chat model 
+- Choose CodeLlama-13b-hf model 
 
    <img width="527" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/49963b2a-f3d0-4c39-8837-cb4af5059ba2">
 
@@ -83,10 +83,9 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
  -  Choose your compute, either your pre-created compute instance or serverless if you don’t have compute instance created
 
--  Choose the model_name as "Llama-2-7b-chat" , update endpoint_name , deployment_name  if needed and  The sku_name would be the A100 or V100 GPU SKU , at present  it defaults to Standard_NC24s_v3 SKU and execute the notebook
+-  Choose the model_name as "CodeLlama-13b-hf" , update endpoint_name , deployment_name  if needed and  The sku_name would be the A100 or V100 GPU SKU , at present  it defaults to Standard_NC24s_v3 SKU and execute the notebook
 
-   <img width="893" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0abc20ed-cf9d-4ae0-9f7a-8a3774737d2f">
-
+  <img width="629" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0c9e97e5-4bde-44cb-8498-7effcd7c2b17">
 
 
 -  Uncomment and install dependencies
@@ -115,15 +114,16 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
      <img width="1169" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/33dd7224-cf94-4ec0-9287-b34c19f2e00a">
 
-- Run 3.1 and 3.2 to create a endpoint for the Llama-2-7b-chat , this would take few minutes
+- Run 3.1 and 3.2 and 3.3 to create a endpoint for the CodeLlama-13b-hf , this would take few minutes
 
-  <img width="736" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/b0894558-35d6-4e29-b375-896248762550">
+  <img width="1058" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/ffe60da2-335d-4097-a478-0f300f95ca7f">
 
-- Deploy the Llama 2 model with the content safety resource to the endpoint created in previous steps , this would take several minutes , wait for completion 
+
+- Deploy the CodeLlama-13b-hf model with the content safety resource to the endpoint created in previous steps , this would take several minutes , wait for completion 
   
-    <img width="698" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/7230fa15-a23c-4577-81d0-5c7384ecf10e">
+    <img width="1073" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f98b1623-f448-477d-bd2b-31d9036a2d2d">
 
-- Once Successful , switch to the endpoints section and click on the Llama2 endpoint in the Real-time endpoint section
+- Once Successful , switch to the endpoints section and click on the CodeLlama-13b-hf endpoint in the Real-time endpoint section
 
     <img width="877" alt="image" src="https://github.com/mahes-a/StagingBuild/assets/120069348/cfd87fef-ec4b-4c86-ac3c-a50f4c5b6564">
 
