@@ -144,3 +144,12 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
 
 **Create an Custom Copilot and make HTTP Post requests to real-time inference endpoint that hosts CodeLlama-13b-hf model with built in Azure AI Content Safety**
+
+- Login into the Copilot Studio [here](https://copilotstudio.microsoft.com/)
+
+- Open the Copilots tab and create a new copilot
+
+  <img width="884" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/0425e5fa-9c56-4c86-a459-c61eaa3e549b">
+  
+
+- 
