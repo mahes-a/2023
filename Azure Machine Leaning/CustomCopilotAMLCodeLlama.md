@@ -10,7 +10,11 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
 ## Custom Copilot Teams channel Screen Grab
 
-![image](https://github.com/mahes-a/2023/assets/120069348/368fa3ce-57ce-44c4-9f28-3e5c3bcffd84)
+
+<img width="1000" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f2eb1529-7b73-4ed0-ae08-f347a1e41987">
+
+
+
 
 ## Prerequisites
 
