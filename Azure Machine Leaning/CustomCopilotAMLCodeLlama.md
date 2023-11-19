@@ -159,3 +159,13 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 - Navigate to Extend Microsoft Copilot (preview) -> Conversational plugins and click Add conversational plugin , Refer [here](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-conversational-plugins) to learn more about Conversational plugins
   
    <img width="960" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f5e62fca-6b18-428d-84d2-18befbf67f0b">
+
+- Add Set Variable activity
+
+  <img width="397" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/c919e541-48e2-4cb5-a7bf-42c473d7db25">
+
+ - For simplicty , we will use Variables to build the input Json request
+   
+ - Name the variable body and add the below as To Value 
+
+            {     "input_data": {         "input_string": [             "def sortlist(my_list):"         ],         "parameters": {             "top_p": 0.9,                             "temperature": 0.1,             "do_sample": true,             "max_new_tokens": 256,             "return_full_text": false,             "repeat_penalty":1.2          }     } }
