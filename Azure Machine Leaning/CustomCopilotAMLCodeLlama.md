@@ -141,3 +141,6 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
 
 *If you aren't going use the real time Code Llama  deployment, Please delete the endpoint to prevent overages by following the article [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=azure-cli#delete-the-endpoint-and-the-deployment)*
+
+
+**Create an Custom Copilot and make HTTP Post requests to real-time inference endpoint that hosts CodeLlama-13b-hf model with built in Azure AI Content Safety**
