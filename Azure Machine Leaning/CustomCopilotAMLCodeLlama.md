@@ -41,3 +41,12 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 - Safe Prompts are sent to CodeLlama-13b-hf model and response from CodeLlama-13b-hf model is also monitored and validated by the Azure AI Content Safety resource
   
 - Safe Responses are sent back to Teams Copilot via the Azure Machine learning real-time inference endpoints
+
+## Steps
+
+*As noted in the Prerequisites sections Deploying Llama 2 models requires GPU compute of V100 / A100 SKUs , Please ensure you have quota available for v100 or A100 , If you donot have quota , you may use a shared environment for a short period*
+
+![image](https://github.com/mahes-a/2023/assets/120069348/791e54e0-cf92-42e2-ac81-09630f16930b)
+
+
+**Create an Azure Machine learning real-time inference endpoint that hosts Llama-2-7b-chat model with built in Azure AI Content Safety**
