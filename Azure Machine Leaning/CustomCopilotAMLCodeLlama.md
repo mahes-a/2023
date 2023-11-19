@@ -209,4 +209,10 @@ Lets build CodeBuddy a custom copilot powered by Code Llama, a leading AI platfo
 
     <img width="735" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/af997820-9259-484a-bba4-f3d947bbf792">
 
- - 
+ - Remove the activities and add a Redirect activity and select the conversation plugin created
+   
+   <img width="524" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/00b688b8-9182-48b2-a5cf-f5f6baa88760
+
+   <img width="524" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/e3037d13-3b45-4fbd-a060-622590bf0494">
+
+
