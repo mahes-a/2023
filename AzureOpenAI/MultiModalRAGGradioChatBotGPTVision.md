@@ -4,4 +4,51 @@ In the rapidly evolving landscape of artificial intelligence, chatbots have esta
 
 In this article, we'll delve into the creation of a cutting-edge Multi Modal RAG Chatbot, powered by Azure Open AI GPT Turbo with Vision. This unique configuration allows us to respond to user's queries based on images, enhancing the quality of its interactions. Furthermore, we'll explore how we utilized Gradio, a flexible UI library, to build an intuitive and user-friendly interface for our chatbot. Whether you're an AI enthusiast, a seasoned developer, or simply curious about the latest developments in chatbot technology, this article will provide valuable insights into the future of user interaction. So, let's dive in!
 
+## High-level Architecture
 
+<img width="760" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6e2b3f43-f37f-41c9-b402-ef8d54081338">
+
+## Technical Flow
+
+# Multi Modal RAG (Retrieval-Augmented Generation) System  
+  
+## Overview  
+This repository contains the implementation of a Multi Modal RAG system that leverages both images and text to deliver intelligent responses to user queries. It integrates Microsoft Azure's AI capabilities with OpenAI's GPT-4 Turbo to create a private ChatGPT-like experience that is tailored to your specific data.  
+  
+## Technical Flow  
+  
+### Back-end Flow: Indexing Images and Creating a Knowledge Base  
+  
+1. **Storage Account**:  
+   - Source images and metadata are securely stored in an Azure Storage Account.  
+  
+2. **Image Retrieval and Processing**:  
+   - A Machine Learning Notebook accesses and processes images and metadata from the Storage Account.  
+  
+3. **Azure AI Vision**:  
+   - The service generates multi-modal image embeddings via API, capturing image features in a machine-readable vector format.  
+  
+4. **Index Creation for AI Search**:  
+   - An index of image embeddings is created for efficient searching and is integrated into Azure AI Search.  
+  
+### Front-End Flow: Augmenting and Generating Responses  
+  
+R. **Data Retrieval**:  
+   - AI Search retrieves relevant images and text from the knowledge base in response to user queries.  
+  
+A. **Augmentation**:  
+   - Retrieved data is augmented with prompts to enrich the context for response generation.  
+  
+G. **Response Generation**:  
+   - OpenAI's GPT-4 Turbo with vision capabilities processes the augmented data and generates relevant textual responses.  
+  
+### User Interaction  
+  
+- **Gradio MultiModal Chatbot**:  
+   - A user-friendly interface for query submission and response reception, hosted on Azure App Service.  
+  
+- **Azure App Service**:  
+   - Ensures the chatbot's availability and scalability as a web application.  
+  
+- **Users**:  
+  - Users interact with the system via the Gradio interface, receiving intelligent responses informed by their queries. 
