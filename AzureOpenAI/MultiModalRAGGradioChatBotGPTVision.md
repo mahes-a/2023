@@ -10,15 +10,18 @@ In this article, we'll delve into the creation of a cutting-edge Multi Modal RAG
 
 ## Multimodal Gradio RAG Chatbot Screengrabs
 
-![image](https://github.com/mahes-a/2023/assets/120069348/6069c447-4aa1-495a-8ba1-e9496cbe6894)
+<img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6069c447-4aa1-495a-8ba1-e9496cbe6894">
 
-![image](https://github.com/mahes-a/2023/assets/120069348/f9f8fbf9-0d41-47a2-9ceb-90c6ac54efdd)
+<img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/f9f8fbf9-0d41-47a2-9ceb-90c6ac54efdd">
 
-![image](https://github.com/mahes-a/2023/assets/120069348/d8dd9227-4e08-408a-a6f7-6d1b8de29874)
+<img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/d8dd9227-4e08-408a-a6f7-6d1b8de29874">
 
-![image](https://github.com/mahes-a/2023/assets/120069348/2baeb5e1-55dc-4bcd-b5e9-6cfe506e491d)
+<img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/2baeb5e1-55dc-4bcd-b5e9-6cfe506e491d">
 
-![image](https://github.com/mahes-a/2023/assets/120069348/92012277-ddd9-4178-95d6-2da82bbf2036)
+<img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/92012277-ddd9-4178-95d6-2da82bbf2036">
+
+<img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8d605449-386d-4c25-8b00-469ca9c8f5f2">
+
 
 
 ## Prerequisites
@@ -32,17 +35,10 @@ Azure subscription with
   - Azure App Service to host the Gradio App
 
 Gradio Multi Modal Chatbot , Refer [here](https://www.gradio.app/main/guides/multimodal-chatbot-part1)
-
-## Technical Flow
-
-# Multi Modal RAG (Retrieval-Augmented Generation) System  
-  
-## Overview  
-This repository contains the implementation of a Multi Modal RAG system that leverages both images and text to deliver intelligent responses to user queries. It integrates Microsoft Azure's AI capabilities with OpenAI's GPT-4 Turbo to create a private ChatGPT-like experience that is tailored to your specific data.  
   
 ## Technical Flow  
   
-### Back-end Flow: Indexing Images and Creating a Knowledge Base  
+#### Back-end Flow: Indexing Images and Creating a Knowledge Base  
   
 1. **Storage Account**:  
    - Source images and metadata are securely stored in an Azure Storage Account.  
@@ -56,7 +52,7 @@ This repository contains the implementation of a Multi Modal RAG system that lev
 4. **Index Creation for AI Search**:  
    - An index of image embeddings is created for efficient searching and is integrated into Azure AI Search.  
   
-### Front-End Flow: Augmenting and Generating Responses  
+#### Front-End Flow: Augmenting and Generating Responses  
   
 R. **Data Retrieval**:  
    - AI Search retrieves relevant images and text from the knowledge base in response to user queries.  
@@ -67,7 +63,7 @@ A. **Augmentation**:
 G. **Response Generation**:  
    - Azure OpenAI's GPT-4 Turbo with vision capabilities processes the augmented data and generates relevant textual responses.  
   
-### User Interaction  
+#### User Interaction  
   
 - **Gradio MultiModal Chatbot**:  
    - A user-friendly interface for query submission and response reception, hosted on Azure App Service.  
@@ -77,3 +73,5 @@ G. **Response Generation**:
   
 - **Users**:  
   - Users interact with the system via the Gradio interface, receiving intelligent responses informed by their queries. 
+
+## Steps
