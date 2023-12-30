@@ -30,7 +30,7 @@ Azure subscription with
   - Azure OpenAI's GPT-4 Turbo with vision capabilities , Refer [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/gpt-with-vision)
   - Azure AI Vision
   - Azure AI Search
-  - Azure Machine Learning Compute/ Optional for Developmnet can use local VS Code
+  - Optional Azure Machine Learning Compute , Alternatively can Use Local Machine VS Code
   - Azure App Service to host the Gradio App
 
 Gradio Multi Modal Chatbot , Refer [here](https://www.gradio.app/main/guides/multimodal-chatbot-part1)
@@ -74,3 +74,25 @@ Gradio Multi Modal Chatbot , Refer [here](https://www.gradio.app/main/guides/mul
   - Users interact with the system via the Gradio interface, receiving intelligent responses informed by their queries. 
 
 ## Steps
+
+#### Indexing Images and Creating a Knowledge Base from your own images
+
+GPT-4 Turbo with Vision on your data allows the model to generate more customized and targeted answers using Retrieval Augmented Generation based on your own images and image metadata.
+
+To provide your own image data for GPT-4 Turbo with Vision, Azure OpenAI’s vision model.
+
+- Upload the images to Storage Account
+  
+- Prepare a Metadata Json file as below with the image url and image description
+
+  <img width="613" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/9990546d-dd0a-4d12-ad58-a108ed324749">
+
+- Clone the code  https://github.com/mahes-a/ImageIndexing
+  
+- Update the Metadata Json file with Image url and description  https://github.com/mahes-a/ImageIndexing/blob/main/productinfoMetdadata.json
+
+- Create the .env file from the .env-sample and fill up the keys and endpoints
+  
+- Run the IndexImagestoCogSearch.ipynb either using a Azure Machine Learning Compute or through your local Visual Studio Code for development
+  
+-  Once the code is run your own data knowledge base is created for querying 
