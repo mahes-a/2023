@@ -8,6 +8,20 @@ In this article, we'll delve into the creation of a cutting-edge Multi Modal RAG
 
 <img width="760" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6e2b3f43-f37f-41c9-b402-ef8d54081338">
 
+## Multimodal Gradio RAG Chatbot Screengrabs
+
+![image](https://github.com/mahes-a/2023/assets/120069348/6069c447-4aa1-495a-8ba1-e9496cbe6894)
+
+![image](https://github.com/mahes-a/2023/assets/120069348/f9f8fbf9-0d41-47a2-9ceb-90c6ac54efdd)
+
+![image](https://github.com/mahes-a/2023/assets/120069348/d8dd9227-4e08-408a-a6f7-6d1b8de29874)
+
+![image](https://github.com/mahes-a/2023/assets/120069348/2baeb5e1-55dc-4bcd-b5e9-6cfe506e491d)
+
+
+
+
+
 ## Technical Flow
 
 # Multi Modal RAG (Retrieval-Augmented Generation) System  
