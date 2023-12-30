@@ -20,8 +20,7 @@ In this article, we'll delve into the creation of a cutting-edge Multi Modal RAG
 
 <img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/92012277-ddd9-4178-95d6-2da82bbf2036">
 
-<img width="500" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/8d605449-386d-4c25-8b00-469ca9c8f5f2">
-
+<img width="500" src="https://github.com/mahes-a/2023/assets/120069348/70732cb3-87e9-4ef4-ad27-3358590b9aa6">
 
 
 ## Prerequisites
