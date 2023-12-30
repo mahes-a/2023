@@ -95,4 +95,10 @@ To provide your own image data for GPT-4 Turbo with Vision, Azure OpenAI’s vis
   
 - Run the IndexImagestoCogSearch.ipynb either using a Azure Machine Learning Compute or through your local Visual Studio Code for development
   
--  Once the code is run your own data knowledge base is created for querying 
+-  Once the code is run your own data knowledge base is created for querying
+
+#### Creating  Multimodal Gradio Chatbot UI Powered by GPT-4 Turbo With Vision answering the User Image queries 
+
+- Clone the code from https://github.com/mahes-a/MultiModalGradioChatBot to create the RAG UI
+  
+- 
