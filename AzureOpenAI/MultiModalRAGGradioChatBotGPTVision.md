@@ -6,7 +6,7 @@ In this article, we'll delve into the creation of a cutting-edge Multi Modal RAG
 
 ## High-level Architecture
 
-<img width="760" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6e2b3f43-f37f-41c9-b402-ef8d54081338">
+<img width="900" alt="image" src="https://github.com/mahes-a/2023/assets/120069348/6e2b3f43-f37f-41c9-b402-ef8d54081338">
 
 ## Multimodal Gradio RAG Chatbot Screengrabs
 
