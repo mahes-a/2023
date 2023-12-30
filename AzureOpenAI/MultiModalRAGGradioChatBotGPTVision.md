@@ -37,40 +37,40 @@ Gradio Multi Modal Chatbot , Refer [here](https://www.gradio.app/main/guides/mul
   
 ## Technical Flow  
   
-#### Back-end Flow: Indexing Images and Creating a Knowledge Base  
+##### Back-end Flow: Indexing Images and Creating a Knowledge Base  
   
-1. **Storage Account**:  
+1. ##### Storage Account  
    - Source images and metadata are securely stored in an Azure Storage Account.  
   
-2. **Image Retrieval and Processing**:  
+2.  ##### Image Retrieval and Processing:  
    - A Machine Learning Notebook accesses and processes images and metadata from the Storage Account.  
   
-3. **Azure AI Vision**:  
+3.  ##### Azure AI Vision:  
    - The service generates multi-modal image embeddings via API, capturing image features in a machine-readable vector format.  
   
-4. **Index Creation for AI Search**:  
+4.  ##### Index Creation for AI Search:  
    - An index of image embeddings is created for efficient searching and is integrated into Azure AI Search.  
   
-#### Front-End Flow: Augmenting and Generating Responses  
+##### Front-End Flow: Augmenting and Generating Responses  
   
-R. **Data Retrieval**:  
+##### R. Data Retrieval:  
    - AI Search retrieves relevant images and text from the knowledge base in response to user queries.  
   
-A. **Augmentation**:  
+##### A. Augmentation:  
    - Retrieved data is augmented with prompts to enrich the context for response generation.  
   
-G. **Response Generation**:  
+##### G. Response Generation:  
    - Azure OpenAI's GPT-4 Turbo with vision capabilities processes the augmented data and generates relevant textual responses.  
   
-#### User Interaction  
+##### User Interaction  
   
-- **Gradio MultiModal Chatbot**:  
+##### Gradio MultiModal Chatbot:  
    - A user-friendly interface for query submission and response reception, hosted on Azure App Service.  
   
-- **Azure App Service**:  
+##### Azure App Service:  
    - Ensures the chatbot's availability and scalability as a web application.  
   
-- **Users**:  
+##### Users:  
   - Users interact with the system via the Gradio interface, receiving intelligent responses informed by their queries. 
 
 ## Steps
