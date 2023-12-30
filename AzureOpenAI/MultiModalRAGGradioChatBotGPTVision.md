@@ -21,7 +21,17 @@ In this article, we'll delve into the creation of a cutting-edge Multi Modal RAG
 ![image](https://github.com/mahes-a/2023/assets/120069348/92012277-ddd9-4178-95d6-2da82bbf2036)
 
 
+## Prerequisites
 
+Azure subscription with
+  - Storage Account
+  - Azure OpenAI's GPT-4 Turbo with vision capabilities , Refer [here](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/gpt-with-vision)
+  - Azure AI Vision
+  - Azure AI Search
+  - Azure Machine Learning Compute/ Optional for Developmnet can use local VS Code
+  - Azure App Service to host the Gradio App
+
+Gradio Multi Modal Chatbot , Refer [here](https://www.gradio.app/main/guides/multimodal-chatbot-part1)
 
 ## Technical Flow
 
@@ -55,7 +65,7 @@ A. **Augmentation**:
    - Retrieved data is augmented with prompts to enrich the context for response generation.  
   
 G. **Response Generation**:  
-   - OpenAI's GPT-4 Turbo with vision capabilities processes the augmented data and generates relevant textual responses.  
+   - Azure OpenAI's GPT-4 Turbo with vision capabilities processes the augmented data and generates relevant textual responses.  
   
 ### User Interaction  
   
