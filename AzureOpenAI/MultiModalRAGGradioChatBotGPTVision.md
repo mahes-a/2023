@@ -110,7 +110,7 @@ To provide your own image data for GPT-4 Turbo with Vision, Azure OpenAI’s vis
 - To Deploy the Gradio App to a Azure App Service refer [here](https://datasciencedojo.com/blog/web_app_for_gradio/)
 
 #### Inspiration and References 
-- Azure Python SDK https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-storage-blob
+- https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/storage/azure-storage-blob
 - https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator/blob/main/04-Complex-Docs.ipynb
 - https://github.com/Azure/azureml-examples
 - https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/use-your-image-data
